@@ -21,3 +21,4 @@ The build is minified and the filenames include the hashes.<br />
 
 Judah Krug - jkrug7@gatech.edu (Developer)
 Colin Tam - ctam31@gatech.edu (Developer)
+Rachel Voirin - rvoirin3@gatech.edu (Developer)
