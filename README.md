@@ -19,7 +19,7 @@ The build is minified and the filenames include the hashes.<br />
 
 
 
-Judah Krug - jkrug7@gatech.edu (Developer)
-Colin Tam - ctam31@gatech.edu (Developer)
-Rachel Voirin - rvoirin3@gatech.edu (Developer)
-Michael Ryan - mryan47@gatech.edu (Developer)
+Judah Krug - jkrug7@gatech.edu (Developer)<br />
+Colin Tam - ctam31@gatech.edu (Developer)<br />
+Rachel Voirin - rvoirin3@gatech.edu (Developer)<br />
+Michael Ryan - mryan47@gatech.edu (Developer)<br />
