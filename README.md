@@ -23,3 +23,4 @@ Judah Krug - jkrug7@gatech.edu (Developer)<br />
 Colin Tam - ctam31@gatech.edu (Developer)<br />
 Rachel Voirin - rvoirin3@gatech.edu (Developer)<br />
 Michael Ryan - mryan47@gatech.edu (Developer)<br />
+Charlie Luo - cvxluo@gatech.edu (Developer)<br />
