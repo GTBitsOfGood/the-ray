@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ProgressBar from './components/progressBar';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           <h1> Welcome to the Ray </h1>
         </center>
       </header>
+      <ProgressBar bgcolor="#6a1b9a" completed={50} />
     </div>
   );
 }
