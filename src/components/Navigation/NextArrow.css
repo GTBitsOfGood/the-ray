@@ -1,0 +1,11 @@
+.arrow {
+  background-color: transparent;
+  border: none;
+}
+
+.arrow-svg {
+  fill: black;
+}
+.arrow-svg:hover {
+  fill: gray;
+}

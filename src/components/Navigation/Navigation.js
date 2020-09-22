@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import ProgressBar from '../progressBar';
+import NextArrow from './NextArrow';
 
 function Navigation(props) {
   const { children } = props;
@@ -14,7 +15,8 @@ function Navigation(props) {
       <button type="button" onClick={() => changePageIndex(pageIndex + 1)}>
         Next
       </button>
-      <ProgressBar bgcolor="#6a1b9a" completed={pageIndex / children.length} />
+      <NextArrow />
+      <ProgressBar bgcolor="#6a1b9a" completed={(pageIndex / Object.keys(children).length) * 100} />
     </div>
   );
 }
