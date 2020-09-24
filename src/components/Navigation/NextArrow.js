@@ -1,22 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './NextArrow.css';
+import downarrow from './arrow_downward_24px.svg';
 
-function NextArrow() {
+function NextArrow(props) {
+  const { goNextPage, dark } = props;
   return (
-    <button type="button" className="arrow">
-      <svg
-        className="arrow-svg"
-        width="60"
-        height="60"
-        viewBox="0 0 60 60"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M59.625 29.8125L54.3705 24.558L33.5391 45.3523V0H26.0859V45.3523L5.29172 24.5208L0 29.8125L29.8125 59.625L59.625 29.8125Z" />
-      </svg>
+    <button type="button" className="arrow" onClick={goNextPage}>
+      <img
+        src={downarrow}
+        alt="Go to next page"
+        className={dark ? 'arrow-image arrow-image-dark' : 'arrow-image arrow-image-light'}
+      />
     </button>
   );
 }
+
+NextArrow.propTypes = {
+  goNextPage: PropTypes.func.isRequired,
+  dark: PropTypes.bool,
+};
+
+NextArrow.defaultProps = {
+  dark: false,
+};
 
 export default NextArrow;

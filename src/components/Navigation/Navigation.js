@@ -12,11 +12,9 @@ function Navigation(props) {
   return (
     <div>
       {children[pageIndex]}
-      <button type="button" onClick={() => changePageIndex(pageIndex + 1)}>
-        Next
-      </button>
-      <NextArrow />
-      <ProgressBar bgcolor="#6a1b9a" completed={(pageIndex / Object.keys(children).length) * 100} />
+
+      <NextArrow goNextPage={() => changePageIndex(pageIndex + 1)} dark />
+      <ProgressBar bgcolor="#6a1b9a" completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
 }
