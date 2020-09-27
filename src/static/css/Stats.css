@@ -1,0 +1,95 @@
+.body {
+    position: relative;
+    /* width: 1440px; */
+    min-height: 1000px;
+    width: 100%;
+    height: 100%;
+    background: #092342;
+    display: flex;
+    flex-direction: column;
+}
+
+.ellipse-open {
+    position: absolute;
+    width: 32.62px;
+    height: 32.62px;
+    /* left: 943px;
+    top: 640px; */
+    border: 3px solid #FFFFFF;
+}
+
+.ellipse-full {
+    position: absolute;
+    width: 32.62px;
+    height: 32.62px;
+    /* left: 878px;
+    top: 640px; */
+    background: #FFFFFF;
+}
+
+.main-text {
+    position: absolute;
+    width: 441px;
+    height: 169px;
+    /* left: 499px;
+    top: 173.68px; */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 144px;
+    line-height: 169px;
+
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.secondary-text {
+    /* left: 22.99%; */
+    /* right: 22.85%; */
+    top: 49.56%;
+    bottom: 45.78%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+    align-self: center;
+}
+
+img {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    /* height: 100%; */
+    /* min-height: 100px; */
+    /* max-height: 100%; */
+}
+
+.lower-elements {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    align-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+hr {
+    align-self: center;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #ffffff;
+    margin: 1em 0;
+    padding: 0;
+    width: 50%;
+}
