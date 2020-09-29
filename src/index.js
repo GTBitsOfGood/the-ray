@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './pages/App';
 import Statistics from './Statistics';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Statistics
+    <Statistics
       text="gallons of gas wasted because of poor tire management"
       image="GasStation"
       number="2,000,000,000"
       selection="0"
     />
-    <Statistics
+    {/* <Statistics
       text="car accidents due to underinflated tires every year"
       image="Crash"
       number="78,000"
