@@ -1,0 +1,28 @@
+.arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.arrow-image {
+  position: absolute;
+  left: 92.78%;
+  right: 3.08%;
+  top: 86.56%;
+  bottom: 6.82%;
+
+  transition: filter 1s ease;
+}
+
+.arrow-image-light:hover {
+  filter: invert(25%);
+}
+
+.arrow-image-dark {
+  transition: filter 1s ease;
+  filter: invert(100%);
+}
+
+.arrow-image-dark:hover {
+  filter: invert(75%);
+}
