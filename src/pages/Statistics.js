@@ -1,14 +1,13 @@
 import React from 'react';
-import './static/css/Stats.css';
-import './static/css/main.css';
+import '../static/css/Stats.css';
 import PropTypes from 'prop-types';
-import Crash from './static/images/car-crash-crop.jpg';
-import FlatTire from './static/images/flat-tire-crop.jpg';
-import GasStation from './static/images/gas-station-crop.jpg';
-import carAccidentIcon from './static/images/car-accident-icon.svg';
-import carAccidentIconBlack from './static/images/car-accident-icon-black.svg';
-import gasIcon from './static/images/gas-icon.svg';
-import gasIconBlack from './static/images/gas-icon-black.svg';
+import Crash from '../static/images/car-crash-crop.jpg';
+import FlatTire from '../static/images/flat-tire-crop.jpg';
+import GasStation from '../static/images/gas-station-crop.jpg';
+import carAccidentIcon from '../static/images/car-accident-icon.svg';
+import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
+import gasIcon from '../static/images/gas-icon.svg';
+import gasIconBlack from '../static/images/gas-icon-black.svg';
 
 class Statistics extends React.PureComponent {
   render() {

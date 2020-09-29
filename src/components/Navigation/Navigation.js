@@ -78,7 +78,7 @@ function Navigation(props) {
         {children}
       </div>
 
-      <NextArrow goNextPage={pageDown} dark />
+      <NextArrow goNextPage={pageDown} />
       <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
