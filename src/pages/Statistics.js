@@ -12,7 +12,7 @@ import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Statistics extends React.PureComponent {
   render() {
-    const { image, selection, number, text } = this.props;
+    const { image, selection, number, text, isActive } = this.props;
 
     let currImage = GasStation;
 
@@ -28,9 +28,8 @@ class Statistics extends React.PureComponent {
           <div className="main-text">{number}</div>
         </div>
         <div className="lower-elements">
-          <ParallaxComponent>
+          <ParallaxComponent shouldParallaxScroll={isActive}>
             <p className="secondary-text">{text}</p>
-            <div />
           </ParallaxComponent>
           <hr />
           <div className="icons">
@@ -78,6 +77,7 @@ Statistics.propTypes = {
   selection: PropTypes.number,
   number: PropTypes.string,
   text: PropTypes.string,
+  isActive: PropTypes.bool,
 };
 
 Statistics.defaultProps = {
@@ -85,5 +85,6 @@ Statistics.defaultProps = {
   selection: 0,
   number: '2,000,000,000',
   text: 'gallons of gas wasted because of poor tire management',
+  isActive: false,
 };
 export default Statistics;

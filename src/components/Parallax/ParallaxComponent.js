@@ -2,22 +2,32 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 function ParallaxComponent(props) {
-  const { children, shouldparallaxscroll, transitionTime, transitionDelay } = props;
+  const { children, shouldParallaxScroll, transitionTime, transitionDelay } = props;
 
   const parallaxContainer = useRef(null);
 
+  const slideDown = () => {
+    parallaxContainer.current.style.transform = 'translate(0,200px)';
+  };
+
   useEffect(() => {
-    if (shouldparallaxscroll) {
-      parallaxContainer.current.style.marginTop = `0px`;
+    parallaxContainer.current.style.transform = 'translate(0,0)';
+    if (!shouldParallaxScroll) {
+      const timeout = setTimeout(slideDown, transitionTime);
+      return () => {
+        clearTimeout(timeout);
+      };
     }
-  }, [shouldparallaxscroll]);
+    return () => {};
+  }, [shouldParallaxScroll]);
 
   return (
     <div
       ref={parallaxContainer}
+      className="parallax-scroll"
       style={{
-        marginTop: `${shouldparallaxscroll ? 100 : 0}`,
-        transition: `margin-top ${transitionTime}ms ease-in-out`,
+        transform: `translate(0, ${shouldParallaxScroll ? 0 : 200}px)`,
+        transition: `transform ${transitionTime}ms ease-in-out`,
         transitionDelay: `${transitionDelay}ms`,
       }}
     >
@@ -27,15 +37,15 @@ function ParallaxComponent(props) {
 }
 
 ParallaxComponent.propTypes = {
-  children: PropTypes.arrayOf(React.Component),
-  shouldparallaxscroll: PropTypes.bool,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(React.Component), React.Component]),
+  shouldParallaxScroll: PropTypes.bool,
   transitionTime: PropTypes.number,
   transitionDelay: PropTypes.number,
 };
 
 ParallaxComponent.defaultProps = {
   children: [],
-  shouldparallaxscroll: false,
+  shouldParallaxScroll: false,
   transitionTime: 1000,
   transitionDelay: 100,
 };
