@@ -14,6 +14,15 @@ function Navigation(props) {
 
   const pageContainer = useRef(null);
 
+  // const childrenPages = [];
+  // React.Children.forEach(children, (child, i) => {
+  //   if (React.isValidElement(child)) {
+  //     childrenPages.push(<ScrollPage isActive={pageIndex === i}>{child}</ScrollPage>);
+  //   } else {
+  //     childrenPages.push(child);
+  //   }
+  // });
+
   useEffect(() => {
     pageContainer.current.style.transform = `translate(0, ${pageIndex * -100}%)`;
   });

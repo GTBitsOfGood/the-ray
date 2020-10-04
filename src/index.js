@@ -12,7 +12,7 @@ ReactDOM.render(
           text="gallons of gas wasted because of poor tire management"
           image="GasStation"
           number="2,000,000,000"
-          selection="0"
+          selection={0}
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -20,7 +20,7 @@ ReactDOM.render(
           text="car accidents due to underinflated tires every year"
           image="Crash"
           number="78,000"
-          selection="1"
+          selection={1}
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -28,7 +28,7 @@ ReactDOM.render(
           text="increase in serious accidents by driving on underinflated tires"
           image="FlatTire"
           number="300%"
-          selection="1"
+          selection={1}
         />
       </div>
     </Navigation>

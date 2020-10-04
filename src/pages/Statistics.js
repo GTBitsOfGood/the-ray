@@ -8,6 +8,7 @@ import carAccidentIcon from '../static/images/car-accident-icon.svg';
 import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
 import gasIcon from '../static/images/gas-icon.svg';
 import gasIconBlack from '../static/images/gas-icon-black.svg';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Statistics extends React.PureComponent {
   render() {
@@ -27,7 +28,10 @@ class Statistics extends React.PureComponent {
           <div className="main-text">{number}</div>
         </div>
         <div className="lower-elements">
-          <p className="secondary-text">{text}</p>
+          <ParallaxComponent>
+            <p className="secondary-text">{text}</p>
+            <div />
+          </ParallaxComponent>
           <hr />
           <div className="icons">
             <div className="icon">
