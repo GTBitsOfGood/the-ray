@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Statistics from './pages/Statistics';
+import Ticket from './pages/Ticket';
 import Navigation from './components/Navigation/Navigation';
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
           image="GasStation"
           number="2,000,000,000"
           selection={0}
-          isActive={pageIndex === 0}
         />
+      </div>
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Ticket isActive={pageIndex === 1} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
@@ -22,7 +25,6 @@ function App() {
           image="Crash"
           number="78,000"
           selection={1}
-          isActive={pageIndex === 1}
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -31,7 +33,6 @@ function App() {
           image="FlatTire"
           number="300%"
           selection={1}
-          isActive={pageIndex === 2}
         />
       </div>
     </Navigation>

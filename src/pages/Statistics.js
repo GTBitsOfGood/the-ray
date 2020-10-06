@@ -8,11 +8,10 @@ import carAccidentIcon from '../static/images/car-accident-icon.svg';
 import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
 import gasIcon from '../static/images/gas-icon.svg';
 import gasIconBlack from '../static/images/gas-icon-black.svg';
-import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Statistics extends React.PureComponent {
   render() {
-    const { image, selection, number, text, isActive } = this.props;
+    const { image, selection, number, text } = this.props;
 
     let currImage = GasStation;
 
@@ -28,9 +27,7 @@ class Statistics extends React.PureComponent {
           <div className="main-text">{number}</div>
         </div>
         <div className="lower-elements">
-          <ParallaxComponent shouldParallaxScroll={isActive}>
-            <p className="secondary-text">{text}</p>
-          </ParallaxComponent>
+          <p className="secondary-text">{text}</p>
           <hr />
           <div className="icons">
             <div className="icon">
@@ -77,7 +74,6 @@ Statistics.propTypes = {
   selection: PropTypes.number,
   number: PropTypes.string,
   text: PropTypes.string,
-  isActive: PropTypes.bool,
 };
 
 Statistics.defaultProps = {
@@ -85,6 +81,5 @@ Statistics.defaultProps = {
   selection: 0,
   number: '2,000,000,000',
   text: 'gallons of gas wasted because of poor tire management',
-  isActive: false,
 };
 export default Statistics;

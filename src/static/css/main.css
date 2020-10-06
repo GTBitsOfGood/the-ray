@@ -9,7 +9,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-.parallax-scroll {
-  transform: translate(0px, 200px);
-}
