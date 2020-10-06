@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
+import Find from './pages/Find';
+import Help from './pages/Help';
+import Location from './pages/Location';
+import Newsletter from './pages/Newsletter';
+import Partners from './pages/Partners';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -28,6 +33,38 @@ ReactDOM.render(
           text="increase in serious accidents by driving on underinflated tires"
           image="FlatTire"
           number="300%"
+          selection="1"
+        />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Find text="increase in serious accidents by driving on underinflated tires" image="FlatTire" selection="1" />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Location
+          text="increase in serious accidents by driving on underinflated tires"
+          image="FlatTire"
+          selection="1"
+        />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Help text="increase in serious accidents by driving on underinflated tires" image="FlatTire" selection="1" />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Newsletter
+          text="increase in serious accidents by driving on underinflated tires"
+          image="FlatTire"
+          selection="1"
+        />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Partners
+          text="increase in serious accidents by driving on underinflated tires"
+          image="FlatTire"
           selection="1"
         />
       </div>
