@@ -31,36 +31,44 @@ class Statistics extends React.PureComponent {
           <hr />
           <div className="icons">
             <div className="icon">
-              {selection === 0 && (
+              {selection === '0' && (
                 <div className="border-container">
-                  <img src={gasIconBlack} alt="gasIconBlack" style={{ width: '4vw', height: '8vw' }} />
+                  <img
+                    src={gasIconBlack}
+                    alt="gasIconBlack"
+                    style={{ width: 'calc(30px + 4vw)', height: 'cal(30px + 8vw)' }}
+                  />
                 </div>
               )}
-              {selection !== 0 && (
+              {selection !== '0' && (
                 <div className="no-border-container">
-                  <img src={gasIcon} alt="gasIcon" style={{ width: '4vw', height: '8vw' }} />
+                  <img src={gasIcon} alt="gasIcon" style={{ width: 'calc(30px + 4vw)', height: 'cal(30px + 8vw)' }} />
                 </div>
               )}
-              <p>gas</p>
+              <p className="secondary-text">gas</p>
             </div>
             <div className="icon">
               <div>
-                {selection !== 0 && (
+                {selection !== '0' && (
                   <div className="border-container">
                     <img
                       src={carAccidentIconBlack}
                       alt="carAccidentIconBlack"
-                      style={{ width: '7vw', height: '8vw' }}
+                      style={{ width: 'calc(30px + 7vw)', height: 'calc(30px + 8vw)' }}
                     />
                   </div>
                 )}
-                {selection === 0 && (
+                {selection === '0' && (
                   <div className="no-border-container">
-                    <img src={carAccidentIcon} alt="carAccidentIcon" style={{ width: '7vw', height: '8vw' }} />
+                    <img
+                      src={carAccidentIcon}
+                      alt="carAccidentIcon"
+                      style={{ width: 'calc(30px + 7vw)', height: 'calc(30px + 8vw)' }}
+                    />
                   </div>
                 )}
               </div>
-              <p>car accidents</p>
+              <p className="secondary-text">car accidents</p>
             </div>
           </div>
         </div>
@@ -71,14 +79,14 @@ class Statistics extends React.PureComponent {
 
 Statistics.propTypes = {
   image: PropTypes.node,
-  selection: PropTypes.number,
+  selection: PropTypes.string,
   number: PropTypes.string,
   text: PropTypes.string,
 };
 
 Statistics.defaultProps = {
   image: GasStation,
-  selection: 0,
+  selection: '0',
   number: '2,000,000,000',
   text: 'gallons of gas wasted because of poor tire management',
 };
