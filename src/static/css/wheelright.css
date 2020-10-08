@@ -23,7 +23,7 @@
   top: 9.01%;
   bottom: 8.84%;
 
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 400px;
@@ -34,6 +34,6 @@
   text-align: center;
 
   mix-blend-mode: normal;
-  -webkit-text-stroke: 3px white;
+  -webkit-text-stroke: 6px white;
   -webkit-text-fill-color: transparent;
 }
