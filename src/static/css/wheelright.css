@@ -1,6 +1,11 @@
 .wheelright-background {
   background-image: url('../images/wheelright.jpg');
   background-size: cover;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -0.17%;
 }
 
 .wheelright-body {
@@ -24,7 +29,6 @@
   font-weight: bold;
   font-size: 400px;
   line-height: 400px;
-  /* or 100% */
 
   display: flex;
   align-items: center;

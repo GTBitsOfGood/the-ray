@@ -9,6 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Navigation progressBarColor="#fff">
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Wheelright />
+      </div>
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
           text="gallons of gas wasted because of poor tire management"
           image="GasStation"
@@ -31,9 +34,6 @@ ReactDOM.render(
           number="300%"
           selection="1"
         />
-      </div>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Wheelright />
       </div>
     </Navigation>
   </React.StrictMode>,
