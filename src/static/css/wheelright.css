@@ -1,0 +1,35 @@
+.wheelright-background {
+  background-image: url('../images/wheelright.jpg');
+  background-size: cover;
+}
+
+.wheelright-body {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -0.17%;
+  background: rgba(135, 56, 86, 0.44);
+}
+
+.wheelright-text {
+  position: absolute;
+  left: 0.01%;
+  right: 0%;
+  top: 9.01%;
+  bottom: 8.84%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 400px;
+  line-height: 400px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  mix-blend-mode: normal;
+  border: 10px solid #ffffff;
+}

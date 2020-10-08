@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
+import Wheelright from './pages/Wheelright';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -30,6 +31,9 @@ ReactDOM.render(
           number="300%"
           selection="1"
         />
+      </div>
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Wheelright />
       </div>
     </Navigation>
   </React.StrictMode>,
