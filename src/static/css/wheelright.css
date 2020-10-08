@@ -34,5 +34,6 @@
   text-align: center;
 
   mix-blend-mode: normal;
-  border: 10px solid #ffffff;
+  -webkit-text-stroke: 3px white;
+  -webkit-text-fill-color: transparent;
 }
