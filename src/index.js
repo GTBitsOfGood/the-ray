@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
 import Wheelright from './pages/Wheelright';
+import WhatWeDo from './pages/what-we-do';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -11,6 +12,11 @@ ReactDOM.render(
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Wheelright />
       </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <WhatWeDo />
+      </div>
+
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
           text="gallons of gas wasted because of poor tire management"

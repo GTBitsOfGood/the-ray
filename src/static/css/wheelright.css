@@ -1,19 +1,18 @@
 .wheelright-background {
   background-image: url('../images/wheelright.jpg');
   background-size: cover;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: -0.17%;
+  width: 100%;
+  height: 100vh;
 }
 
 .wheelright-body {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: -0.17%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
   background: rgba(135, 56, 86, 0.44);
 }
 
