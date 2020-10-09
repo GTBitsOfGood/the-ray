@@ -1,0 +1,15 @@
+.overview-body {
+  position: relative;
+  /* width: 1440px; */
+  /* min-height: 10000px; */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /* z-index: 1; */
+}
+
+.overview-left {
+  display: flex;
+  background: #4c7d77;
+}

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
 import Wheelright from './pages/Wheelright';
 import WhatWeDo from './pages/what-we-do';
+import Overview from './pages/overview';
+import DriveOver from './pages/drive-over';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -15,6 +17,14 @@ ReactDOM.render(
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <WhatWeDo />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Overview />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <DriveOver />
       </div>
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
