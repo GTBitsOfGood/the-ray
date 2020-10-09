@@ -5,6 +5,7 @@ import Wheelright from './pages/Wheelright';
 import WhatWeDo from './pages/what-we-do';
 import Overview from './pages/overview';
 import DriveOver from './pages/drive-over';
+import InfoDelivery from './pages/info-delivery';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -25,6 +26,10 @@ ReactDOM.render(
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <DriveOver />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <InfoDelivery />
       </div>
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
