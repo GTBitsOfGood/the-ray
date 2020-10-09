@@ -26,49 +26,51 @@ class Statistics extends React.PureComponent {
           <img className="image" src={currImage} alt={currImage} />
           <div className="main-text">{number}</div>
         </div>
-        <div className="lower-elements">
-          <p className="secondary-text">{text}</p>
-          <hr />
-          <div className="icons">
-            <div className="icon">
-              {selection === '0' && (
-                <div className="border-container">
-                  <img
-                    src={gasIconBlack}
-                    alt="gasIconBlack"
-                    style={{ width: 'calc(30px + 4vw)', height: 'cal(30px + 8vw)' }}
-                  />
-                </div>
-              )}
-              {selection !== '0' && (
-                <div className="no-border-container">
-                  <img src={gasIcon} alt="gasIcon" style={{ width: 'calc(30px + 4vw)', height: 'cal(30px + 8vw)' }} />
-                </div>
-              )}
-              <p className="secondary-text">gas</p>
-            </div>
-            <div className="icon">
-              <div>
-                {selection !== '0' && (
+        <div className="lower-container">
+          <div className="lower-elements">
+            <p className="secondary-text">{text}</p>
+            <hr />
+            <div className="icons">
+              <div className="icon">
+                {selection === '0' && (
                   <div className="border-container">
                     <img
-                      src={carAccidentIconBlack}
-                      alt="carAccidentIconBlack"
-                      style={{ width: 'calc(30px + 7vw)', height: 'calc(30px + 8vw)' }}
+                      src={gasIconBlack}
+                      alt="gasIconBlack"
+                      style={{ width: 'calc(10px + 3vw)', height: 'calc(10px + 6vw)' }}
                     />
                   </div>
                 )}
-                {selection === '0' && (
+                {selection !== '0' && (
                   <div className="no-border-container">
-                    <img
-                      src={carAccidentIcon}
-                      alt="carAccidentIcon"
-                      style={{ width: 'calc(30px + 7vw)', height: 'calc(30px + 8vw)' }}
-                    />
+                    <img src={gasIcon} alt="gasIcon" style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }} />
                   </div>
                 )}
+                <p className="tertiary-text">gas</p>
               </div>
-              <p className="secondary-text">car accidents</p>
+              <div className="icon">
+                <div>
+                  {selection !== '0' && (
+                    <div className="border-container">
+                      <img
+                        src={carAccidentIconBlack}
+                        alt="carAccidentIconBlack"
+                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                      />
+                    </div>
+                  )}
+                  {selection === '0' && (
+                    <div className="no-border-container">
+                      <img
+                        src={carAccidentIcon}
+                        alt="carAccidentIcon"
+                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                      />
+                    </div>
+                  )}
+                </div>
+                <p className="tertiary-text">car accidents</p>
+              </div>
             </div>
           </div>
         </div>
