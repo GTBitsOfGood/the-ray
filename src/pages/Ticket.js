@@ -15,7 +15,20 @@ function Ticket(props) {
             <CarComponent isActive={isActive} />
           </div>
         </div>
-        <div className="split ticket-text-box" />
+        <div className="split ticket-text-box">
+          <hr hidden style={{ marginTop: '20%', visibility: 'hidden' }} />
+          <h1 className="ticket-text">Ticket</h1>
+          <div className="ticket-text-box" style={{ marginTop: '50px' }}>
+            <p className="ticket-text">The tire pressure (in PSI) of each individual tire is displayed.</p>
+          </div>
+          <h5 className="ticket-text">Average Tire Pressure: </h5>
+          <h3 style={{ marginTop: '6px' }} className="ticket-text">
+            30-35 PSI
+          </h3>
+          <p style={{ marginTop: '10px' }} className="ticket-text">
+            *Note that these tires are underinflated
+          </p>
+        </div>
       </ParallaxComponent>
     </div>
   );
