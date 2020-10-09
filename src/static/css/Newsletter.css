@@ -10,3 +10,51 @@
   z-index: 1;
   display: flex;
 }
+
+.newsletter-main-text {
+  position: absolute;
+  left: 51.74%;
+  right: 8.54%;
+  top: 34.44%;
+  bottom: 46.89%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.newsletter-website {
+  position: absolute;
+  left: 61.81%;
+  right: 8.54%;
+  top: 57.22%;
+  bottom: 34.44%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.credit-card {
+  position: absolute;
+  width: 401px;
+  height: 360px;
+  left: 195px;
+  top: 150px;
+  z-index: 6;
+}

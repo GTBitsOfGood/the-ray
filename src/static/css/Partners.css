@@ -1,18 +1,95 @@
 .partners-background {
   background-image: url('../images/partners-bw.png');
   background-size: cover;
+  background-position: 0px -140px;
 }
 
 .partners-body {
+  background-image: url('../images/partners-color.png');
   position: relative;
-  /* width: 1440px; */
-  /* min-height: 10000px; */
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(9, 35, 66, 0) 0%, rgba(9, 35, 66, 0.44) 100%);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 360px;
+  /* background: linear-gradient(180deg, rgba(9, 35, 66, 0) 0%, rgba(9, 35, 66, 0.44) 100%); */
   display: flex;
   flex-direction: column;
   z-index: 1;
   display: flex;
+}
+
+.partners-toptext {
+  position: absolute;
+  width: 293px;
+  height: 56px;
+  left: 154px;
+  top: 50;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #ffffff;
+}
+
+.partners-drive {
+  position: absolute;
+  width: 559px;
+  height: 226px;
+  left: 90px;
+  top: 307px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+
+  color: #ffffff;
+}
+
+.return-start {
+  position: absolute;
+  width: 343px;
+  height: 42px;
+  left: 1050px;
+  top: 601px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.kia {
+  position: absolute;
+  width: 182px;
+  height: 182px;
+  left: 804px;
+  top: 1px;
+  z-index: 6;
+}
+
+.gdot {
+  position: absolute;
+  width: 243px;
+  height: 135px;
+  left: 528px;
+  top: 10px;
+  z-index: 6;
+}
+
+.socials {
+  position: absolute;
+  width: 207.07px;
+  height: 43.66px;
+  left: 91.76px;
+  top: 625px;
+  z-index: 6;
 }
