@@ -66,19 +66,19 @@
 }
 
 .tertiary-text {
-    top: 49.56%;
-    bottom: 45.78%;
-  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: calc(8px + 1.4vw);
-    line-height: 42px;
-  
-    color: #ffffff;
-    align-self: center;
-    text-align: center;
-  }
+  top: 49.56%;
+  bottom: 45.78%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: calc(8px + 1.4vw);
+  line-height: 42px;
+
+  color: #ffffff;
+  align-self: center;
+  text-align: center;
+}
 
 .image {
   display: flex;

@@ -43,7 +43,11 @@ class Statistics extends React.PureComponent {
                 )}
                 {selection !== '0' && (
                   <div className="no-border-container">
-                    <img src={gasIcon} alt="gasIcon" style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }} />
+                    <img
+                      src={gasIcon}
+                      alt="gasIcon"
+                      style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }}
+                    />
                   </div>
                 )}
                 <p className="tertiary-text">gas</p>
