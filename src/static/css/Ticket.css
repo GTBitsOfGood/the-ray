@@ -29,11 +29,21 @@
 
 .ticket-box {
   width: 84%;
+  box-sizing: border-box;
+}
+
+.ticket-box-bottom {
+  height: 84%;
+  margin: -67px 56px 0 56px;
+  border: 10px solid #ffffff;
+  border-top: none;
+}
+
+.ticket-box-top {
   height: 95.22%;
-  margin: 65px 56px 0px 56px;
+  margin: 65px 56px 0 56px;
   border: 10px solid #ffffff;
   border-bottom: none;
-  box-sizing: border-box;
 }
 
 .ticket-loop {
@@ -43,6 +53,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 63.47%;
+  height: 12.6%;
+  margin-top: 10%;
+  bottom: 0;
+}
+
+.ticket-offset {
   width: 63.47%;
   height: 12.6%;
   margin-top: 10%;

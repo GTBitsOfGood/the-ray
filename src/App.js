@@ -17,9 +17,6 @@ function App() {
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Ticket isActive={pageIndex === 1} />
-      </div>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
           text="car accidents due to underinflated tires every year"
           image="Crash"
@@ -33,6 +30,19 @@ function App() {
           image="FlatTire"
           number="300%"
           selection={1}
+        />
+      </div>
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Ticket isActive={pageIndex === 3} />
+      </div>
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Ticket
+          isActive={pageIndex === 4}
+          bottomTicket
+          subtext="The tread depths (in 32nd inch) of each individual tire is also calculated and displayed."
+          dataHeader="Average tire depth: "
+          data="10/32 - 11/32 inches"
+          note="*Note that these tires are worn"
         />
       </div>
     </Navigation>

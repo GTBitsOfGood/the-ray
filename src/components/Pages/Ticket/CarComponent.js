@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../../static/css/TicketCar.css';
 import PropTypes from 'prop-types';
 import psiCar from '../../../static/images/psi-car.svg';
+import tireCar from '../../../static/images/tire-depth-car.svg';
 import ParallaxComponent from '../../Parallax/ParallaxComponent';
 
 function CarComponent(props) {
@@ -11,7 +12,7 @@ function CarComponent(props) {
   const [componentWidth, setCompWidth] = useState(window.innerWidth * 0.3166053511705686);
   const [componentHeight, setCompHeight] = useState(window.innerHeight * 0.5837486687965922);
 
-  const { isActive } = props;
+  const { isActive, n1, n2, n3, n4, tireDepthCar, heightPct } = props;
 
   function resetLines() {
     setBoxWidth(window.innerWidth * 0.0611430625);
@@ -29,21 +30,21 @@ function CarComponent(props) {
   }, []);
 
   return (
-    <div className="ticket-car-container">
+    <div className="ticket-car-container" style={{ height: `${heightPct}%` }}>
       <div className="ticket-car-box">
-        <p>32</p>
+        <p>{n1}</p>
       </div>
       <div className="ticket-car-box" style={{ right: 0 }}>
-        <p>27</p>
+        <p>{n2}</p>
       </div>
       <div className="ticket-car-box" style={{ bottom: 0 }}>
-        <p>29</p>
+        <p>{n3}</p>
       </div>
       <div className="ticket-car-box" style={{ right: 0, bottom: 0 }}>
-        <p>27</p>
+        <p>{n4}</p>
       </div>
-      <ParallaxComponent shouldParallaxScroll={isActive} transitionTime={2000}>
-        <img src={psiCar} alt="Car with Tire Pressure in PSI" />
+      <ParallaxComponent shouldParallaxScroll={isActive} transitionTime={2000} transitionDelay={0}>
+        <img src={tireDepthCar ? tireCar : psiCar} alt="Car with Tire Pressure in PSI" />
       </ParallaxComponent>
       <svg>
         <line x1={boxwidth - 5} y1={boxwidth - 5} x2={boxwidth + tireXOffset} y2={boxwidth + tireYOffset} />
@@ -72,10 +73,22 @@ function CarComponent(props) {
 
 CarComponent.propTypes = {
   isActive: PropTypes.bool,
+  n1: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  n2: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  n3: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  n4: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  tireDepthCar: PropTypes.bool,
+  heightPct: PropTypes.number,
 };
 
 CarComponent.defaultProps = {
   isActive: false,
+  n1: 32,
+  n2: 27,
+  n3: 29,
+  n4: 27,
+  tireDepthCar: false,
+  heightPct: 62,
 };
 
 export default CarComponent;
