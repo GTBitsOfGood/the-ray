@@ -5,6 +5,7 @@ import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 import Rubber from './pages/Rubber';
 import Title from './pages/Title';
+import UnderInflated from './pages/UnderInflated';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,10 @@ ReactDOM.render(
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Rubber />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <UnderInflated />
       </div>
 
       <div className="App">
