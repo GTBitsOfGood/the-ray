@@ -1,5 +1,5 @@
 import React from 'react';
-import '../static/css/Rubber.css';
+import '../static/css/rubber.css';
 
 const endPage = () => {
   return (

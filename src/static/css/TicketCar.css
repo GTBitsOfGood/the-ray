@@ -1,0 +1,55 @@
+.ticket-car-container {
+  position: relative;
+  display: block;
+  margin: 7.65% auto;
+  width: 78.51%;
+  height: 62%;
+  text-align: center;
+}
+
+.ticket-car-box {
+  background-color: #fff;
+  position: absolute;
+  width: 19.2%;
+  height: 0;
+  padding-bottom: 19.2%;
+  text-align: center;
+  line-height: 19.2%;
+}
+
+.ticket-car-box p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #092342;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transform: translate(-50%, -50%);
+}
+
+.ticket-car-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transform: translate(-50%, -50%);
+  width: 39.4%;
+}
+
+.ticket-car-container svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.ticket-car-container svg line {
+  stroke: #fff;
+  stroke-width: 5px;
+}
