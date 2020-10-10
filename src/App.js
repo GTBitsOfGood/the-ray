@@ -7,18 +7,12 @@ import WhatWeDo from './pages/what-we-do';
 import Overview from './pages/overview';
 import DriveOver from './pages/drive-over';
 import InfoDelivery from './pages/info-delivery';
-import Rubber from './pages/Rubber';
-import Title from './pages/Title';
-import UnderInflated from './pages/UnderInflated';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
-      <div className="App">
-        <Title />
-      </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
           text="gallons of gas wasted because of poor tire management"
@@ -42,12 +36,6 @@ function App() {
           number="300%"
           selection={1}
         />
-      </div>
-      <div className="App">
-        <Rubber />
-      </div>
-      <div className="App">
-        <UnderInflated />
       </div>
       <div className="App">
         <Wheelright />
