@@ -52,10 +52,13 @@
 
 .image-messages {
   position: absolute;
-  width: 336.56px;
+  /* width: 336.56px;
   height: 356.29px;
   left: 415px;
-  top: 461.71px;
+  top: 461.71px; */
+  left: 24.6%;
+  top: 50%;
+  z-index: 1;
 }
 
 .image-ticket {
@@ -68,8 +71,11 @@
 
 .image-icons {
   position: absolute;
-  width: 256.89px;
+  /* width: 256.89px;
   height: 344px;
   right: 505px;
-  top: 439px;
+  top: 439px; */
+  right: 29.7%;
+  top: 49%;
+  z-index: 1;
 }

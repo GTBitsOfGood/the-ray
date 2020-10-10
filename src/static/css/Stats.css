@@ -28,7 +28,7 @@
 .main-text {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: -50%;
   transform: translate(-50%, -50%);
 
   font-family: Roboto;
@@ -38,6 +38,7 @@
   line-height: 169px;
 
   color: #ffffff;
+  z-index: 1;
 }
 
 .secondary-text {

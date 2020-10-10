@@ -26,11 +26,13 @@ function ParallaxComponent(props) {
       ref={parallaxContainer}
       className="parallax-scroll"
       style={{
+        position: 'absolute',
         transform: `translate(0, ${shouldParallaxScroll ? 0 : 200}px)`,
         transition: `transform ${transitionTime}ms ease-in-out`,
         transitionDelay: `${transitionDelay}ms`,
         width: '100%',
         height: '100%',
+        zIndex: '1',
       }}
     >
       {children}

@@ -6,13 +6,13 @@
 }
 
 .what-body {
-  position: relative;
+  position: absolute;
   width: 100%;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   z-index: 1;
-  display: flex;
+  display: flex; */
   background: rgba(76, 125, 119, 0.44);
 }
 
@@ -22,6 +22,7 @@
   right: 70.42%;
   top: 75.56%;
   bottom: 9.11%;
+  /* bottom: 9%; */
 
   font-family: Roboto;
   font-style: normal;
