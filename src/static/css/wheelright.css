@@ -8,7 +8,7 @@
 .wheelright-body {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -18,16 +18,16 @@
 
 .wheelright-text {
   position: absolute;
-  left: 0.01%;
+  left: 0%;
   right: 0%;
-  top: 9.01%;
-  bottom: 8.84%;
+  top: 9%;
+  bottom: 9%;
 
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 400px;
-  line-height: 400px;
+  font-size: 26vw;
+  line-height: 26vw;
 
   display: flex;
   align-items: center;
