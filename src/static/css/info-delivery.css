@@ -1,0 +1,75 @@
+.info-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #092342;
+}
+
+.info-title {
+  position: absolute;
+  left: 44.03%;
+  right: 44.17%;
+  /* top: 2%; */
+  /* bottom: 85.11%; */
+  margin-top: 55px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.info-text {
+  position: absolute;
+  left: 17%;
+  right: 9.31%;
+  /* top: 18%;
+    bottom: 69.89%; */
+  margin-top: 150px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.image-phone {
+  position: absolute;
+  width: 428.85px;
+  height: 800px;
+  left: 370px;
+  top: 200px;
+}
+
+.image-messages {
+  position: absolute;
+  width: 336.56px;
+  height: 356.29px;
+  left: 415px;
+  top: 461.71px;
+}
+
+.image-ticket {
+  position: absolute;
+  width: 463px;
+  height: 800px;
+  right: 370px;
+  top: 195px;
+}
+
+.image-icons {
+  position: absolute;
+  width: 256.89px;
+  height: 344px;
+  right: 505px;
+  top: 439px;
+}

@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
+import Wheelright from './pages/Wheelright';
+import WhatWeDo from './pages/what-we-do';
+import Overview from './pages/overview';
+import DriveOver from './pages/drive-over';
+import InfoDelivery from './pages/info-delivery';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 
@@ -30,6 +35,25 @@ ReactDOM.render(
           number="300%"
           selection="1"
         />
+      </div>
+      <div className="App">
+        <Wheelright />
+      </div>
+
+      <div className="App">
+        <WhatWeDo />
+      </div>
+
+      <div className="App">
+        <Overview />
+      </div>
+
+      <div className="App">
+        <DriveOver />
+      </div>
+
+      <div className="App">
+        <InfoDelivery />
       </div>
     </Navigation>
   </React.StrictMode>,
