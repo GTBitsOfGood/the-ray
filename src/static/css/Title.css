@@ -23,13 +23,13 @@
   display: inline-block;
   left: 1.18%;
   right: 1.11%;
-  top: 5.44%;
+  top: -15%;
   bottom: 59.44%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 230px;
+  font-size: 19.5vw;
   line-height: 316px;
 
   align-items: center;
@@ -45,14 +45,14 @@
 
   left: 46.26%;
   right: 43.4%;
-  top: 33.5%;
+  top: 30%;
   bottom: 66.78%;
-  width: 100 px;
+  width: 100px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3vw;
   line-height: 56px;
 
   color: #ffffff;
@@ -67,11 +67,10 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 900;
-  font-size: 110px;
+  font-weight: bold;
+  font-size: 8vw;
   line-height: 169px;
   /* identical to box height */
-
   color: #ffffff;
 }
 
@@ -87,14 +86,14 @@
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 56px;
+  line-height: 70px;
 
   color: #ffffff;
 }
 
 .scroll-text {
   position: absolute;
-  left: 49.21%;
+  left: 56.21%;
   right: 9.79%;
   top: 83.56%;
   bottom: 7.78%;
@@ -103,7 +102,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 2vw;
   line-height: 42px;
 
   color: #ffffff;
