@@ -28,8 +28,9 @@
 .right {
   right: 0;
   background-image: url('../images/location2.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 .location-body {
@@ -55,53 +56,48 @@
 
 .help-location-text {
   position: absolute;
-  width: 551px;
-  height: 46px;
-  left: 53px;
-  top: 440px;
+  width: 100%;
+  height: 0%;
+  left: 6%;
+  top: 52%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-
+  font-size: 4vw;
+  line-height: 120%;
   color: #ffffff;
 }
 
 .help-location-text2 {
   position: absolute;
-  width: 644px;
-  height: 136px;
-  left: 53px;
-  top: 555px;
+  width: 90%;
+  height: 0%;
+  left: 6%;
+  top: 74%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-
+  font-size: 1.5vw;
+  line-height: 120%;
   color: #ffffff;
 }
 
 .location-bar {
   position: absolute;
-  left: 53px;
-  top: 540px;
+  left: 3%;
+  width: 59%;
+  top: 69%;
   z-index: 5;
-  /* Marvelous */
-
   background: #f2d4bc;
-  /* Creamy Beige */
-
   border: 10px solid #f2d4bc;
 }
 
 .location-dot {
-  height: 23px;
-  top: 558px;
+  height: 3%;
+  top: 71%;
   position: absolute;
-  left: 910px;
+  left: 63%;
   z-index: 6;
 }

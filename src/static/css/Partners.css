@@ -1,18 +1,13 @@
 .partners-background {
-  background-image: url('../images/partners-bw.png');
+  background-image: url('../images/partners-pic.png');
   background-size: cover;
-  background-position: 0px -140px;
+  background-position: bottom;
 }
 
 .partners-body {
-  background-image: url('../images/partners-color.png');
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0px 360px;
-  /* background: linear-gradient(180deg, rgba(9, 35, 66, 0) 0%, rgba(9, 35, 66, 0.44) 100%); */
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -21,17 +16,16 @@
 
 .partners-toptext {
   position: absolute;
-  width: 293px;
-  height: 56px;
-  left: 154px;
+  width: 30%;
+  height: 50%;
+  left: 10%;
   top: 50;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3vw;
   line-height: 56px;
-
   color: #ffffff;
 }
 
@@ -39,13 +33,13 @@
   position: absolute;
   width: 559px;
   height: 226px;
-  left: 90px;
-  top: 307px;
+  left: 5%;
+  top: 36%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 5vw;
   line-height: 112px;
 
   color: #ffffff;
@@ -53,15 +47,15 @@
 
 .return-start {
   position: absolute;
-  width: 343px;
-  height: 42px;
-  left: 1050px;
-  top: 601px;
+  width: 80%;
+  height: 50%;
+  left: 72%;
+  top: 84%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 42px;
 
   color: #ffffff;
@@ -71,8 +65,8 @@
   position: absolute;
   width: 182px;
   height: 182px;
-  left: 804px;
-  top: 1px;
+  left: 58%;
+  top: 0.2%;
   z-index: 6;
 }
 
@@ -80,8 +74,8 @@
   position: absolute;
   width: 243px;
   height: 135px;
-  left: 528px;
-  top: 10px;
+  left: 40%;
+  top: 0.5%;
   z-index: 6;
 }
 
@@ -89,7 +83,7 @@
   position: absolute;
   width: 207.07px;
   height: 43.66px;
-  left: 91.76px;
-  top: 625px;
+  left: 5%;
+  top: 75%;
   z-index: 6;
 }

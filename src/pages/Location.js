@@ -7,7 +7,7 @@ class Location extends React.PureComponent {
     return (
       <div className="location-background">
         <img className="location-dot" src={target} alt="Target point" />
-        <hr className="location-bar" style={{ width: '853px' }} />
+        <hr className="location-bar" />
         <div className="split left">
           <div className="location-body">
             <p className="help-location-text">
