@@ -1,13 +1,13 @@
 import React from 'react';
 import '../static/css/Location.css';
-import target from '../static/images/Ellipse 44.png';
+// import target from '../static/images/Ellipse 44.png';
 
 class Location extends React.PureComponent {
   render() {
     return (
       <div className="location-background">
-        <img className="location-dot" src={target} alt="Target point" />
-        <hr className="location-bar" />
+        {/* <img className="location-dot" src={target} alt="Target point" />
+        <hr className="location-bar" /> */}
         <div className="split left">
           <div className="location-body">
             <p className="help-location-text">

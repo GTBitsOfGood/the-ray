@@ -13,7 +13,9 @@ class Newsletter extends React.PureComponent {
             <br />
             Join the team by making a donation and signing up for our newsletter.
           </p>
-          <p className="newsletter-website">visit theray.org</p>
+          <p className="newsletter-website">
+            visit&nbsp;<a href="https://theray.org/"> theray.org</a>
+          </p>
         </div>
       </div>
     );
