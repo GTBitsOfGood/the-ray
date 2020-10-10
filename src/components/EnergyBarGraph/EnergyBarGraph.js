@@ -24,7 +24,9 @@ function EnergyBarGraph() {
           .map((day) => day.split(';'))
           .map((day) => {
             return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
-          });
+          })
+          .filter((day) => !Number.isNaN(day.kWh));
+        console.log(parsedData);
         setMonthlyData(parsedData);
       });
 
@@ -62,6 +64,13 @@ function EnergyBarGraph() {
     return totalData;
   })();
 
+  // Setting relative max values for coloring the bars - i.e. if a month has 25 kWh production, it would be completely white
+  const graphTimeScale = {
+    month: 25,
+    year: 500,
+    total: 6000,
+  };
+
   return (
     <div style={{ height: 1000 }}>
       <ResponsiveBar
@@ -70,8 +79,8 @@ function EnergyBarGraph() {
         indexBy="date"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0}
-        // colors={(bar) => "hsl(0, 0%, " + (bar.value / 25) * 100 + "%)"}
-        colors={{ scheme: 'nivo' }}
+        colors={(bar) => `hsl(0, 0%, ${(bar.value / graphTimeScale[timescale]) * 100}%)`}
+        // colors={{ scheme: 'nivo' }}
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
           tickSize: 5,
