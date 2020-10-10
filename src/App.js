@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import Statistics from './pages/Statistics';
 import Ticket from './pages/Ticket';
 import Navigation from './components/Navigation/Navigation';
+import Wheelright from './pages/Wheelright';
+import WhatWeDo from './pages/what-we-do';
+import Overview from './pages/overview';
+import DriveOver from './pages/drive-over';
+import InfoDelivery from './pages/info-delivery';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
@@ -44,6 +49,25 @@ function App() {
           data="10/32 - 11/32 inches"
           note="*Note that these tires are worn"
         />
+      </div>
+      <div className="App">
+        <Wheelright />
+      </div>
+
+      <div className="App">
+        <WhatWeDo />
+      </div>
+
+      <div className="App">
+        <Overview />
+      </div>
+
+      <div className="App">
+        <DriveOver />
+      </div>
+
+      <div className="App">
+        <InfoDelivery />
       </div>
     </Navigation>
   );
