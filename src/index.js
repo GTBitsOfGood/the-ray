@@ -12,27 +12,7 @@ import Navigation from './components/Navigation/Navigation';
 ReactDOM.render(
   <React.StrictMode>
     <Navigation progressBarColor="#fff">
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Wheelright />
-      </div>
-
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <WhatWeDo />
-      </div>
-
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Overview />
-      </div>
-
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <DriveOver />
-      </div>
-
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <InfoDelivery />
-      </div>
-
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+      <div className="App">
         <Statistics
           text="gallons of gas wasted because of poor tire management"
           image="GasStation"
@@ -40,7 +20,7 @@ ReactDOM.render(
           selection="0"
         />
       </div>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+      <div className="App">
         <Statistics
           text="car accidents due to underinflated tires every year"
           image="Crash"
@@ -48,13 +28,32 @@ ReactDOM.render(
           selection="1"
         />
       </div>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+      <div className="App">
         <Statistics
           text="increase in serious accidents by driving on underinflated tires"
           image="FlatTire"
           number="300%"
           selection="1"
         />
+      </div>
+      <div className="App">
+        <Wheelright />
+      </div>
+
+      <div className="App">
+        <WhatWeDo />
+      </div>
+
+      <div className="App">
+        <Overview />
+      </div>
+
+      <div className="App">
+        <DriveOver />
+      </div>
+
+      <div className="App">
+        <InfoDelivery />
       </div>
     </Navigation>
   </React.StrictMode>,
