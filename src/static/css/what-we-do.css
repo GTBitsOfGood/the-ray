@@ -19,9 +19,9 @@
 .what-text {
   position: absolute;
   left: 5.42%;
-  right: 70.42%;
-  top: 75.56%;
-  bottom: 9.11%;
+  /* right: 70.42%; */
+  /* top: 75.56%; */
+  bottom: 0%;
 
   font-family: Roboto;
   font-style: normal;
