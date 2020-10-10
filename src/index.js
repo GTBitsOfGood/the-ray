@@ -4,13 +4,19 @@ import Statistics from './pages/Statistics';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
 import Rubber from './pages/Rubber';
+import Title from './pages/Title';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navigation progressBarColor="#fff">
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
+        <Title />
+      </div>
+
+      <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Rubber />
       </div>
+
       <div className="App">
         <Statistics
           text="gallons of gas wasted because of poor tire management"
