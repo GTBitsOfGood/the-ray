@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Statistics from './pages/Statistics';
 import './static/css/main.css';
 import Navigation from './components/Navigation/Navigation';
-import Rubber from './pages/Rubber';
+import RubberEnd from './pages/RubberEnd';
 import Title from './pages/Title';
 import UnderInflated from './pages/UnderInflated';
 
@@ -15,7 +15,7 @@ ReactDOM.render(
       </div>
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Rubber />
+        <RubberEnd />
       </div>
 
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
