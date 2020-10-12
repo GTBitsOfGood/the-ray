@@ -22,14 +22,13 @@ function EnergyBarGraph() {
   const retrievedMonthsIndex = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_MONTHS.txt';
   const retrievedYearsIndex = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_YEARS.txt';
 
-  const yearlyDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_2020.csv';
   const totalDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_Total.csv';
 
-  const [monthlyData, setMonthlyData] = useState([]);
-  const [yearlyData, setYearlyData] = useState([]);
+  const [monthlyData, setMonthlyData] = useState({});
+  const [yearlyData, setYearlyData] = useState({});
   const [totalData, setTotalData] = useState([]);
 
-  const [displayData, setDisplayData] = useState([]);
+  const [displayDate, setDisplayDate] = useState({});
   const [timescale, setTimescale] = useState('total');
 
   useEffect(() => {
@@ -142,7 +141,7 @@ function EnergyBarGraph() {
             retrievedYearlyData[year] = csvData;
           });
           console.log(retrievedYearlyData);
-          setMonthlyData(retrievedYearlyData);
+          setYearlyData(retrievedYearlyData);
         }
       )
 
@@ -164,11 +163,18 @@ function EnergyBarGraph() {
   }, []);
 
   const timeData = (() => {
-    if (timescale === 'month') return monthlyData;
-    if (timescale === 'year') return yearlyData;
-    if (timescale === 'total') return totalData;
+    if (timescale === 'month') {
+      return monthlyData[displayDate.year][displayDate.month];
+    }
+    if (timescale === 'year') {
+      return yearlyData[displayDate.year];
+    }
+    if (timescale === 'total') {
+      return totalData;
+    }
     return totalData;
   })();
+
 
   // Setting relative max values for coloring the bars - i.e. if a month has 25 kWh production, it would be completely white
   const graphTimeScale = {
@@ -177,54 +183,118 @@ function EnergyBarGraph() {
     total: 6000,
   };
 
+  const legendTime = (() => {
+    if (timescale === 'total') return 'Year';
+    if (timescale === 'year') return 'Month';
+    if (timescale === 'month') return 'Day';
+    return 'Date';
+  })();
+
+  const graphTitle = (() => {
+    if (timescale === 'total') return 'Power produced by PV4EV';
+    if (timescale === 'year') return 'Power produced per month in ' + displayDate.year;
+    if (timescale === 'month') return 'Power produced per day in ' + displayDate.month + ' ' + displayDate.year;
+    return 'Power produced by PV4EV';
+  })();
+
+
   return (
     <div style={{ height: 1000 }}>
+      <h1>{graphTitle}</h1>
+      <button
+        type="button"
+        onClick={() => {
+          // If user has clicked on a specific year, do not lose the data - otherwise, default to current year
+          if (!('year' in displayDate)) setDisplayDate({ 'year': parseInt(new Date().getFullYear())})
+          if (!('month' in displayDate)) setDisplayDate({ 'month': months[parseInt(new Date().getMonth())]})
+          setTimescale('month');
+        }}
+      >
+        Month
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          // If user has clicked on a specific year, do not lose the data - otherwise, default to current year
+          if (!('year' in displayDate)) setDisplayDate({ 'year': parseInt(new Date().getFullYear())})
+          setTimescale('year');
+        }}
+      >
+        Year
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          setTimescale('total');
+        }}
+      >
+        Total
+      </button>
       <ResponsiveBar
         data={timeData}
         keys={['kWh']}
         indexBy="date"
-        margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-        padding={0}
-        colors={(bar) => `hsl(0, 0%, ${(bar.value / graphTimeScale[timescale]) * 100}%)`}
+        margin={{ top: 50, right: 130, bottom: 80, left: 100 }}
+        padding={0.3}
+        // colors={(bar) => `hsl(0, 0%, ${(bar.value / graphTimeScale[timescale]) * 100}%)`}
         // colors={{ scheme: 'nivo' }}
+        colors={() => `#092342`} // The Ray's Deep Ocean color
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
           tickSize: 5,
           tickPadding: 5,
-          tickRotation: 0,
-          legend: 'Day',
+          tickRotation: 45,
+          legend: `${legendTime}`,
           legendPosition: 'middle',
-          legendOffset: 32,
+          legendOffset: 60,
         }}
         axisLeft={{
           tickSize: 5,
           tickPadding: 5,
-          tickRotation: 0,
+          tickRotation: 45,
           legend: 'Total Yield (kWh)',
           legendPosition: 'middle',
-          legendOffset: -40,
+          legendOffset: -64,
         }}
-        enableLabel
-        labelSkipWidth={12}
-        labelSkipHeight={12}
-        labelTextColor={{ from: 'color', modifiers: [['darker', 2.0]] }}
+        enableLabel={false}
         animate
         motionStiffness={90}
         motionDamping={15}
-        onClick={() => {
-          if (timescale === 'year') setTimescale('month');
-          if (timescale === 'total') setTimescale('year');
+        onClick={(event) => {
+          console.log("CLICK EVENT");
+          console.log(event);
+          if (timescale === 'year') {
+            setDisplayDate({
+              ...displayDate,
+              'month': event.data.date,
+            })
+            setTimescale('month');
+          }
+          if (timescale === 'total') {
+            setDisplayDate({
+              'year': event.data.date,
+            })
+            setTimescale('year');
+          }
+        }}
+
+        theme={{
+          axis: {
+            ticks: {
+              text: {
+                fontSize: 18,
+              }
+            },
+
+            legend: {
+              text: {
+                fontSize: 20,
+                fontWeight: 'bold',
+              }
+            }
+          }
         }}
       />
-      <button
-        type="button"
-        onClick={() => {
-          if (timescale === 'month') setTimescale('year');
-          if (timescale === 'year') setTimescale('total');
-        }}
-      >
-        Back
-      </button>
     </div>
   );
 }
