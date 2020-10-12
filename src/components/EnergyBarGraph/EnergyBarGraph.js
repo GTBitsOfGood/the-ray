@@ -2,46 +2,152 @@ import React, { useEffect, useState } from 'react';
 
 import { ResponsiveBar } from '@nivo/bar';
 
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+]
+
 function EnergyBarGraph() {
-  const monthlyDataURL =
-    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_Month.csv';
-  const yearlyDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_Year.csv';
+
+  const retrievedMonthsIndex = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_MONTHS.txt';
+  const retrievedYearsIndex = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_YEARS.txt';
+
+  const yearlyDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_2020.csv';
   const totalDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_Total.csv';
 
   const [monthlyData, setMonthlyData] = useState([]);
   const [yearlyData, setYearlyData] = useState([]);
   const [totalData, setTotalData] = useState([]);
 
+  const [displayData, setDisplayData] = useState([]);
   const [timescale, setTimescale] = useState('total');
 
   useEffect(() => {
-    fetch(monthlyDataURL)
-      .then((response) => response.text())
-      .then((data) => {
-        const parsedData = data
-          .split('\n')
-          .slice(1)
-          .map((day) => day.split(';'))
-          .map((day) => {
-            return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
-          })
-          .filter((day) => !Number.isNaN(day.kWh));
-        console.log(parsedData);
-        setMonthlyData(parsedData);
-      });
 
-    fetch(yearlyDataURL)
-      .then((response) => response.text())
+    // Retrieve monthly data using the index
+    fetch(retrievedMonthsIndex)
+    .then((response) => response.text())
+    .then(data => {
+      // Retrieved month data comes in an array of arrays - [['Oct', '2020'], ['Sep', '2020'] ...]
+      // There is an empty element at the end of the array, due to the newlines - we slice it off
+      const retrievedMonths = data.split('\n').slice(0, -1).map((line) => line.split('-'));
+
+      const monthRequests = [];
+      const monthsRetrieved = [];
+      retrievedMonths.map(
+        (retrieved) => {
+          const month = retrieved[0];
+          const year = retrieved[1];
+
+          monthsRetrieved.push([month, year]);
+
+          const monthlyDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_' + month + '_' + year + '.csv';
+          monthRequests.push(fetch(monthlyDataURL))
+        }
+      );
+
+      // Bundle all fetch requests together and handle them
+      Promise.all(monthRequests)
+      .then((responses) => {
+        return Promise.all(responses.map((response) => response.text()));
+      })
       .then((data) => {
-        const parsedData = data
-          .split('\n')
-          .slice(1)
-          .map((day) => day.split(';'))
-          .map((day) => {
-            return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
+        // Trimming and formatting retrieved data - a month is composed of an array of dictionaries, each dict representing a day with date and kWh properties
+        return data.map(
+          (datum) => {
+            return datum
+            .split('\n')
+            .slice(1)
+            .map((day) => day.split(';'))
+            .map((day) => {
+              return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
+            })
+            .filter((day) => !Number.isNaN(day.kWh));
+          }
+        )
+
+      })
+      .then(
+        (data) => {
+          const retrievedMonthlyData = {};
+
+          monthsRetrieved.map((date, i) => {
+            const month = date[0];
+            const year = date[1];
+            const csvData = data[i];
+            retrievedMonthlyData[year] = { ...retrievedMonthlyData[year] }
+            retrievedMonthlyData[year][month] = csvData;
           });
-        setYearlyData(parsedData);
-      });
+          console.log(retrievedMonthlyData);
+          setMonthlyData(retrievedMonthlyData);
+        }
+      );
+    });
+
+
+    // Retrieve yearly data
+    fetch(retrievedYearsIndex)
+    .then((response) => response.text())
+    .then(data => {
+      // There is an empty element at the end of the array, due to the newlines - we slice it off
+      const retrievedYears = data.split('\n').slice(0, -1);
+
+      const yearRequests = [];
+      const yearsRetrieved = [];
+      retrievedYears.map(
+        (year) => {
+
+          yearsRetrieved.push(year);
+
+          const yearlyDataURL = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/Energy_and_Power_' + year + '.csv';
+          yearRequests.push(fetch(yearlyDataURL))
+        }
+      );
+      
+
+      Promise.all(yearRequests)
+      .then((responses) => {
+        return Promise.all(responses.map((response) => response.text()));
+      })
+      .then((data) => {
+        return data.map(
+          (datum) => {
+            return datum
+            .split('\n')
+            .slice(1)
+            .map((day) => day.split(';'))
+            .map((day) => {
+              return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
+            });
+          }
+        )
+
+      })
+      .then(
+        (data) => {
+          const retrievedYearlyData = {};
+
+          yearsRetrieved.map((year, i) => {
+            const csvData = data[i];
+            retrievedYearlyData[year] = csvData;
+          });
+          console.log(retrievedYearlyData);
+          setMonthlyData(retrievedYearlyData);
+        }
+      )
+
+    });
+
 
     fetch(totalDataURL)
       .then((response) => response.text())
