@@ -12,7 +12,7 @@ function CarComponent(props) {
   const [componentWidth, setCompWidth] = useState(window.innerWidth * 0.3166053511705686);
   const [componentHeight, setCompHeight] = useState(window.innerHeight * 0.5837486687965922);
 
-  const { isActive, n1, n2, n3, n4, tireDepthCar, heightPct } = props;
+  const { pageIndex, n1, n2, n3, n4, tireDepthCar, heightPct } = props;
 
   function resetLines() {
     setBoxWidth(window.innerWidth * 0.0611430625);
@@ -43,7 +43,7 @@ function CarComponent(props) {
       <div className="ticket-car-box" style={{ right: 0, bottom: 0 }}>
         <p>{n4}</p>
       </div>
-      <ParallaxComponent shouldParallaxScroll={isActive} transitionTime={2000} transitionDelay={0}>
+      <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0}>
         <img src={tireDepthCar ? tireCar : psiCar} alt="Car with Tire Pressure in PSI" />
       </ParallaxComponent>
       <svg>
@@ -72,7 +72,7 @@ function CarComponent(props) {
 }
 
 CarComponent.propTypes = {
-  isActive: PropTypes.bool,
+  pageIndex: PropTypes.number,
   n1: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   n2: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   n3: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
@@ -82,7 +82,7 @@ CarComponent.propTypes = {
 };
 
 CarComponent.defaultProps = {
-  isActive: false,
+  pageIndex: -2,
   n1: 32,
   n2: 27,
   n3: 29,
