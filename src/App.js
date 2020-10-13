@@ -76,11 +76,11 @@ function App() {
         <InfoDelivery />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Ticket isActive={pageIndex === 11} />
+        <Ticket pageIndex={11} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Ticket
-          isActive={pageIndex === 12}
+          pageIndex={12}
           bottomTicket
           subtext="The tread depths (in 32nd inch) of each individual tire is also calculated and displayed."
           dataHeader="Average tire depth: "

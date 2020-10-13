@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 function ParallaxComponent(props) {
-  const { children, shouldParallaxScroll, transitionTime, transitionDelay, resetTime } = props;
+  const { children, transitionTime, transitionDelay, resetTime, pageIndex } = props;
 
   const parallaxContainer = useRef(null);
 
@@ -20,25 +20,38 @@ function ParallaxComponent(props) {
     parallaxContainer.current.style.transitionDelay = `${transitionDelay}ms`;
   };
 
-  useEffect(() => {
-    parallaxContainer.current.style.transform = 'translate(0,0)';
-    if (!shouldParallaxScroll) {
+  const resetOrScroll = (num) => {
+    if (num === pageIndex) {
+      parallaxContainer.current.style.transform = 'translate(0,0)';
+    } else if (num === pageIndex - 1 || num === pageIndex + 1) {
       disableAnimation();
       const timeout = setTimeout(slideDown, resetTime);
       setTimeout(enableAnimation, resetTime + 10);
       return () => {
         clearTimeout(timeout);
       };
+    } else {
+      parallaxContainer.current.style.transform = 'translate(0,200)';
     }
     return () => {};
-  }, [shouldParallaxScroll, resetTime]);
+  };
+
+  useEffect(() => {
+    resetOrScroll(0);
+    const listener = document.addEventListener('page-scroll', (e) => {
+      resetOrScroll(e.detail);
+    });
+    return () => {
+      document.removeEventListener(listener);
+    };
+  }, []);
 
   return (
     <div
       ref={parallaxContainer}
       className="parallax-scroll"
       style={{
-        transform: `translate(0, ${shouldParallaxScroll ? 0 : 200}px)`,
+        transform: `translate(0, 200px)`,
         transition: `transform ${transitionTime}ms ease-in-out`,
         transitionDelay: `${transitionDelay}ms`,
         width: '100%',
@@ -52,7 +65,7 @@ function ParallaxComponent(props) {
 
 ParallaxComponent.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(React.Component), React.Component]),
-  shouldParallaxScroll: PropTypes.bool,
+  pageIndex: PropTypes.number,
   transitionTime: PropTypes.number,
   transitionDelay: PropTypes.number,
   resetTime: PropTypes.number,
@@ -60,7 +73,7 @@ ParallaxComponent.propTypes = {
 
 ParallaxComponent.defaultProps = {
   children: [],
-  shouldParallaxScroll: false,
+  pageIndex: -2,
   transitionTime: 1000,
   transitionDelay: 100,
   resetTime: 1000,
