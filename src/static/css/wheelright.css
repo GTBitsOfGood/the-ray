@@ -20,14 +20,14 @@
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 9%;
-  bottom: 9%;
+  top: 7%;
+  bottom: 7%;
 
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26vw;
-  line-height: 26vw;
+  font-size: 22vw;
+  line-height: 24vw;
 
   display: flex;
   align-items: center;

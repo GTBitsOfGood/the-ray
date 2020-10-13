@@ -17,7 +17,8 @@ const Overview = () => {
         <img className="overview-right-image" src={Car} alt="The Ray Car" />
         <img className="overview-right-background" src={Right} alt="Right background" />
         <p className="overview-right-text">
-          WheelRight strives to make this process easier to save time, fuel, money, and most importantly--lives.
+          <b>WheelRight </b> strives to make this process easier to <b>save time, fuel, money, and most importantly</b>
+          --lives.
         </p>
       </div>
     </div>
