@@ -1,0 +1,246 @@
+.underinflated-body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #873856;
+}
+
+.left-underinflated-color {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(135, 56, 86, 0.44);
+}
+
+.underinflated-left-image {
+  background-image: url('../images/under-inflated-tire.jpg');
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+}
+
+.underinflated-left-background {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
+  z-index: 0;
+  height: 62vw;
+}
+
+.itra-text {
+  position: absolute;
+  left: 12.72%;
+  right: 64.87%;
+  top: 21.86%;
+  bottom: 67.81%;
+  white-space: nowrap;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.underinflated-text {
+  position: absolute;
+  left: 12.74%;
+  right: 62.79%;
+  top: 35.56%;
+  bottom: 43.78%;
+  white-space: nowrap;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+
+  color: #ffffff;
+}
+
+.failure-text {
+  position: absolute;
+  left: 12.74%;
+  right: 62.29%;
+  top: 65.44%;
+  bottom: 29.22%;
+  white-space: nowrap;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.dangers-text {
+  position: absolute;
+  left: 60.42%;
+  right: 10.14%;
+  top: 11.67%;
+  bottom: 83.67%;
+  white-space: nowrap;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.skidding-text {
+  /* skidding */
+
+  position: absolute;
+  left: 72.54%;
+  right: 18.01%;
+  top: 28.91%;
+  bottom: 66.43%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.hydroplaning-text {
+  position: absolute;
+  left: 72.54%;
+  right: 13.08%;
+  top: 44.37%;
+  bottom: 50.96%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.flat-tire-underinflated-text {
+  position: absolute;
+  left: 72.89%;
+  right: 18.01%;
+  top: 59.05%;
+  bottom: 36.29%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.tire-blowout-text {
+  position: absolute;
+  left: 72.54%;
+  right: 13.01%;
+  top: 74.51%;
+  bottom: 20.82%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.skidding-image {
+  position: absolute;
+  width: 74.6px;
+  height: 78.38px;
+  left: 61.54%;
+  right: 18.01%;
+  top: 31.91%;
+  bottom: 66.43%;
+}
+
+.hydroplaning-image {
+  position: absolute;
+  width: 60.38px;
+  height: 56.39px;
+  left: 62.54%;
+  right: 13.08%;
+  top: 49.37%;
+  bottom: 50.96%;
+}
+
+.flattire-image {
+  position: absolute;
+  width: 50.19px;
+  height: 50.19px;
+
+  left: 62.89%;
+  right: 18.01%;
+  top: 66.05%;
+  bottom: 36.29%;
+}
+
+.blowout-image {
+  position: absolute;
+  width: 78.4px;
+  height: 63.16px;
+  left: 62.54%;
+  right: 13.01%;
+  top: 80.5%;
+  bottom: 20.82%;
+}
+
+.underinflated-right-background {
+  position: absolute;
+  left: 40%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  width: 70%;
+  height: 100%;
+}
+
+.underinflated-right-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 43.3vw;
+  z-index: -1;
+}
+
+.underinflated-right-text {
+  position: absolute;
+  width: 507px;
+  height: 168px;
+  left: 1000px;
+  top: 610px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}

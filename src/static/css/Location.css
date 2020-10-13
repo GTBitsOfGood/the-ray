@@ -19,6 +19,7 @@
 }
 
 .left {
+  position: relative;
   left: 0;
   background-image: url('../images/location1.png');
   background-size: cover;
@@ -26,6 +27,7 @@
 
 /* Control the right side */
 .right {
+  position: relative;
   right: 0;
   background-image: url('../images/location2.png');
   background-size: cover;
