@@ -7,26 +7,33 @@ import WhatWeDo from './pages/what-we-do';
 import Overview from './pages/overview';
 import DriveOver from './pages/drive-over';
 import InfoDelivery from './pages/info-delivery';
+import RubberEnd from './pages/RubberEnd';
+import Title from './pages/Title';
+import UnderInflated from './pages/UnderInflated';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+      <div className="App">
+        <Title />
+      </div>
+
+      <div className="App">
         <Statistics
           text="gallons of gas wasted because of poor tire management"
           image="GasStation"
           number="2,000,000,000"
-          selection={0}
+          selection="0"
         />
       </div>
-      <div className="App" style={{ width: '100vw', height: '100vh' }}>
+      <div className="App">
         <Statistics
           text="car accidents due to underinflated tires every year"
           image="Crash"
           number="78,000"
-          selection={1}
+          selection="1"
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -34,8 +41,15 @@ function App() {
           text="increase in serious accidents by driving on underinflated tires"
           image="FlatTire"
           number="300%"
-          selection={1}
+          selection="1"
         />
+      </div>
+      <div className="App">
+        <RubberEnd />
+      </div>
+
+      <div className="App">
+        <UnderInflated />
       </div>
       <div className="App">
         <Wheelright />
@@ -57,11 +71,11 @@ function App() {
         <InfoDelivery />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Ticket isActive={pageIndex === 8} />
+        <Ticket isActive={pageIndex === 11} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Ticket
-          isActive={pageIndex === 9}
+          isActive={pageIndex === 12}
           bottomTicket
           subtext="The tread depths (in 32nd inch) of each individual tire is also calculated and displayed."
           dataHeader="Average tire depth: "
