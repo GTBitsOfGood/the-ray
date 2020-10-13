@@ -14,9 +14,9 @@
 .drive-title {
   position: absolute;
   left: 3.89%;
-  right: 64.03%;
-  top: 53.22%;
-  bottom: 27.22%;
+  /* right: 64.03%; */
+  top: 480px;
+  /* bottom: 27.22%; */
 
   font-family: Roboto;
   font-style: normal;
@@ -31,8 +31,8 @@
   position: absolute;
   left: 3.89%;
   right: 46.39%;
-  top: 67.78%;
-  bottom: 17.89%;
+  top: 600px;
+  /* bottom: 17.89%; */
 
   font-family: Roboto;
   font-style: normal;
@@ -44,7 +44,7 @@
 }
 
 .image-car {
-  width: 710px;
+  width: 652px;
   height: 900px;
   position: absolute;
   right: 0%;
@@ -52,15 +52,28 @@
 
 .image-line {
   position: absolute;
-  width: 1171px;
-  left: 3.96%;
-  right: 29.1%;
-  top: 84.65%;
+  width: auto;
+  left: 0%;
+  right: 400px;
+  top: 768px;
   bottom: 13.33%;
 }
 .image-dot {
   position: absolute;
-  left: 73.56%;
-  top: 83.65%;
-  bottom: 12.44%;
+  right: 400px;
+  top: 760px;
+}
+
+.hr {
+  /* align-self: center; */
+  top: 752.5px;
+  display: block;
+  position: absolute;
+  left: 3.89%;
+  height: 1px;
+  border: 0;
+  border-top: 10px solid #ffffff;
+  /* margin: 1em 0; */
+  padding: 0;
+  width: calc(100vw - 400px - 3.89% - 4px);
 }
