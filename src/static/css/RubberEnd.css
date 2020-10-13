@@ -1,11 +1,11 @@
-.main-background {
+.rubber-background {
   background-image: url('../images/rubber.jpg');
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
 
-.main-body {
+.rubber-body {
   position: relative;
   width: 100%;
   min-height: 100vh;

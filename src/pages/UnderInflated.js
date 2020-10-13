@@ -8,9 +8,9 @@ import Right from '../static/images/tire-right.svg';
 
 const UnderInflated = () => {
   return (
-    <div className="overview-body">
-      <div className="overview-left-image">
-        <div className="left-color">
+    <div className="underinflated-body">
+      <div className="underinflated-left-image">
+        <div className="left-underinflated-color">
           <p className="itra-text">
             The International Tire and <br /> Rubber Association cites{' '}
           </p>
@@ -24,12 +24,12 @@ const UnderInflated = () => {
           </p>
         </div>
       </div>
-      <div className="overview-right">
-        <img className="overview-right-background" src={Right} alt="Right background" />
+      <div className="underinflated-right">
+        <img className="underinflated-right-background" src={Right} alt="Right background" />
         <p className="dangers-text"> Potential dangers include: </p>
         <p className="skidding-text"> skidding </p>
         <p className="hydroplaning-text"> hydroplaning </p>
-        <p className="flat-tire-text"> flat tires </p>
+        <p className="flat-tire-underinflated-text"> flat tires </p>
         <p className="tire-blowout-text"> tire blowouts </p>
         <img className="skidding-image" src={Skidding} alt="Hydroplaning" />
         <img className="hydroplaning-image" src={Hydroplaning} alt="Hydroplaning" />

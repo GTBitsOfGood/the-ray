@@ -1,0 +1,33 @@
+.find-background {
+  background-image: url('../images/where-to-find-us.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.find-body {
+  position: relative;
+  /* width: 1440px; */
+  /* min-height: 10000px; */
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(76, 125, 119, 0.5);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
+}
+
+.find-main-text {
+  position: absolute;
+  left: 5.69%;
+  right: 19.65%;
+  top: 79.33%;
+  bottom: 10.11%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4vw;
+  line-height: 84px;
+  color: #ffffff;
+}

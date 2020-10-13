@@ -26,6 +26,8 @@ function Navigation(props) {
   const pageDown = () => {
     if (pageIndex < maxPages) {
       changePageIndex(pageIndex + 1);
+    } else {
+      changePageIndex(0);
     }
   };
 
@@ -77,7 +79,7 @@ function Navigation(props) {
         {children}
       </div>
 
-      <NextArrow goNextPage={pageDown} />
+      <NextArrow goNextPage={pageDown} up={pageIndex === maxPages} />
       <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );

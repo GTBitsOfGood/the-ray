@@ -8,10 +8,8 @@ const endPage = () => {
         <p className="title-border-text">WheelRight</p>
         <p className="theray-text">THE RAY</p>
         <p className="title-text">WheelRight</p>
-        <p className="tiresafety-text" style={{ fontWeight: 'bold' }}>
-          TIRE SAFETY CHECK STATION
-        </p>
-        <p className="scroll-text">scroll or swipe up to start the experience</p>
+        <p className="tiresafety-title-text">TIRE SAFETY CHECK STATION</p>
+        <p className="scroll-title-text">scroll or swipe up to start the experience</p>
       </div>
     </div>
   );
