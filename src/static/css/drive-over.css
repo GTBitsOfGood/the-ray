@@ -30,8 +30,8 @@
 .drive-text {
   position: absolute;
   left: 3.89%;
-  right: 46.39%;
-  top: 600px;
+  right: 652px;
+  top: 610px;
   /* bottom: 17.89%; */
 
   font-family: Roboto;
@@ -56,7 +56,7 @@
   left: 0%;
   right: 400px;
   top: 768px;
-  bottom: 13.33%;
+  /* bottom: 13.33%; */
 }
 .image-dot {
   position: absolute;
