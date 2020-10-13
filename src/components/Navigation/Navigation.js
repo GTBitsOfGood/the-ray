@@ -5,9 +5,8 @@ import ProgressBar from './progressBar';
 import NextArrow from './NextArrow';
 
 function Navigation(props) {
-  const { children, progressBarColor, transitionTime } = props;
+  const { children, progressBarColor, transitionTime, pageIndex, changePageIndex } = props;
 
-  const [pageIndex, changePageIndex] = useState(0);
   const [isScrolling, changeScrollState] = useState(false);
 
   const maxPages = Object.keys(children).length - 1;
@@ -88,12 +87,16 @@ Navigation.propTypes = {
   children: PropTypes.arrayOf(React.Component),
   progressBarColor: PropTypes.string,
   transitionTime: PropTypes.number,
+  pageIndex: PropTypes.number,
+  changePageIndex: PropTypes.func,
 };
 
 Navigation.defaultProps = {
   children: [],
   progressBarColor: '#6a1b9a',
   transitionTime: 1000,
+  pageIndex: 0,
+  changePageIndex: () => {},
 };
 
 export default Navigation;
