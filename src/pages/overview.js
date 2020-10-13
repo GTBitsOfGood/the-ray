@@ -20,7 +20,6 @@ const Overview = () => {
           WheelRight strives to make this process easier to save time, fuel, money, and most importantly--lives.
         </p>
       </div>
-      <div className="overview-text" />
     </div>
   );
 };
