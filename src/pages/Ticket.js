@@ -5,17 +5,17 @@ import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 import CarComponent from '../components/Pages/Ticket/CarComponent';
 
 function Ticket(props) {
-  const { isActive, bottomTicket, subtext, dataHeader, data, note } = props;
+  const { bottomTicket, subtext, dataHeader, data, note, pageIndex } = props;
   return (
     <div className="ticket-background">
-      <ParallaxComponent shouldParallaxScroll={isActive} transitionTime={1500} transitionDelay={0}>
+      <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
         <div className="split ticket-img-box">
           <div className={`ticket-box ticket-box-${bottomTicket ? 'bottom' : 'top'}`}>
             {!bottomTicket ? <div className="ticket-loop" /> : <div className="ticket-offset" />}
             {bottomTicket ? (
-              <CarComponent isActive={isActive} tireDepthCar heightPct={70} n1={7} n2={10} n3="> 6" n4={9} />
+              <CarComponent pageIndex={pageIndex} tireDepthCar heightPct={70} n1={7} n2={10} n3="> 6" n4={9} />
             ) : (
-              <CarComponent isActive={isActive} />
+              <CarComponent pageIndex={pageIndex} />
             )}
           </div>
         </div>
@@ -39,7 +39,7 @@ function Ticket(props) {
 }
 
 Ticket.propTypes = {
-  isActive: PropTypes.bool,
+  pageIndex: PropTypes.number,
   bottomTicket: PropTypes.bool,
   subtext: PropTypes.string,
   dataHeader: PropTypes.string,
@@ -48,7 +48,7 @@ Ticket.propTypes = {
 };
 
 Ticket.defaultProps = {
-  isActive: false,
+  pageIndex: -2,
   bottomTicket: false,
   subtext: 'The tire pressure (in PSI) of each individual tire is displayed.',
   dataHeader: 'Average tire pressure: ',

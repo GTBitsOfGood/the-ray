@@ -5,6 +5,8 @@
   width: 100%;
   min-height: 100vh;
 
+  background: #4c7d77;
+
   /* display: flex;
   flex-direction: row; */
   /* background: #4C7D77; */
@@ -15,7 +17,7 @@
   position: absolute;
   top: 0.8%;
   left: 0%;
-  z-index: 1;
+  z-index: 2;
   width: 49vw;
   height: 35vw;
 }
@@ -25,22 +27,24 @@
   left: 0%;
   top: 0%;
   bottom: 0%;
-  z-index: 0;
+  z-index: 1;
   height: 62vw;
 }
 
 .overview-left-text {
   position: absolute;
-  left: 4.72%;
-  right: 52.57%;
-  top: 68.67%;
-  bottom: 18.89%;
+  left: 4%;
+  right: 50%;
+  top: 36vw;
+  /* bottom: 6%; */
+  /* top: 500px; */
+  z-index: 10;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3vw;
+  line-height: 3.5vw;
 
   color: #ffffff;
 }
@@ -48,11 +52,11 @@
 .overview-right-background {
   position: absolute;
   right: 0%;
-  bottom: -20.8%;
-  z-index: -1;
+  top: 32vw;
+  z-index: 1;
   /* height: 19vw;
   width: 60vw; */
-  width: 55vw;
+  width: 52.75vw;
   height: 30vw;
 }
 
@@ -62,21 +66,24 @@
   left: 0%;
   width: 100vw;
   height: 43.3vw;
-  z-index: -1;
+  z-index: 0;
 }
 
 .overview-right-text {
   position: absolute;
-  width: 507px;
-  height: 168px;
-  left: 1000px;
-  top: 610px;
+  /* width: 507px; */
+  /* height: 168px; */
+  right: 4%;
+  top: 32vw;
+  /* bottom: 5%; */
+  left: 55%;
+  z-index: 2;
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  /* font-weight: bold; */
+  font-size: 2.5vw;
+  line-height: 3.5vw;
 
   color: #ffffff;
 }

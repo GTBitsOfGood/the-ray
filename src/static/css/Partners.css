@@ -1,0 +1,142 @@
+.partners-background {
+  background-image: url('../images/partners-pic.png');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.partners-body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
+}
+
+.partners-toptext {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  left: 10%;
+  top: 50;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vw;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+.partners-drive {
+  position: absolute;
+  width: 559px;
+  height: 226px;
+  left: 5%;
+  top: 36%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 112px;
+
+  color: #ffffff;
+}
+
+.return-start {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  left: 72%;
+  top: 84%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.kia {
+  position: absolute;
+  width: 182px;
+  height: 182px;
+  left: 58%;
+  top: 0.2%;
+  z-index: 6;
+}
+
+.gdot {
+  position: absolute;
+  width: 243px;
+  height: 135px;
+  left: 40%;
+  top: 0.5%;
+  z-index: 6;
+}
+
+.facebook {
+  /* position: absolute;
+  width: 207.07px;
+  height: 43.66px;
+  left: 5%;
+  top: 75%;
+  z-index: 6; */
+
+  position: absolute;
+  left: 6.37%;
+  right: 92.11%;
+  top: 84.11%;
+  bottom: 11.39%;
+
+  /* background: #FFFFFF; */
+}
+
+.twitter {
+  /* position: absolute;
+  width: 207.07px;
+  height: 43.66px;
+  left: 5%;
+  top: 75%;
+  z-index: 6; */
+
+  position: absolute;
+  left: 9.14%;
+  right: 87.39%;
+  top: 84.11%;
+  bottom: 11.39%;
+}
+
+.linkedin {
+  /* position: absolute;
+  width: 207.07px;
+  height: 43.66px;
+  left: 5%;
+  top: 75%;
+  z-index: 6; */
+
+  position: absolute;
+  left: 14%;
+  right: 55%;
+  top: 84.11%;
+  bottom: 11.39%;
+}
+
+.instagram {
+  /* position: absolute;
+  width: 207.07px;
+  height: 43.66px;
+  left: 5%;
+  top: 75%;
+  z-index: 6; */
+
+  position: absolute;
+  left: 17.94%;
+  right: 79.25%;
+  top: 84.11%;
+  bottom: 11.39%;
+}

@@ -20,12 +20,20 @@ function Navigation(props) {
   const pageUp = () => {
     if (pageIndex > 0) {
       changePageIndex(pageIndex - 1);
+      const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex - 1 });
+      document.dispatchEvent(scrollevent);
     }
   };
 
   const pageDown = () => {
     if (pageIndex < maxPages) {
       changePageIndex(pageIndex + 1);
+      const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex + 1 });
+      document.dispatchEvent(scrollevent);
+    } else {
+      changePageIndex(0);
+      const scrollevent = new CustomEvent('page-scroll', { detail: 0 });
+      document.dispatchEvent(scrollevent);
     }
   };
 
@@ -77,7 +85,7 @@ function Navigation(props) {
         {children}
       </div>
 
-      <NextArrow goNextPage={pageDown} />
+      <NextArrow goNextPage={pageDown} up={pageIndex === maxPages} />
       <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
