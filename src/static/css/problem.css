@@ -1,0 +1,52 @@
+.body {
+  background: #873856;
+  /* background: #ffffff; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 51.74%;
+  /* right: 31.39%; */
+  top: 20%;
+  /* bottom: 57.78%; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.text {
+  position: absolute;
+  width: 40vw;
+  /* height: 221px; */
+  left: 51.74%;
+  top: calc(20% + 150px);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.icon {
+  position: absolute;
+  width: 267px;
+  height: 650px;
+  /* left: 20%; */
+  right: 60%;
+  /* right: 31.39%; */
+  top: 11%;
+  bottom: 0%;
+}
