@@ -1,0 +1,119 @@
+.body {
+  background: #4c7d77;
+  /* background: #ffffff; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  /* left: 0%; */
+  /* top: 20%; */
+  /* height: 100vh; */
+  position: absolute;
+  height: 100vh;
+  right: 18.6vmin;
+}
+
+.solar {
+  right: 0%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+
+.pv4evsvg {
+  z-index: 0;
+  position: absolute;
+  right: 40.9vh;
+  bottom: 18vh;
+  height: 61vh;
+}
+
+.hollow-text {
+  position: absolute;
+  left: 20px;
+  /* right: 39.44%; */
+  top: -70px;
+  /* bottom: 55.22%; */
+
+  font-family: Roboto;
+  font-style: normal;
+  /* font-weight: 900; */
+  font-size: 270px;
+  /* line-height: 316px; */
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+
+  color: #4c7d77;
+}
+
+.title-text {
+  position: absolute;
+  left: 100px;
+  /* right: 77.92%; */
+  top: 210px;
+  /* bottom: 62.56%; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #ffffff;
+}
+
+.main-text {
+  position: absolute;
+  left: 325px;
+  /* right: 60.07%; */
+  top: 230px;
+  /* bottom: 42.67%; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 144px;
+  line-height: 169px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.secondary-text {
+  position: absolute;
+  left: 100px;
+  /* right: 44.03%; */
+  top: 400px;
+  /* bottom: 28.22%; */
+  text-align: left;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #ffffff;
+}
+
+.scroll-text {
+  position: absolute;
+  /* left: 45.28%; */
+  right: 19.72%;
+  /* top: 89.33%; */
+  bottom: 6%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
