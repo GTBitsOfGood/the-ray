@@ -1,0 +1,37 @@
+.pv-help-background {
+  background-image: url('../images/pvHelp.png');
+  background-size: cover;
+  position: relative;
+}
+
+.pv-help-body {
+  position: relative;
+  /* width: 1440px; */
+  /* min-height: 10000px; */
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(80, 166, 195, 0.38);
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  display: flex;
+}
+
+.pv-help-main-text {
+  position: absolute;
+  left: 60.07%;
+  /* right: 40.28%; */
+  top: 57.22%;
+  bottom: 45.44%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}

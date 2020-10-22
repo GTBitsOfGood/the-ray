@@ -13,14 +13,27 @@ import UnderInflated from './pages/UnderInflated';
 import Find from './pages/Find';
 import Help from './pages/Help';
 import Location from './pages/Location';
-import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
+import Newsletter from './pages/Newsletter';
+import Pv4evHelp from './pages/Pv4evHelp';
+import PvNewsletter from './pages/PvNewsletter';
+import PvPartners from './pages/PvPartners';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+      <div className="App">
+        <Pv4evHelp />
+      </div>
+      <div className="App">
+        <PvNewsletter />
+      </div>
+      <div className="App">
+        <PvPartners />
+      </div>
+
       <div className="App">
         <Title />
       </div>
