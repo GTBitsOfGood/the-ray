@@ -15,12 +15,31 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
+import PvMiles from './pages/PvMiles';
+import PvMap from './pages/PvMap';
+import PvBigNum from './pages/PvBigNum';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+      <div className="App">
+        <PvMap />
+      </div>
+
+      <div className="App">
+        <PvBigNum pageIndex={1} />
+      </div>
+
+      <div className="App">
+        <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" percentage={false} transitionTime={2000} />
+      </div>
+
+      <div className="App">
+        <PvMiles />
+      </div>
+
       <div className="App">
         <Title />
       </div>
@@ -76,11 +95,11 @@ function App() {
         <InfoDelivery />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
-        <Ticket pageIndex={11} />
+        <Ticket pageIndex={15} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Ticket
-          pageIndex={12}
+          pageIndex={16}
           bottomTicket
           subtext="The tread depths (in 32nd inch) of each individual tire is also calculated and displayed."
           dataHeader="Average tire depth: "
