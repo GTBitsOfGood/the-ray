@@ -1,15 +1,15 @@
 import React from 'react';
 import '../static/css/Location.css';
-// import target from '../static/images/Ellipse 44.png';
+import PropTypes from 'prop-types';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
-class Location extends React.PureComponent {
-  render() {
-    return (
-      <div className="location-background">
-        {/* <img className="location-dot" src={target} alt="Target point" />
-        <hr className="location-bar" /> */}
-        <div className="split left">
-          <div className="location-body">
+const Location = (props) => {
+  const { pageIndex } = props;
+  return (
+    <div className="location-background">
+      <div className="split left">
+        <div className="location-body">
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
             <p className="help-location-text">
               The Ray Welcome Center <br />
             </p>
@@ -18,14 +18,23 @@ class Location extends React.PureComponent {
               infrastructure of the future, and it starts on 18 miles of West Georgia&apos;s I-85, and the land and
               communities surrounding it.
             </p>
-          </div>
-        </div>
-
-        <div className="split right">
-          <div className="location-body2" />
+          </ParallaxComponent>
         </div>
       </div>
-    );
-  }
-}
+
+      <div className="split right">
+        <div className="location-body2" />
+      </div>
+    </div>
+  );
+};
+
+Location.propTypes = {
+  pageIndex: PropTypes.number,
+};
+
+Location.defaultProps = {
+  pageIndex: -2,
+};
+
 export default Location;
