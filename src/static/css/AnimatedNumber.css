@@ -1,0 +1,15 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --percentage-sign {
+  syntax: '<string>';
+  initial-value: '%';
+  inherits: false;
+}
+
+.animated-number::before {
+  content: counter(num) '' attr(percentage-sign);
+}
