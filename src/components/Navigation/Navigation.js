@@ -18,23 +18,27 @@ function Navigation(props) {
   });
 
   const pageUp = () => {
-    if (pageIndex > 0) {
-      changePageIndex(pageIndex - 1);
-      const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex - 1 });
-      document.dispatchEvent(scrollevent);
-    }
+    changePageIndex((prevIndex) => {
+      if (prevIndex > 0) {
+        const scrollevent = new CustomEvent('page-scroll', { detail: prevIndex - 1 });
+        document.dispatchEvent(scrollevent);
+        return prevIndex - 1;
+      }
+      return prevIndex;
+    });
   };
 
   const pageDown = () => {
-    if (pageIndex < maxPages) {
-      changePageIndex(pageIndex + 1);
-      const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex + 1 });
-      document.dispatchEvent(scrollevent);
-    } else {
-      changePageIndex(0);
+    changePageIndex((prevIndex) => {
+      if (prevIndex < maxPages) {
+        const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex + 1 });
+        document.dispatchEvent(scrollevent);
+        return prevIndex + 1;
+      }
       const scrollevent = new CustomEvent('page-scroll', { detail: 0 });
       document.dispatchEvent(scrollevent);
-    }
+      return 0;
+    });
   };
 
   const onScroll = (event) => {
@@ -53,16 +57,23 @@ function Navigation(props) {
     }
   };
 
-  /*
   const handleKeyDown = (event) => {
+    // Up arrow
     if (event.keyCode === 38) {
-      pageUp()
+      pageUp();
     }
+    // Down arrow
     if (event.keyCode === 40) {
-      pageDown()
+      pageDown();
     }
-  }
-  */
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div
