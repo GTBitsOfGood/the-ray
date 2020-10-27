@@ -15,13 +15,32 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
+// import PvMiles from './pages/PvMiles';
+// import PvMap from './pages/PvMap';
+// import PvBigNum from './pages/PvBigNum';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+      {/* <div className="App">
+        <PvMap />
+      </div>
+
       <div className="App">
+        <PvBigNum pageIndex={1} />
+      </div>
+
+      <div className="App">
+        <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" percentage={false} transitionTime={2000} />
+      </div>
+
+      <div className="App">
+        <PvMiles />
+      </div> */}
+
+      {/* <div className="App">
         <Help />
       </div>
       <div className="App">
@@ -29,10 +48,10 @@ function App() {
       </div>
       <div className="App">
         <Partners hannahsolar />
-      </div>
+      </div> */}
 
       <div className="App">
-        <Title />
+        <Title pageIndex={0} />
       </div>
 
       <div className="App">
@@ -41,6 +60,7 @@ function App() {
           image="GasStation"
           number="2,000,000,000"
           selection="0"
+          pageIndex={1}
         />
       </div>
       <div className="App">
@@ -49,6 +69,7 @@ function App() {
           image="Crash"
           number="78,000"
           selection="1"
+          pageIndex={2}
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -57,33 +78,34 @@ function App() {
           image="FlatTire"
           number="300%"
           selection="1"
+          pageIndex={3}
         />
       </div>
       <div className="App">
-        <RubberEnd />
+        <RubberEnd pageIndex={4} />
       </div>
 
       <div className="App">
-        <UnderInflated />
+        <UnderInflated pageIndex={5} />
       </div>
       <div className="App">
-        <Wheelright />
-      </div>
-
-      <div className="App">
-        <WhatWeDo />
+        <Wheelright pageIndex={6} />
       </div>
 
       <div className="App">
-        <Overview />
+        <WhatWeDo pageIndex={7} />
       </div>
 
       <div className="App">
-        <DriveOver />
+        <Overview pageIndex={8} />
       </div>
 
       <div className="App">
-        <InfoDelivery />
+        <DriveOver pageIndex={9} />
+      </div>
+
+      <div className="App">
+        <InfoDelivery pageIndex={10} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Ticket pageIndex={11} />
@@ -99,19 +121,23 @@ function App() {
         />
       </div>
       <div className="App">
-        <Find />
+        <Find pageIndex={13} />
       </div>
       <div className="App">
-        <Location />
+        <Location pageIndex={14} />
       </div>
       <div className="App">
-        <Help wheel />
+        <Help pageIndex={15} wheel />
       </div>
       <div className="App">
-        <Newsletter message="Join the team by making a donation and signing up for our newsletter." card />
+        <Newsletter
+          pageIndex={16}
+          message="Join the team by making a donation and signing up for our newsletter."
+          card
+        />
       </div>
       <div className="App">
-        <Partners />
+        <Partners pageIndex={17} />
       </div>
     </Navigation>
   );
