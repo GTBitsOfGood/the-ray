@@ -7,7 +7,7 @@ import pv4evsvg from '../static/images/pv4ev.svg';
 class PV4EV extends React.PureComponent {
   render() {
     return (
-      <div className="body">
+      <div className="body" style={{ backgroundColor: '#4c7d77' }}>
         <img className="background" src={greenRectangle} alt="Background" />
         <img className="solar" src={solar} alt="Solar" />
         <img className="pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />

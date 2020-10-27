@@ -1,10 +1,16 @@
 <svg width="267" height="650" viewBox="0 0 267 650" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect y="138" width="267" height="458" fill="white"/>
-<ellipse cx="134" cy="261.5" rx="122" ry="28.5" fill="#4C7D77"/>
+<!-- <ellipse cx="134" cy="261.5" rx="122" ry="28.5" fill="#4C7D77"/> -->
 <path d="M266.5 597.5C266.5 604.564 262.862 611.346 256.168 617.569C249.474 623.793 239.761 629.421 227.716 634.158C203.629 643.63 170.319 649.5 133.5 649.5C96.6814 649.5 63.3713 643.63 39.2842 634.158C27.2392 629.421 17.5255 623.793 10.8316 617.569C4.13826 611.346 0.5 604.564 0.5 597.5C0.5 590.436 4.13826 583.654 10.8316 577.431C17.5255 571.207 27.2392 565.579 39.2842 560.842C63.3713 551.37 96.6814 545.5 133.5 545.5C170.319 545.5 203.629 551.37 227.716 560.842C239.761 565.579 249.474 571.207 256.168 577.431C262.862 583.654 266.5 590.436 266.5 597.5Z" fill="white" stroke="white"/>
-<rect x="12" y="232" width="244" height="364" fill="#4C7D77"/>
+<rect x="12" y="232" width="244" height="364">
+    <animate attributeName="fill" values="#D35C58;#FFFF00;#4C7D77" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="height" from="50" to="364" dur="10s" fill="freeze" repeatCount="indefinite" />
+    <animate attributeName="y" from="550" to="232" dur="10s" fill="freeze" repeatCount="indefinite" />
+</rect>
 <ellipse cx="133.5" cy="232" rx="133.5" ry="31" fill="#6C6C6C"/>
-<ellipse cx="134" cy="596" rx="122" ry="38" fill="#4C7D77"/>
+<ellipse cx="134" cy="596" rx="122" ry="38" fill="#4C7D77">
+    <animate attributeName="fill" values="#D35C58;#FFFF00;#4C7D77" dur="10s" repeatCount="indefinite"/>
+</ellipse>
 <rect y="59" width="267" height="173" fill="#6C6C6C"/>
 <ellipse cx="133.5" cy="61.5" rx="133.5" ry="26.5" fill="#6C6C6C"/>
 <ellipse cx="133.5" cy="11.5" rx="47.5" ry="11.5" fill="white"/>

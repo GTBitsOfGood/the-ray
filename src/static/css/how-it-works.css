@@ -20,19 +20,22 @@
 }
 
 .box {
-  top: 20%;
-  left: 3vw;
-  right: 55vw;
-  position: absolute;
   background: #092342;
-  border: 1px solid white;
-  padding: 20px;
-  padding-top: 0px;
+  /* outline: 1px solid #ffffff; */
+  height: calc(70px + 30vh);
+  display: flex;
+  position: absolute;
+  width: 600px;
+  top: 20vh;
+  left: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 25px;
 }
 
 .title {
   position: relative;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -45,13 +48,14 @@
 }
 
 .text {
-  position: relative;
+  position: absolute;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
+  max-width: 600px;
 
   color: #ffffff;
 }
