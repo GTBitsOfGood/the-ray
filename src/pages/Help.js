@@ -1,15 +1,30 @@
 import React from 'react';
 import '../static/css/Help.css';
+import PropTypes from 'prop-types';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Help extends React.PureComponent {
   render() {
+    const { wheel, pageIndex } = this.props;
     return (
-      <div className="help-background">
+      <div className={wheel ? 'help-background' : 'pv-help-background'}>
         <div className="find-body">
-          <p className="help-main-text">How you can help</p>
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+            <p className={wheel ? 'help-main-text' : 'pv-help-main-text'}>How you can help</p>
+          </ParallaxComponent>
         </div>
       </div>
     );
   }
 }
+
+Help.propTypes = {
+  wheel: PropTypes.bool,
+  pageIndex: PropTypes.number,
+};
+Help.defaultProps = {
+  wheel: false,
+  pageIndex: -2,
+};
+
 export default Help;

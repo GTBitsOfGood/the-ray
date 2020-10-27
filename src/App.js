@@ -13,11 +13,8 @@ import UnderInflated from './pages/UnderInflated';
 import Find from './pages/Find';
 import Help from './pages/Help';
 import Location from './pages/Location';
-import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
-import HowItWorks from './pages/How-It-Works';
-import PV4EV from './pages/PV4EV';
-import Problem from './pages/Problem';
+import Newsletter from './pages/Newsletter';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
@@ -25,23 +22,7 @@ function App() {
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
       <div className="App">
-        <PV4EV />
-      </div>
-
-      <div className="App">
-        <Problem selection="Problem" />
-      </div>
-
-      <div className="App">
-        <Problem selection="Solution" />
-      </div>
-
-      <div className="App">
-        <HowItWorks />
-      </div>
-
-      <div className="App">
-        <Title />
+        <Title pageIndex={0} />
       </div>
 
       <div className="App">
@@ -50,6 +31,7 @@ function App() {
           image="GasStation"
           number="2,000,000,000"
           selection="0"
+          pageIndex={1}
         />
       </div>
       <div className="App">
@@ -58,6 +40,7 @@ function App() {
           image="Crash"
           number="78,000"
           selection="1"
+          pageIndex={2}
         />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
@@ -66,33 +49,34 @@ function App() {
           image="FlatTire"
           number="300%"
           selection="1"
+          pageIndex={3}
         />
       </div>
       <div className="App">
-        <RubberEnd />
+        <RubberEnd pageIndex={4} />
       </div>
 
       <div className="App">
-        <UnderInflated />
+        <UnderInflated pageIndex={5} />
       </div>
       <div className="App">
-        <Wheelright />
-      </div>
-
-      <div className="App">
-        <WhatWeDo />
+        <Wheelright pageIndex={6} />
       </div>
 
       <div className="App">
-        <Overview />
+        <WhatWeDo pageIndex={7} />
       </div>
 
       <div className="App">
-        <DriveOver />
+        <Overview pageIndex={8} />
       </div>
 
       <div className="App">
-        <InfoDelivery />
+        <DriveOver pageIndex={9} />
+      </div>
+
+      <div className="App">
+        <InfoDelivery pageIndex={10} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Ticket pageIndex={11} />
@@ -108,19 +92,23 @@ function App() {
         />
       </div>
       <div className="App">
-        <Find />
+        <Find pageIndex={13} />
       </div>
       <div className="App">
-        <Location />
+        <Location pageIndex={14} />
       </div>
       <div className="App">
-        <Help />
+        <Help pageIndex={15} wheel />
       </div>
       <div className="App">
-        <Newsletter />
+        <Newsletter
+          pageIndex={16}
+          message="Join the team by making a donation and signing up for our newsletter."
+          card
+        />
       </div>
       <div className="App">
-        <Partners />
+        <Partners pageIndex={17} />
       </div>
     </Navigation>
   );
