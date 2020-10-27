@@ -13,8 +13,8 @@ import UnderInflated from './pages/UnderInflated';
 import Find from './pages/Find';
 import Help from './pages/Help';
 import Location from './pages/Location';
-import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
+import Newsletter from './pages/Newsletter';
 // import PvMiles from './pages/PvMiles';
 // import PvMap from './pages/PvMap';
 // import PvBigNum from './pages/PvBigNum';
@@ -38,6 +38,16 @@ function App() {
 
       <div className="App">
         <PvMiles />
+      </div> */}
+
+      {/* <div className="App">
+        <Help />
+      </div>
+      <div className="App">
+        <Newsletter message="Power the team by making a donation and signing up for our newsletter." />
+      </div>
+      <div className="App">
+        <Partners hannahsolar />
       </div> */}
 
       <div className="App">
@@ -117,10 +127,14 @@ function App() {
         <Location pageIndex={14} />
       </div>
       <div className="App">
-        <Help pageIndex={15} />
+        <Help pageIndex={15} wheel />
       </div>
       <div className="App">
-        <Newsletter pageIndex={16} />
+        <Newsletter
+          pageIndex={16}
+          message="Join the team by making a donation and signing up for our newsletter."
+          card
+        />
       </div>
       <div className="App">
         <Partners pageIndex={17} />
