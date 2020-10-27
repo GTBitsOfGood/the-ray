@@ -1,19 +1,25 @@
 import React from 'react';
 import '../static/css/Partners.css';
+import PropTypes from 'prop-types';
 import kia from '../static/images/kia-logo-png-transparent 1.png';
 import gdot from '../static/images/DOT-GA-US-Logo-2018 1.png';
 import facebook from '../static/images/facebook.png';
 import twitter from '../static/images/twitter.png';
 import linkedin from '../static/images/linked in.png';
+import raylogo from '../static/images/ray-anderson-logo 1.png';
 import instagram from '../static/images/instagram.png';
+import hannahlogo from '../static/images/hannahlogo.png';
 
 class Partners extends React.PureComponent {
   render() {
+    const { hannahsolar } = this.props;
     return (
       <div className="partners-background">
         <div className="partners-body">
           <img className="kia" src={kia} alt="Kia logo" />
           <img className="gdot" src={gdot} alt="Dot logo" />
+          <img className="ray" src={raylogo} alt="Ray C. Anderson logo" />
+          {hannahsolar && <img className="hannah" src={hannahlogo} alt="Hannah logo" />}
           <a href="https://www.facebook.com/TheRayHighway/">
             <img className="facebook" src={facebook} alt="facebook logo" />
           </a>
@@ -36,4 +42,11 @@ class Partners extends React.PureComponent {
     );
   }
 }
+
+Partners.propTypes = {
+  hannahsolar: PropTypes.bool,
+};
+Partners.defaultProps = {
+  hannahsolar: false,
+};
 export default Partners;

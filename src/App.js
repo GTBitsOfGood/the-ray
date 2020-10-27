@@ -15,9 +15,6 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
-import Pv4evHelp from './pages/Pv4evHelp';
-import PvNewsletter from './pages/PvNewsletter';
-import PvPartners from './pages/PvPartners';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
@@ -25,13 +22,13 @@ function App() {
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
       <div className="App">
-        <Pv4evHelp />
+        <Help />
       </div>
       <div className="App">
-        <PvNewsletter />
+        <Newsletter message="Power the team by making a donation and signing up for our newsletter." />
       </div>
       <div className="App">
-        <PvPartners />
+        <Partners hannahsolar />
       </div>
 
       <div className="App">
@@ -108,10 +105,10 @@ function App() {
         <Location />
       </div>
       <div className="App">
-        <Help />
+        <Help wheel />
       </div>
       <div className="App">
-        <Newsletter />
+        <Newsletter message="Join the team by making a donation and signing up for our newsletter." card />
       </div>
       <div className="App">
         <Partners />
