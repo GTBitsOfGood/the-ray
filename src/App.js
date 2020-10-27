@@ -15,12 +15,31 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
+import HowItWorks from './pages/How-It-Works';
+import PV4EV from './pages/PV4EV';
+import Problem from './pages/Problem';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+      <div className="App">
+        <PV4EV />
+      </div>
+
+      <div className="App">
+        <Problem selection="Problem" />
+      </div>
+
+      <div className="App">
+        <Problem selection="Solution" />
+      </div>
+
+      <div className="App">
+        <HowItWorks />
+      </div>
+
       <div className="App">
         <Title />
       </div>
