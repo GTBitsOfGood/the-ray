@@ -15,41 +15,12 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
-// import PvMiles from './pages/PvMiles';
-// import PvMap from './pages/PvMap';
-// import PvBigNum from './pages/PvBigNum';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
-      {/* <div className="App">
-        <PvMap />
-      </div>
-
-      <div className="App">
-        <PvBigNum pageIndex={1} />
-      </div>
-
-      <div className="App">
-        <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" percentage={false} transitionTime={2000} />
-      </div>
-
-      <div className="App">
-        <PvMiles />
-      </div> */}
-
-      {/* <div className="App">
-        <Help />
-      </div>
-      <div className="App">
-        <Newsletter message="Power the team by making a donation and signing up for our newsletter." />
-      </div>
-      <div className="App">
-        <Partners hannahsolar />
-      </div> */}
-
       <div className="App">
         <Title pageIndex={0} />
       </div>
