@@ -43,6 +43,9 @@ function App() {
           pageIndex={2}
         />
       </div>
+      <div className="App">
+        <RubberEnd pageIndex={4} />
+      </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
           text="increase in serious accidents by driving on underinflated tires"
@@ -51,9 +54,6 @@ function App() {
           selection="1"
           pageIndex={3}
         />
-      </div>
-      <div className="App">
-        <RubberEnd pageIndex={4} />
       </div>
 
       <div className="App">

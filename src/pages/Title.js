@@ -9,8 +9,10 @@ const Title = (props) => {
     <div className="title-background">
       <div className="title-body">
         <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-          <p className="title-border-text">WheelRight</p>
-          <p className="theray-text">THE RAY</p>
+          <div className="uppertext">
+            <p className="title-border-text">WheelRight</p>
+            <p className="theray-text">THE RAY</p>
+          </div>
           <p className="title-text">WheelRight</p>
           <p className="tiresafety-title-text">TIRE SAFETY CHECK STATION</p>
           <p className="scroll-title-text">scroll or swipe up to start the experience</p>
