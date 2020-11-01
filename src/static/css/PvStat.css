@@ -1,0 +1,26 @@
+.pv-stat-background {
+  background-image: url('../images/SolarStatBackground.png');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pv-solar-stat-background {
+  background-image: url('../images/SolarStatBackground.png');
+}
+
+.pv-ev-stat-background {
+  background-image: url('../images/EVStatBackground.png');
+}
+
+.pv-gradient-blue-background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #50a6c3 22.88%, rgba(255, 255, 255, 0) 117.39%), rgba(80, 166, 195, 0.44);
+}

@@ -15,12 +15,22 @@ import Help from './pages/Help';
 import Location from './pages/Location';
 import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
+import PvSolarStat from './pages/PvSolarStat';
+import PvEVStat from './pages/PvEVStat';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+      <div className="App">
+        <PvSolarStat />
+      </div>
+
+      <div className="App">
+        <PvEVStat />
+      </div>
+
       <div className="App">
         <Title pageIndex={0} />
       </div>
