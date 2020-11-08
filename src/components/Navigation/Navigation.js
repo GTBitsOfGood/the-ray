@@ -137,6 +137,7 @@ function Navigation(props) {
 
       <NextArrow goNextPage={pageDown} up={pageIndex === maxPages} />
       <AutoplayArrow
+        pageIndex={pageIndex}
         isAutoplay={isAutoplay}
         goNextPage={() => {
           changeAutoplay(!isAutoplay);

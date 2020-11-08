@@ -44,7 +44,7 @@ function App() {
         />
       </div>
       <div className="App">
-        <RubberEnd pageIndex={4} />
+        <RubberEnd pageIndex={3} />
       </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
@@ -52,7 +52,7 @@ function App() {
           image="FlatTire"
           number="300%"
           selection="1"
-          pageIndex={3}
+          pageIndex={4}
         />
       </div>
 
