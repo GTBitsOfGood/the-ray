@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import ProgressBar from './progressBar';
 import NextArrow from './NextArrow';
+import AutoplayArrow from './AutoplayArrow';
 
 function Navigation(props) {
   const { children, progressBarColor, transitionTime, pageIndex, changePageIndex } = props;
@@ -12,6 +13,29 @@ function Navigation(props) {
   const maxPages = Object.keys(children).length - 1;
 
   const pageContainer = useRef(null);
+
+  const [isAutoplay, changeAutoplay] = useState(false);
+
+  const pageTimes = [
+    2000,
+    6000,
+    4000,
+    3000,
+    4000,
+    6000,
+    3000,
+    3000,
+    5000,
+    4000,
+    5000,
+    4000,
+    4000,
+    3000,
+    3000,
+    3000,
+    3000,
+    3000,
+  ];
 
   useEffect(() => {
     pageContainer.current.style.transform = `translate(0, ${pageIndex * -100}%)`;
@@ -31,7 +55,7 @@ function Navigation(props) {
   const pageDown = () => {
     changePageIndex((prevIndex) => {
       if (prevIndex < maxPages) {
-        const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex + 1 });
+        const scrollevent = new CustomEvent('page-scroll', { detail: prevIndex + 1 });
         document.dispatchEvent(scrollevent);
         return prevIndex + 1;
       }
@@ -40,6 +64,21 @@ function Navigation(props) {
       return 0;
     });
   };
+
+  const scrollIfAutoplay = () => {
+    if (isAutoplay) {
+      pageDown();
+    }
+  };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      scrollIfAutoplay();
+    }, pageTimes[pageIndex]);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isAutoplay, pageIndex]);
 
   const onScroll = (event) => {
     if (!isScrolling) {
@@ -97,6 +136,13 @@ function Navigation(props) {
       </div>
 
       <NextArrow goNextPage={pageDown} up={pageIndex === maxPages} />
+      <AutoplayArrow
+        pageIndex={pageIndex}
+        isAutoplay={isAutoplay}
+        goNextPage={() => {
+          changeAutoplay(!isAutoplay);
+        }}
+      />
       <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
