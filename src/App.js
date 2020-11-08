@@ -17,6 +17,7 @@ import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
 import PvSolarStat from './pages/PvSolarStat';
 import PvEVStat from './pages/PvEVStat';
+import PvBigNum from './pages/PvBigNum';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
@@ -26,6 +27,10 @@ function App() {
       <div className="App">
         <PvSolarStat />
       </div>
+
+      <PvBigNum pageIndex={1} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
+
+      <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
 
       <div className="App">
         <PvEVStat />
