@@ -27,7 +27,7 @@ function App() {
 
       <div className="App">
         <Statistics
-          text="gallons of gas wasted because of poor tire management"
+          text="gallons of fuel wasted because of poor tire management each year"
           image="GasStation"
           number="2,000,000,000"
           selection="0"
@@ -36,26 +36,26 @@ function App() {
       </div>
       <div className="App">
         <Statistics
-          text="car accidents due to underinflated tires every year"
+          text="car crashes due to underinflated tires every year"
           image="Crash"
           number="78,000"
           selection="1"
           pageIndex={2}
         />
       </div>
-      <div className="App">
-        <RubberEnd pageIndex={3} />
-      </div>
       <div className="App" style={{ width: '100vw', height: '100vh' }}>
         <Statistics
-          text="increase in serious accidents by driving on underinflated tires"
+          text="increase in serious crashes by driving on underinflated tires"
           image="FlatTire"
           number="300%"
           selection="1"
-          pageIndex={4}
+          pageIndex={3}
+          source="* National Highway Traffic Safety Administration (NHTSA)"
         />
       </div>
-
+      <div className="App">
+        <RubberEnd pageIndex={4} />
+      </div>
       <div className="App">
         <UnderInflated pageIndex={5} />
       </div>

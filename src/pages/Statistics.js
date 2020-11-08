@@ -12,7 +12,7 @@ import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Statistics extends React.PureComponent {
   render() {
-    const { image, selection, number, text, pageIndex } = this.props;
+    const { image, selection, number, text, pageIndex, source } = this.props;
 
     let currImage = GasStation;
 
@@ -77,10 +77,11 @@ class Statistics extends React.PureComponent {
                       </div>
                     )}
                   </div>
-                  <p className="tertiary-text">car accidents</p>
+                  <p className="tertiary-text">car crashes</p>
                 </div>
               </div>
             </div>
+            <p className="source">{source}</p>
           </ParallaxComponent>
         </div>
       </div>
@@ -94,6 +95,7 @@ Statistics.propTypes = {
   number: PropTypes.string,
   text: PropTypes.string,
   pageIndex: PropTypes.number,
+  source: PropTypes.string,
 };
 
 Statistics.defaultProps = {
@@ -102,5 +104,6 @@ Statistics.defaultProps = {
   number: '2,000,000,000',
   text: 'gallons of gas wasted because of poor tire management',
   pageIndex: -2,
+  source: '',
 };
 export default Statistics;
