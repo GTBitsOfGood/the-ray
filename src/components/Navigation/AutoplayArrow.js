@@ -20,7 +20,3 @@ AutoplayArrow.propTypes = {
 };
 
 export default AutoplayArrow;
-
-// ok so on click i want the button to disappear after that and i want it to automatically go down eveyr few seconds
-// right now it is essentially the exact same as the down arrow
-// also would be nice if the button were white instead of black but whatever
