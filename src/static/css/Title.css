@@ -19,8 +19,9 @@
 
 .title-border-text {
   position: relative;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -75%);
   display: inline-block;
+  margin-bottom: 0%;
   left: 1.18%;
   right: 1.11%;
   top: -15%;
@@ -40,22 +41,29 @@
 }
 
 .theray-text {
-  position: absolute;
+  position: relative;
   white-space: nowrap;
-
+  transform: translate(0px, -390px);
+  /* transform: translate(0%, -1025%); */
   left: 46.26%;
+  /*
   right: 43.4%;
-  top: 30%;
   bottom: 66.78%;
   width: 100px;
+  bottom: 56%; */
+  width: 20%;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 3vw;
-  line-height: 56px;
+  line-height: 75%;
 
   color: #ffffff;
+}
+
+.uppertext {
+  display: inline-block;
 }
 
 .title-text {

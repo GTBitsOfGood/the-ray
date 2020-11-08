@@ -56,7 +56,6 @@ function App() {
       <div className="App">
         <RubberEnd pageIndex={4} />
       </div>
-
       <div className="App">
         <UnderInflated pageIndex={5} />
       </div>
