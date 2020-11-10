@@ -31,41 +31,41 @@ class Start extends React.PureComponent {
     const { setWheelright, setPv4ev } = this.props;
     const { isHovered } = this.state;
     return (
-      <div className="body">
+      <div className="start-body">
         {isHovered === 0 && (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img className="image" src={rayFuture} alt={rayFuture} />
-            <div className="deaths">
-              <p className="text">
+            <img className="start-image" src={rayFuture} alt={rayFuture} />
+            <div className="start-deaths">
+              <p className="start-text">
                 <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> DEATHS
               </p>
             </div>
-            <div className="center">
-              <div className="waste">
-                <p className="text">
+            <div className="start-center">
+              <div className="start-waste">
+                <p className="start-text">
                   <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> WASTE
                 </p>
               </div>
             </div>
-            <div className="impact">
-              <p className="text">
+            <div className="start-impact">
+              <p className="start-text">
                 <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> IMPACT
               </p>
             </div>
             <p>Click on one of the projects below to view interactive info and data visualizations</p>
-            <div className="line1" />
-            <div className="line2" />
-            <div className="line3" />
-            <div className="line4" />
-            <div className="line5" />
+            <div className="start-line1" />
+            <div className="start-line2" />
+            <div className="start-line3" />
+            <div className="start-line4" />
+            <div className="start-line5" />
           </div>
         )}
 
         {isHovered === 1 && (
-          <div className="title-background">
-            <div className="title-body">
-              <p className="title-border-text">WheelRight</p>
-              <p className="tiresafety-title-text" style={{ top: '40%', left: '30.5%' }}>
+          <div className="start-title-background">
+            <div className="start-title-body">
+              <p className="start-title-border-text">WheelRight</p>
+              <p className="start-tiresafety-title-text" style={{ top: '40%', left: '30.5%' }}>
                 TIRE SAFETY CHECK STATION
               </p>
             </div>
@@ -73,20 +73,22 @@ class Start extends React.PureComponent {
         )}
 
         {isHovered === 2 && (
-          <div className="body" style={{ backgroundColor: '#4c7d77' }}>
-            <img className="background" src={greenRectangle} alt="Background" />
-            <img className="solar" src={solar} alt="Solar" />
-            <img className="pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />
-            <p className="hollow-text">PV4EV</p>
-            <p className="secondary-text" style={{ display: 'flex', alignItems: 'center' }}>
-              SOLAR-POWERED ELECTRICAL VEHICLE CHARGING STATION
+          <div className="start-body" style={{ backgroundColor: '#4c7d77' }}>
+            <img className="start-background" src={greenRectangle} alt="Background" />
+            <img className="start-solar" src={solar} alt="Solar" />
+            <img className="start-pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />
+            <p className="start-hollow-text">PV4EV</p>
+            <p className="start-secondary-text" style={{ display: 'flex', alignItems: 'center', whiteSpace: 'nowrap' }}>
+              SOLAR-POWERED ELECTRICAL
+              <br />
+              VEHICLE CHARGING STATION
             </p>
           </div>
         )}
 
         <button
           type="button"
-          className="wheelright"
+          className="start-wheelright"
           onMouseEnter={() => this.toggleWheelright()}
           onMouseLeave={() => this.toggleTitle()}
           onClick={setWheelright}
@@ -94,14 +96,14 @@ class Start extends React.PureComponent {
         >
           {isHovered !== 1 ? (
             <p
-              className="text"
+              className="start-text"
               style={{ left: '12%', top: '-4%', fontWeight: '900', fontSize: '36px', lineHeight: '42px' }}
             >
               WHEELRIGHT
             </p>
           ) : (
             <p
-              className="text"
+              className="start-text"
               style={{
                 left: '12%',
                 top: '-4%',
@@ -117,7 +119,7 @@ class Start extends React.PureComponent {
         </button>
         <button
           type="button"
-          className="pv4ev"
+          className="start-pv4ev"
           onMouseEnter={() => this.togglePV4EV()}
           onMouseLeave={() => this.toggleTitle()}
           onClick={setPv4ev}
@@ -125,14 +127,14 @@ class Start extends React.PureComponent {
         >
           {isHovered !== 2 ? (
             <p
-              className="text"
+              className="start-text"
               style={{ left: '19%', top: '-4%', fontWeight: '900', fontSize: '36px', lineHeight: '42px' }}
             >
               PV4EV
             </p>
           ) : (
             <p
-              className="text"
+              className="start-text"
               style={{
                 left: '19%',
                 top: '-4%',
