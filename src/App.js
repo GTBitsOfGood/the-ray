@@ -13,32 +13,28 @@ import UnderInflated from './pages/UnderInflated';
 import Find from './pages/Find';
 import Help from './pages/Help';
 import Location from './pages/Location';
-import Newsletter from './pages/Newsletter';
 import Partners from './pages/Partners';
-// import PvMiles from './pages/PvMiles';
-// import PvMap from './pages/PvMap';
-// import PvBigNum from './pages/PvBigNum';
+import Newsletter from './pages/Newsletter';
+import PvSolarStat from './pages/PvSolarStat';
+import PvEVStat from './pages/PvEVStat';
+import PvBigNum from './pages/PvBigNum';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
 
   return (
     <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
-      {/* <div className="App">
-        <PvMap />
+      <div className="App">
+        <PvSolarStat />
       </div>
 
-      <div className="App">
-        <PvBigNum pageIndex={1} />
-      </div>
+      <PvBigNum pageIndex={1} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
+
+      <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
 
       <div className="App">
-        <PvBigNum pageIndex={2} targetNum={20} label="MINUTES" percentage={false} transitionTime={2000} />
+        <PvEVStat />
       </div>
-
-      <div className="App">
-        <PvMiles />
-      </div> */}
 
       <div className="App">
         <Title pageIndex={0} />
@@ -117,10 +113,14 @@ function App() {
         <Location pageIndex={14} />
       </div>
       <div className="App">
-        <Help pageIndex={15} />
+        <Help pageIndex={15} wheel />
       </div>
       <div className="App">
-        <Newsletter pageIndex={16} />
+        <Newsletter
+          pageIndex={16}
+          message="Join the team by making a donation and signing up for our newsletter."
+          card
+        />
       </div>
       <div className="App">
         <Partners pageIndex={17} />

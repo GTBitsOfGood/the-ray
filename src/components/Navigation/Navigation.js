@@ -31,7 +31,7 @@ function Navigation(props) {
   const pageDown = () => {
     changePageIndex((prevIndex) => {
       if (prevIndex < maxPages) {
-        const scrollevent = new CustomEvent('page-scroll', { detail: pageIndex + 1 });
+        const scrollevent = new CustomEvent('page-scroll', { detail: prevIndex + 1 });
         document.dispatchEvent(scrollevent);
         return prevIndex + 1;
       }

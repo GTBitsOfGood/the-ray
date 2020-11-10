@@ -1,7 +1,7 @@
 import React from 'react';
 import '../static/css/PvBigNum.css';
 import PropTypes from 'prop-types';
-import AnimatedNumber from '../components/Pages/PvBigNum/AnimatedNumber';
+import CrossBrowserAnimatedNumber from '../components/Pages/PvBigNum/CrossBrowserAnimatedNumber';
 
 function PvBigNum(props) {
   const { pageIndex, targetNum, percentage, label, transitionTime } = props;
@@ -11,7 +11,7 @@ function PvBigNum(props) {
         <div className="split pv-bignum-textbox">
           <div className="pv-bignum-numbers">
             <div style={{ fontSize: '288px' }}>
-              <AnimatedNumber
+              <CrossBrowserAnimatedNumber
                 pageIndex={pageIndex}
                 transitionTime={transitionTime}
                 target={targetNum}

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 
-import { Bar } from '@nivo/bar';
+import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
+import './EnergyBarGraph.css';
 
-function EnergyBarGraph(props) {
-  const { height, width } = props;
-
+function EnergyBarGraph() {
   const retrievedMonthsIndex =
     'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_MONTHS.txt';
   const retrievedYearsIndex = 'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/RETRIEVED_YEARS.txt';
@@ -162,12 +160,10 @@ function EnergyBarGraph(props) {
   })();
 
   return (
-    <div style={{ height: 800 }}>
-      <h1>{graphTitle}</h1>
+    <div className="graph-body">
+      <h1 className="graph-title">{graphTitle}</h1>
       <TimescaleButtons currentDisplayInfo={displayInfo} changeDisplayInfo={setDisplayInfo} />
-      <Bar
-        height={height}
-        width={width}
+      <ResponsiveBar
         data={timeData}
         keys={['kWh']}
         indexBy="date"
@@ -240,15 +236,5 @@ function EnergyBarGraph(props) {
     </div>
   );
 }
-
-EnergyBarGraph.propTypes = {
-  height: PropTypes.number,
-  width: PropTypes.number,
-};
-
-EnergyBarGraph.defaultProps = {
-  height: 1000,
-  width: 2000,
-};
 
 export default EnergyBarGraph;
