@@ -15,7 +15,7 @@ const Overview = (props) => {
         <img className="overview-left-background" src={Left} alt="Left background" />
         <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
           <img className="overview-left-image" src={Graphic} alt="Car Graphic" />
-          <p className="overview-left-text">Tire inflation and monitoring methods are a hassle.</p>
+          <p className="overview-left-text">Traditional tire inflation and monitoring methods are a hassle.</p>
         </ParallaxComponent>
       </div>
       <div className="overview-right">

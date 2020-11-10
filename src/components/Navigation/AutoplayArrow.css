@@ -1,0 +1,16 @@
+.autoarrow {
+  background-color: transparent;
+  border: white;
+  outline: white;
+}
+
+.autoarrow-image {
+  position: absolute;
+  left: 3.08%;
+  right: 92.78%;
+  top: 86.56%;
+  bottom: 6.82%;
+  width: 5%;
+
+  transition: filter 1s ease;
+}
