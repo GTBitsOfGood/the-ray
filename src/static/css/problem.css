@@ -1,4 +1,4 @@
-.body {
+.problem-body {
   background: #873856;
   /* background: #ffffff; */
   width: 100%;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.title {
+.problem-title {
   position: absolute;
   left: 51.74%;
   /* right: 31.39%; */
@@ -24,7 +24,7 @@
   color: #ffffff;
 }
 
-.text {
+.problem-text {
   position: absolute;
   width: 40vw;
   /* height: 221px; */
@@ -40,7 +40,7 @@
   color: #ffffff;
 }
 
-.icon {
+.problem-icon {
   position: absolute;
   width: 267px;
   height: 650px;
