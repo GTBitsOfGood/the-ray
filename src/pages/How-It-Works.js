@@ -5,17 +5,17 @@ import solarTop from '../static/images/solar-top.png';
 class HowItWorks extends React.PureComponent {
   render() {
     return (
-      <div className="body" style={{ backgroundColor: '#092342' }}>
-        <div className="box" style={{ zIndex: '12' }}>
-          <div className="title" style={{ left: '4%', top: '6%' }}>
+      <div className="how-body" style={{ backgroundColor: '#092342' }}>
+        <div className="how-box" style={{ zIndex: '12' }}>
+          <div className="how-title" style={{ left: '4%', top: '6%' }}>
             How It Works
           </div>
-          <div className="text" style={{ left: '4%', top: '32%', zIndex: '11', width: '600px' }}>
+          <div className="how-text" style={{ left: '4%', top: '32%', zIndex: '11', width: '600px' }}>
             The photovoltaic cells of the solar panels absorb sunlight and generate energy which is stored and ready to
             be used to charge your electric vehicle.
           </div>
         </div>
-        <img className="image" src={solarTop} alt={solarTop} style={{ zIndex: '10' }} />
+        <img className="how-image" src={solarTop} alt={solarTop} style={{ zIndex: '10' }} />
         <div style={{ width: '100%', top: '0%', border: '1px solid white', position: 'absolute' }} />
         <div style={{ width: '100%', top: '11%', border: '1px solid white', position: 'absolute' }} />
         <div style={{ width: '100%', top: '22%', border: '1px solid white', position: 'absolute' }} />

@@ -1,4 +1,4 @@
-.body {
+.how-body {
   background: #092342;
   /* background: #ffffff; */
   width: 100%;
@@ -10,7 +10,7 @@
   /* background-repeat: repeat; */
 }
 
-.image {
+.how-image {
   height: 100vh;
   width: auto;
   /* z-index: 2; */
@@ -19,7 +19,7 @@
   opacity: 100%;
 }
 
-.box {
+.how-box {
   background: #092342;
   /* outline: 1px solid #ffffff; */
   height: calc(70px + 30vh);
@@ -34,7 +34,7 @@
   padding: 25px;
 }
 
-.title {
+.how-title {
   position: relative;
   font-family: Roboto;
   font-style: normal;
@@ -47,7 +47,7 @@
   color: #ffffff;
 }
 
-.text {
+.how-text {
   position: absolute;
 
   font-family: Roboto;

@@ -1,4 +1,4 @@
-.body {
+.stats-body {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.ellipse-open {
+.stats-ellipse-open {
   position: absolute;
   width: 32.62px;
   height: 32.62px;
@@ -17,7 +17,7 @@
   flex: 1;
 }
 
-.ellipse-full {
+.stats-ellipse-full {
   position: absolute;
   width: 32.62px;
   height: 32.62px;
@@ -25,7 +25,7 @@
   flex: 1;
 }
 
-.main-text {
+.stats-main-text {
   position: absolute;
   left: 50%;
   /* top: 60%; */
@@ -41,7 +41,7 @@
   color: #ffffff;
 }
 
-.secondary-text {
+.stats-secondary-text {
   top: 49.56%;
   bottom: 45.78%;
 
@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-.tertiary-text {
+.stats-tertiary-text {
   top: 49.56%;
   bottom: 45.78%;
 
@@ -71,14 +71,14 @@
   text-align: center;
 }
 
-.image {
+.stats-image {
   display: flex;
   flex: 1;
   width: 100%;
   opacity: 44%;
 }
 
-.lower-container {
+.stats-lower-container {
   position: absolute;
   bottom: 10px;
   top: 23vw;
@@ -87,26 +87,26 @@
   background: #092342;
 }
 
-.image-container {
+.stats-image-container {
   position: relative;
   text-align: center;
 }
 
-.lower-elements {
+.stats-lower-elements {
   display: flex;
   flex: 10;
   flex-direction: column;
   align-content: center;
 }
 
-.icons {
+.stats-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 20px;
   position: relative;
 }
-.icon {
+.stats-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,7 +136,7 @@ hr {
   width: 50%;
 }
 
-.border-container {
+.stats-border-container {
   border-color: white;
   border-style: solid;
   border-radius: 50%;
@@ -148,7 +148,7 @@ hr {
   background-color: white;
 }
 
-.no-border-container {
+.stats-no-border-container {
   width: calc(30px + 6vw);
   height: calc(30px + 6vw);
   display: flex;

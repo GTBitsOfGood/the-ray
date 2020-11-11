@@ -1,4 +1,4 @@
-.body {
+.pv4ev-body {
   background: #4c7d77;
   /* background: #ffffff; */
   width: 100%;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.background {
+.pv4ev-background {
   /* left: 0%; */
   /* top: 20%; */
   /* height: 100vh; */
@@ -15,14 +15,14 @@
   right: 18.6vmin;
 }
 
-.solar {
+.pv4ev-solar {
   right: 0%;
   position: absolute;
   z-index: -1;
   height: 100%;
 }
 
-.pv4evsvg {
+.pv4ev-pv4evsvg {
   z-index: 0;
   position: absolute;
   right: 40.9vh;
@@ -30,7 +30,7 @@
   height: 61vh;
 }
 
-.hollow-text {
+.pv4ev-hollow-text {
   position: absolute;
   left: 20px;
   /* right: 39.44%; */
@@ -49,7 +49,7 @@
   color: transparent;
 }
 
-.title-text {
+.pv4ev-title-text {
   position: absolute;
   left: 100px;
   /* right: 77.92%; */
@@ -65,7 +65,7 @@
   color: #ffffff;
 }
 
-.main-text {
+.pv4ev-main-text {
   position: absolute;
   left: 325px;
   /* right: 60.07%; */
@@ -83,7 +83,7 @@
   color: #ffffff;
 }
 
-.secondary-text {
+.pv4ev-secondary-text {
   position: absolute;
   left: 100px;
   /* right: 44.03%; */
@@ -100,7 +100,7 @@
   color: #ffffff;
 }
 
-.scroll-text {
+.pv4ev-scroll-text {
   position: absolute;
   /* left: 45.28%; */
   right: 19.72%;
