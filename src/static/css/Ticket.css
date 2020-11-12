@@ -22,6 +22,7 @@
 }
 
 .ticket-img-box {
+  position: relative;
   left: 0;
 }
 

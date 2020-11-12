@@ -8,17 +8,23 @@ function Ticket(props) {
   const { bottomTicket, subtext, dataHeader, data, note, pageIndex } = props;
   return (
     <div className="ticket-background">
-      <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+      <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
         <div className="split ticket-img-box">
           <div className={`ticket-box ticket-box-${bottomTicket ? 'bottom' : 'top'}`}>
             {!bottomTicket ? <div className="ticket-loop" /> : <div className="ticket-offset" />}
-            {bottomTicket ? (
-              <CarComponent pageIndex={pageIndex} tireDepthCar heightPct={70} n1={7} n2={10} n3="> 6" n4={9} />
-            ) : (
-              <CarComponent pageIndex={pageIndex} />
-            )}
+            <div style={{ position: 'absolute', width: '82%', height: `${bottomTicket ? '83%' : '94%'}` }}>
+              <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+                {bottomTicket ? (
+                  <CarComponent pageIndex={pageIndex} tireDepthCar heightPct={70} n1={7} n2={10} n3="> 6" n4={9} />
+                ) : (
+                  <CarComponent pageIndex={pageIndex} />
+                )}
+              </ParallaxComponent>
+            </div>
           </div>
         </div>
+      </div>
+      <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
         <div className="split ticket-text-box">
           <hr hidden style={{ marginTop: '20%', visibility: 'hidden' }} />
           <h1 className="ticket-text">Ticket</h1>
