@@ -22,22 +22,6 @@
   align-items: center;
 }
 
-p {
-  position: absolute;
-  text-align: center;
-  left: 20.62%;
-  right: 20.69%;
-  top: 53%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-
-  color: #ffffff;
-}
-
 .start-text {
   font-family: Roboto;
   font-style: normal;
