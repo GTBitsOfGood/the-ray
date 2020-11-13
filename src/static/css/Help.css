@@ -23,18 +23,12 @@
 }
 
 .help-main-text {
-  position: absolute;
-  left: 30.07%;
-  right: 30.28%;
-  top: 45.22%;
-  bottom: 45.44%;
-
+  transform: translate(0px, 325px);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
   line-height: 84px;
-  display: flex;
   align-items: center;
   text-align: center;
 

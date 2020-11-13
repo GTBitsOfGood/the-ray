@@ -155,3 +155,18 @@ hr {
   align-items: center;
   justify-content: center;
 }
+
+.source {
+  position: absolute;
+  left: 3.75%;
+  right: 73.54%;
+  top: 85%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #ffffff;
+}
