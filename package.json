@@ -4,7 +4,7 @@
   "homepage": "https://gtbitsofgood.github.io/the-ray",
   "private": true,
   "dependencies": {
-    "@nivo/bar": "^0.62.0",
+    "@nivo/bar": "^0.64.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
