@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.6a9d24f8.chunk.css",
+    "main.css": "/the-ray/static/css/main.8a4603f7.chunk.css",
     "main.js": "/the-ray/static/js/main.6272b481.chunk.js",
     "main.js.map": "/the-ray/static/js/main.6272b481.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
@@ -8,9 +8,9 @@
     "static/js/2.e37a1eea.chunk.js": "/the-ray/static/js/2.e37a1eea.chunk.js",
     "static/js/2.e37a1eea.chunk.js.map": "/the-ray/static/js/2.e37a1eea.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.d0bb77535beb01fa43aa8e9f2d8b4ecd.js": "/the-ray/precache-manifest.d0bb77535beb01fa43aa8e9f2d8b4ecd.js",
+    "precache-manifest.fc1357fa8d0f0c8d421d62c6049f8c21.js": "/the-ray/precache-manifest.fc1357fa8d0f0c8d421d62c6049f8c21.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.6a9d24f8.chunk.css.map": "/the-ray/static/css/main.6a9d24f8.chunk.css.map",
+    "static/css/main.8a4603f7.chunk.css.map": "/the-ray/static/css/main.8a4603f7.chunk.css.map",
     "static/js/2.e37a1eea.chunk.js.LICENSE.txt": "/the-ray/static/js/2.e37a1eea.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
@@ -68,7 +68,7 @@
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
     "static/js/2.e37a1eea.chunk.js",
-    "static/css/main.6a9d24f8.chunk.css",
+    "static/css/main.8a4603f7.chunk.css",
     "static/js/main.6272b481.chunk.js"
   ]
 }
