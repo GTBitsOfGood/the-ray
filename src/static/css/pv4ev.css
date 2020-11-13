@@ -4,6 +4,9 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
 }
 
 .pv4ev-background {
@@ -58,7 +61,7 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 48px;
   line-height: 56px;
 
@@ -67,14 +70,14 @@
 
 .pv4ev-main-text {
   position: absolute;
-  left: 325px;
+  left: 180px;
   /* right: 60.07%; */
   top: 230px;
   /* bottom: 42.67%; */
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 144px;
   line-height: 169px;
 
@@ -85,9 +88,9 @@
 
 .pv4ev-secondary-text {
   position: absolute;
-  left: 100px;
+  left: 180px;
   /* right: 44.03%; */
-  top: 400px;
+  top: 500px;
   /* bottom: 28.22%; */
   text-align: left;
 

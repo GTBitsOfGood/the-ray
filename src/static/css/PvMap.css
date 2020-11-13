@@ -13,16 +13,19 @@
 
 .pv-map-infobox {
   left: 0;
+  position: relative;
   margin-top: 79px;
   text-align: center;
 }
 
 .pv-map-textbox {
   width: 80%;
+  position: relative;
   margin: 30px auto;
   text-align: left;
 }
 
 .pv-map-imagebox {
   right: 0;
+  position: relative;
 }

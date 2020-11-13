@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+// Wheelright Pages
 import Statistics from './pages/Statistics';
 import Ticket from './pages/Ticket';
 import Navigation from './components/Navigation/Navigation';
@@ -16,13 +18,23 @@ import Location from './pages/Location';
 import Partners from './pages/Partners';
 import Newsletter from './pages/Newsletter';
 import Start from './pages/Start';
+
+// PV4EV pages
 import PVProjection from './pages/PVProjection';
 import PVPorts from './pages/PVPorts';
 import PV4EV from './pages/PV4EV';
+import Problem from './pages/Problem';
+import PvSolarStat from './pages/PvSolarStat';
+import PvEVStat from './pages/PvEVStat';
+import HowItWorks from './pages/How-It-Works';
+import PvMiles from './pages/PvMiles';
+import PvMap from './pages/PvMap';
+import PvBigNum from './pages/PvBigNum';
+import EnergyVisPage from './pages/EnergyVisPage';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
-  const [project, setProject] = useState('PV4EV');
+  const [project, setProject] = useState('Title');
 
   return (
     <div>
@@ -132,12 +144,59 @@ function App() {
             <div className="App">
               <PV4EV />
             </div>
+
+            <div className="App">
+              <Problem selection="Problem" />
+            </div>
+
+            <div className="App">
+              <Problem selection="Solution" />
+            </div>
+
             <div className="App">
               <PVProjection />
             </div>
 
             <div className="App">
               <PVPorts />
+            </div>
+
+            <div className="App">
+              <PvSolarStat />
+            </div>
+
+            <div className="App">
+              <PvEVStat />
+            </div>
+
+            <div className="App">
+              <HowItWorks />
+            </div>
+
+            <div className="App">
+              <PvMap />
+            </div>
+
+            <PvBigNum pageIndex={9} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
+
+            <PvBigNum pageIndex={10} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
+
+            <div className="App">
+              <EnergyVisPage />
+            </div>
+
+            <div className="App">
+              <PvMiles />
+            </div>
+
+            <div className="App">
+              <Help />
+            </div>
+            <div className="App">
+              <Newsletter message="Join the team by making a donation and signing up for our newsletter." />
+            </div>
+            <div className="App">
+              <Partners />
             </div>
           </Navigation>
         )}
