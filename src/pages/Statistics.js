@@ -22,22 +22,22 @@ class Statistics extends React.PureComponent {
       currImage = FlatTire;
     }
     return (
-      <div className="body">
-        <div className="image-container">
-          <img className="image" src={currImage} alt={currImage} />
+      <div className="stats-body">
+        <div className="stats-image-container">
+          <img className="stats-image" src={currImage} alt={currImage} />
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <div className="main-text">{number}</div>
+            <div className="stats-main-text">{number}</div>
           </ParallaxComponent>
         </div>
-        <div className="lower-container">
+        <div className="stats-lower-container">
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <div className="lower-elements">
-              <p className="secondary-text">{text}</p>
+            <div className="stats-lower-elements">
+              <p className="stats-secondary-text">{text}</p>
               <hr />
-              <div className="icons">
-                <div className="icon">
+              <div className="stats-icons">
+                <div className="stats-icon">
                   {selection === '0' && (
-                    <div className="border-container">
+                    <div className="stats-border-container">
                       <img
                         src={gasIconBlack}
                         alt="gasIconBlack"
@@ -46,7 +46,7 @@ class Statistics extends React.PureComponent {
                     </div>
                   )}
                   {selection !== '0' && (
-                    <div className="no-border-container">
+                    <div className="stats-no-border-container">
                       <img
                         src={gasIcon}
                         alt="gasIcon"
@@ -54,12 +54,12 @@ class Statistics extends React.PureComponent {
                       />
                     </div>
                   )}
-                  <p className="tertiary-text">gas</p>
+                  <p className="stats-tertiary-text">gas</p>
                 </div>
-                <div className="icon">
+                <div className="stats-icon">
                   <div>
                     {selection !== '0' && (
-                      <div className="border-container">
+                      <div className="stats-border-container">
                         <img
                           src={carAccidentIconBlack}
                           alt="carAccidentIconBlack"
@@ -68,7 +68,7 @@ class Statistics extends React.PureComponent {
                       </div>
                     )}
                     {selection === '0' && (
-                      <div className="no-border-container">
+                      <div className="stats-no-border-container">
                         <img
                           src={carAccidentIcon}
                           alt="carAccidentIcon"
@@ -77,7 +77,7 @@ class Statistics extends React.PureComponent {
                       </div>
                     )}
                   </div>
-                  <p className="tertiary-text">car crashes</p>
+                  <p className="stats-tertiary-text">car accidents</p>
                 </div>
               </div>
             </div>

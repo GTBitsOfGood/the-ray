@@ -1,12 +1,15 @@
-.body {
+.pv4ev-body {
   background: #4c7d77;
   /* background: #ffffff; */
   width: 100%;
   height: 100vh;
   position: relative;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
 }
 
-.background {
+.pv4ev-background {
   /* left: 0%; */
   /* top: 20%; */
   /* height: 100vh; */
@@ -15,14 +18,14 @@
   right: 18.6vmin;
 }
 
-.solar {
+.pv4ev-solar {
   right: 0%;
   position: absolute;
   z-index: -1;
   height: 100%;
 }
 
-.pv4evsvg {
+.pv4ev-pv4evsvg {
   z-index: 0;
   position: absolute;
   right: 40.9vh;
@@ -30,7 +33,7 @@
   height: 61vh;
 }
 
-.hollow-text {
+.pv4ev-hollow-text {
   position: absolute;
   left: 20px;
   /* right: 39.44%; */
@@ -49,7 +52,7 @@
   color: transparent;
 }
 
-.title-text {
+.pv4ev-title-text {
   position: absolute;
   left: 100px;
   /* right: 77.92%; */
@@ -58,23 +61,23 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 48px;
   line-height: 56px;
 
   color: #ffffff;
 }
 
-.main-text {
+.pv4ev-main-text {
   position: absolute;
-  left: 325px;
+  left: 180px;
   /* right: 60.07%; */
   top: 230px;
   /* bottom: 42.67%; */
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 144px;
   line-height: 169px;
 
@@ -83,11 +86,11 @@
   color: #ffffff;
 }
 
-.secondary-text {
+.pv4ev-secondary-text {
   position: absolute;
-  left: 100px;
+  left: 180px;
   /* right: 44.03%; */
-  top: 400px;
+  top: 500px;
   /* bottom: 28.22%; */
   text-align: left;
 
@@ -100,7 +103,7 @@
   color: #ffffff;
 }
 
-.scroll-text {
+.pv4ev-scroll-text {
   position: absolute;
   /* left: 45.28%; */
   right: 19.72%;
