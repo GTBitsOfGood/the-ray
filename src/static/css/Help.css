@@ -3,6 +3,12 @@
   background-size: cover;
 }
 
+.pv-help-background {
+  background-image: url('../images/pvHelp.png');
+  background-size: cover;
+  position: relative;
+}
+
 .help-body {
   position: relative;
   /* width: 1440px; */
@@ -17,10 +23,23 @@
 }
 
 .help-main-text {
+  transform: translate(0px, 325px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.pv-help-main-text {
   position: absolute;
-  left: 30.07%;
-  right: 30.28%;
-  top: 45.22%;
+  left: 60.07%;
+  /* right: 40.28%; */
+  top: 57.22%;
   bottom: 45.44%;
 
   font-family: Roboto;

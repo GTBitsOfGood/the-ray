@@ -12,12 +12,12 @@
   display: flex;
   z-index: 1;
   display: flex;
+  background: rgba(80, 166, 195, 0.44);
 }
 
 .rubber-text {
   position: absolute;
-  left: 13.39%;
-  right: 16.39%;
+  left: 24%;
   top: 45.78%;
   bottom: 45.89%;
 

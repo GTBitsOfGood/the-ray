@@ -8,10 +8,11 @@ import carAccidentIcon from '../static/images/car-accident-icon.svg';
 import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
 import gasIcon from '../static/images/gas-icon.svg';
 import gasIconBlack from '../static/images/gas-icon-black.svg';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class Statistics extends React.PureComponent {
   render() {
-    const { image, selection, number, text } = this.props;
+    const { image, selection, number, text, pageIndex, source } = this.props;
 
     let currImage = GasStation;
 
@@ -21,62 +22,67 @@ class Statistics extends React.PureComponent {
       currImage = FlatTire;
     }
     return (
-      <div className="body">
-        <div className="image-container">
-          <img className="image" src={currImage} alt={currImage} />
-          <div className="main-text">{number}</div>
+      <div className="stats-body">
+        <div className="stats-image-container">
+          <img className="stats-image" src={currImage} alt={currImage} />
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+            <div className="stats-main-text">{number}</div>
+          </ParallaxComponent>
         </div>
-        <div className="lower-container">
-          <div className="lower-elements">
-            <p className="secondary-text">{text}</p>
-            <hr />
-            <div className="icons">
-              <div className="icon">
-                {selection === '0' && (
-                  <div className="border-container">
-                    <img
-                      src={gasIconBlack}
-                      alt="gasIconBlack"
-                      style={{ width: 'calc(10px + 3vw)', height: 'calc(10px + 6vw)' }}
-                    />
-                  </div>
-                )}
-                {selection !== '0' && (
-                  <div className="no-border-container">
-                    <img
-                      src={gasIcon}
-                      alt="gasIcon"
-                      style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }}
-                    />
-                  </div>
-                )}
-                <p className="tertiary-text">gas</p>
-              </div>
-              <div className="icon">
-                <div>
-                  {selection !== '0' && (
-                    <div className="border-container">
-                      <img
-                        src={carAccidentIconBlack}
-                        alt="carAccidentIconBlack"
-                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
-                      />
-                    </div>
-                  )}
+        <div className="stats-lower-container">
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+            <div className="stats-lower-elements">
+              <p className="stats-secondary-text">{text}</p>
+              <hr />
+              <div className="stats-icons">
+                <div className="stats-icon">
                   {selection === '0' && (
-                    <div className="no-border-container">
+                    <div className="stats-border-container">
                       <img
-                        src={carAccidentIcon}
-                        alt="carAccidentIcon"
-                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                        src={gasIconBlack}
+                        alt="gasIconBlack"
+                        style={{ width: 'calc(10px + 3vw)', height: 'calc(10px + 6vw)' }}
                       />
                     </div>
                   )}
+                  {selection !== '0' && (
+                    <div className="stats-no-border-container">
+                      <img
+                        src={gasIcon}
+                        alt="gasIcon"
+                        style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }}
+                      />
+                    </div>
+                  )}
+                  <p className="stats-tertiary-text">gas</p>
                 </div>
-                <p className="tertiary-text">car accidents</p>
+                <div className="stats-icon">
+                  <div>
+                    {selection !== '0' && (
+                      <div className="stats-border-container">
+                        <img
+                          src={carAccidentIconBlack}
+                          alt="carAccidentIconBlack"
+                          style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                        />
+                      </div>
+                    )}
+                    {selection === '0' && (
+                      <div className="stats-no-border-container">
+                        <img
+                          src={carAccidentIcon}
+                          alt="carAccidentIcon"
+                          style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  <p className="stats-tertiary-text">car accidents</p>
+                </div>
               </div>
             </div>
-          </div>
+            <p className="source">{source}</p>
+          </ParallaxComponent>
         </div>
       </div>
     );
@@ -88,6 +94,8 @@ Statistics.propTypes = {
   selection: PropTypes.string,
   number: PropTypes.string,
   text: PropTypes.string,
+  pageIndex: PropTypes.number,
+  source: PropTypes.string,
 };
 
 Statistics.defaultProps = {
@@ -95,5 +103,7 @@ Statistics.defaultProps = {
   selection: '0',
   number: '2,000,000,000',
   text: 'gallons of gas wasted because of poor tire management',
+  pageIndex: -2,
+  source: '',
 };
 export default Statistics;
