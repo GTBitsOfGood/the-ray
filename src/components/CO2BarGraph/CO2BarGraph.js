@@ -182,7 +182,6 @@ function CO2BarGraph() {
               retrievedYearlyData.push(csvData);
             });
             retrievedYearlyData.reverse();
-            console.log('TOTAL CO2', retrievedYearlyData);
             setTotalData(retrievedYearlyData);
           });
       });
