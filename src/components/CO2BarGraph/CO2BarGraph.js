@@ -62,7 +62,7 @@ function CO2BarGraph() {
                 .map((day) => {
                   return { date: day[0].slice(0, -3), kg: parseFloat(day[1]) };
                 })
-                .filter((day) => !Number.isNaN(day.kWh));
+                .filter((day) => !Number.isNaN(day.kg));
             });
           })
           .then((data) => {

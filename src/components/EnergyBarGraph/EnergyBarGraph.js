@@ -106,7 +106,8 @@ function EnergyBarGraph() {
                 .map((day) => day.split(';'))
                 .map((day) => {
                   return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
-                });
+                })
+                .filter((day) => !Number.isNaN(day.kWh));
             });
           })
           .then((data) => {
