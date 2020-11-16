@@ -31,6 +31,7 @@ import PvMiles from './pages/PvMiles';
 import PvMap from './pages/PvMap';
 import PvBigNum from './pages/PvBigNum';
 import EnergyVisPage from './pages/EnergyVisPage';
+import CO2VisPage from './pages/CO2VisPage';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
@@ -187,6 +188,10 @@ function App() {
 
             <div className="App">
               <PvMiles />
+            </div>
+
+            <div className="App">
+              <CO2VisPage />
             </div>
 
             <div className="App">
