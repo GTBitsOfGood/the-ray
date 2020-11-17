@@ -52,7 +52,9 @@ class Start extends React.PureComponent {
                 <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> IMPACT
               </p>
             </div>
-            <p>Click on one of the projects below to view interactive info and data visualizations</p>
+            <p style={{ position: 'relative', top: '10vh' }}>
+              Click on one of the projects below to view interactive info and data visualizations
+            </p>
             <div className="start-line1" />
             <div className="start-line2" />
             <div className="start-line3" />

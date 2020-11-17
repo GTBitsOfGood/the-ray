@@ -31,10 +31,13 @@ import PvMiles from './pages/PvMiles';
 import PvMap from './pages/PvMap';
 import PvBigNum from './pages/PvBigNum';
 import EnergyVisPage from './pages/EnergyVisPage';
+import CO2VisPage from './pages/CO2VisPage';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
   const [project, setProject] = useState('Title');
+  const [kwh, setkwh] = useState(0);
+  const [CO2, setCO2] = useState(0);
 
   return (
     <div>
@@ -48,7 +51,7 @@ function App() {
       {project === 'Wheelright' && (
         <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
           <div className="App">
-            <Title pageIndex={0} />
+            <Title setProject={setProject} pageIndex={0} />
           </div>
 
           <div className="App">
@@ -142,7 +145,7 @@ function App() {
         {project === 'PV4EV' && (
           <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
             <div className="App">
-              <PV4EV />
+              <PV4EV setProject={setProject} />
             </div>
 
             <div className="App">
@@ -182,11 +185,19 @@ function App() {
             <PvBigNum pageIndex={10} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
 
             <div className="App">
-              <EnergyVisPage />
+              <EnergyVisPage setkwh={setkwh} />
             </div>
 
             <div className="App">
-              <PvMiles />
+              <PvMiles kwh={kwh} />
+            </div>
+
+            <div className="App">
+              <CO2VisPage setCO2={setCO2} />
+            </div>
+
+            <div className="App">
+              <PvMiles CO2={CO2} />
             </div>
 
             <div className="App">

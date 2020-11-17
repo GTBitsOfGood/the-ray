@@ -36,13 +36,15 @@ function ParallaxComponent(props) {
     return () => {};
   };
 
+  const resetWrapper = (e) => {
+    resetOrScroll(e.detail);
+  };
+
   useEffect(() => {
     resetOrScroll(0);
-    const listener = document.addEventListener('page-scroll', (e) => {
-      resetOrScroll(e.detail);
-    });
+    document.addEventListener('page-scroll', resetWrapper);
     return () => {
-      document.removeEventListener(listener);
+      document.removeEventListener('page-scroll', resetWrapper);
     };
   }, []);
 

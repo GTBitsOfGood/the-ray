@@ -1,0 +1,15 @@
+.graph-body {
+  height: 75%;
+  margin-left: 5%;
+}
+
+.graph-title {
+  margin: 0;
+  font-size: 5vw;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+.graph-buttons {
+  margin-left: 5%;
+}

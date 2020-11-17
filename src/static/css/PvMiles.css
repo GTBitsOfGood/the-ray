@@ -19,7 +19,7 @@
 
 .pv-squish-text {
   position: absolute;
-  width: 80%;
+  width: 70%;
   top: 20vh;
   left: 3%;
 }
@@ -29,6 +29,10 @@
   line-height: 42px;
   font-family: Roboto;
   font-weight: 300;
+}
+
+.pv-text b {
+  font-weight: 900;
 }
 
 .pv-text-huge {
@@ -41,4 +45,10 @@
 
 .pv-text-big {
   font-size: 64px;
+}
+
+.pv-secondary-text {
+  position: relative;
+  width: 70%;
+  left: 3%;
 }

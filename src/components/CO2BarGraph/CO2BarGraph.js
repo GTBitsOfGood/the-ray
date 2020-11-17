@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 
 import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
-import './EnergyBarGraph.css';
+import './CO2BarGraph.css';
 
-function EnergyBarGraph({ setkwh }) {
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function CO2BarGraph({ setCO2 }) {
   const retrievedMonthsIndex =
-    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/RETRIEVED_MONTHS.txt';
-  const retrievedYearsIndex =
-    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/RETRIEVED_YEARS.txt';
-
-  const totalDataURL =
-    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/Energy_and_Power_Total.csv';
+    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/RETRIEVED_MONTHS.txt';
+  const retrievedOverallMonthIndex =
+    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/RETRIEVED_OVERALL_MONTHS.txt';
+  const retrievedOverallYearIndex =
+    'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/RETRIEVED_YEARS.txt';
 
   const [monthlyData, setMonthlyData] = useState({});
   const [yearlyData, setYearlyData] = useState({});
@@ -27,7 +28,7 @@ function EnergyBarGraph({ setkwh }) {
     fetch(retrievedMonthsIndex)
       .then((response) => response.text())
       .then((retrievedMonthData) => {
-        // Retrieved month data comes in an array of arrays - [['Oct', '2020'], ['Sep', '2020'] ...]
+        // Retrieved month data comes in an array of arrays - [['1', '2020'], ['2', '2020'] ...]
         // There is an empty element at the end of the array, due to the newlines - we slice it off
         const retrievedMonths = retrievedMonthData
           .split('\n')
@@ -42,7 +43,7 @@ function EnergyBarGraph({ setkwh }) {
 
           monthsRetrieved.push([month, year]);
 
-          const monthlyDataURL = `https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/Energy_and_Power_${month}_${year}.csv`;
+          const monthlyDataURL = `https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/CO2_${month}_${year}.csv`;
           monthRequests.push(fetch(monthlyDataURL));
         });
 
@@ -60,16 +61,16 @@ function EnergyBarGraph({ setkwh }) {
                 .slice(1)
                 .map((day) => day.split(';'))
                 .map((day) => {
-                  return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
+                  return { date: day[0].slice(0, -3), kg: parseFloat(day[1]) };
                 })
-                .filter((day) => !Number.isNaN(day.kWh));
+                .filter((day) => !Number.isNaN(day.kg));
             });
           })
           .then((data) => {
             const retrievedMonthlyData = {};
 
             monthsRetrieved.forEach((date, i) => {
-              const month = date[0];
+              const month = months[date[0] - 1];
               const year = date[1];
               const csvData = data[i];
               retrievedMonthlyData[year] = { ...retrievedMonthlyData[year] };
@@ -79,62 +80,112 @@ function EnergyBarGraph({ setkwh }) {
           });
       });
 
-    // Retrieve yearly data
-    fetch(retrievedYearsIndex)
+    // Retrieve overall monthly data
+    fetch(retrievedOverallMonthIndex)
       .then((response) => response.text())
-      .then((retrievedYearsData) => {
+      .then((retrievedMonthsOverallData) => {
         // There is an empty element at the end of the array, due to the newlines - we slice it off
-        const retrievedYears = retrievedYearsData.split('\n').slice(0, -1);
+        const retrievedOverallMonths = retrievedMonthsOverallData
+          .split('\n')
+          .slice(0, -1)
+          .map((line) => line.split('-'));
 
-        const yearRequests = [];
-        const yearsRetrieved = [];
-        retrievedYears.forEach((year) => {
-          yearsRetrieved.push(year);
+        const overallMonthsRequests = [];
+        const overallMonthsRetrieved = [];
+        retrievedOverallMonths.forEach((retrieved) => {
+          const month = retrieved[0];
+          const year = retrieved[1];
 
-          const yearlyDataURL = `https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/Energy_and_Power_${year}.csv`;
-          yearRequests.push(fetch(yearlyDataURL));
+          overallMonthsRetrieved.push([month, year]);
+
+          const monthlyOverallDataURL = `https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/CO2_Overall_${month}_${year}.csv`;
+          overallMonthsRequests.push(fetch(monthlyOverallDataURL));
         });
 
-        Promise.all(yearRequests)
+        // Bundle all fetch requests together and handle them
+        Promise.all(overallMonthsRequests)
           .then((responses) => {
             return Promise.all(responses.map((response) => response.text()));
           })
           .then((data) => {
+            // Trimming and formatting retrieved data
             return data.map((datum) => {
-              return datum
-                .split('\n')
-                .slice(1)
-                .map((day) => day.split(';'))
-                .map((day) => {
-                  return { date: day[0].slice(0, -3), kWh: parseFloat(day[1]) };
-                })
-                .filter((day) => !Number.isNaN(day.kWh));
+              const date = datum.split('\n')[0].split('/')[2].slice(1, 4);
+              const kg = parseFloat(
+                datum
+                  .split('\n')
+                  .slice(1, 2)
+                  .map((month) => month.split(';'))[0][1]
+              );
+
+              return { date, kg };
             });
           })
           .then((data) => {
-            const retrievedYearlyData = {};
+            const retrievedMonthlyData = {};
 
-            yearsRetrieved.forEach((year, i) => {
+            overallMonthsRetrieved.forEach((date, i) => {
+              const year = date[1];
               const csvData = data[i];
-              retrievedYearlyData[year] = csvData;
+              retrievedMonthlyData[year] = retrievedMonthlyData[year] || [];
+              retrievedMonthlyData[year].push(csvData);
             });
-            setYearlyData(retrievedYearlyData);
+
+            Object.keys(retrievedMonthlyData).forEach((key) => {
+              retrievedMonthlyData[key].reverse();
+            });
+            setYearlyData(retrievedMonthlyData);
           });
       });
 
-    fetch(totalDataURL)
+    // Retrieve total data
+    fetch(retrievedOverallYearIndex)
       .then((response) => response.text())
-      .then((data) => {
-        const parsedData = data
-          .split('\n')
-          .slice(1)
-          .map((day) => day.split(';'))
-          .map((day) => {
-            return { date: day[0], kWh: parseFloat(day[1]) };
+      .then((retrievedYearsOverallData) => {
+        // There is an empty element at the end of the array, due to the newlines - we slice it off
+        const retrievedOverallYears = retrievedYearsOverallData.split('\n').slice(0, -1);
+
+        const overallYearsRequests = [];
+        const overallYearsRetrieved = [];
+        retrievedOverallYears.forEach((retrieved) => {
+          const year = retrieved;
+
+          overallYearsRetrieved.push(year);
+
+          const monthlyOverallDataURL = `https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/CO2_Overall_${year}.csv`;
+          overallYearsRequests.push(fetch(monthlyOverallDataURL));
+        });
+
+        // Bundle all fetch requests together and handle them
+        Promise.all(overallYearsRequests)
+          .then((responses) => {
+            return Promise.all(responses.map((response) => response.text()));
           })
-          .filter((day) => !Number.isNaN(day.kWh));
-        setkwh(parsedData[parsedData.length - 1].kWh);
-        setTotalData(parsedData);
+          .then((data) => {
+            // Trimming and formatting retrieved data
+            return data.map((datum) => {
+              const date = datum.split('\n')[0].split('/')[2].slice(10, 14);
+              const kg = parseFloat(
+                datum
+                  .split('\n')
+                  .slice(1, 2)
+                  .map((month) => month.split(';'))[0][2]
+              );
+
+              return { date, kg };
+            });
+          })
+          .then((data) => {
+            const retrievedYearlyData = [];
+
+            overallYearsRetrieved.forEach((date, i) => {
+              const csvData = data[i];
+              retrievedYearlyData.push(csvData);
+            });
+            retrievedYearlyData.reverse();
+            setCO2(retrievedYearlyData[retrievedYearlyData.length - 1].kg);
+            setTotalData(retrievedYearlyData);
+          });
       });
   }, []);
 
@@ -159,10 +210,10 @@ function EnergyBarGraph({ setkwh }) {
   })();
 
   const graphTitle = (() => {
-    if (displayInfo.timescale === 'total') return 'Power produced by PV4EV';
-    if (displayInfo.timescale === 'year') return `Power produced per month in ${displayInfo.year}`;
-    if (displayInfo.timescale === 'month') return `Power produced per day in ${displayInfo.month} ${displayInfo.year}`;
-    return 'Power produced by PV4EV';
+    if (displayInfo.timescale === 'total') return 'CO2 saved by The Ray';
+    if (displayInfo.timescale === 'year') return `CO2 saved per month in ${displayInfo.year}`;
+    if (displayInfo.timescale === 'month') return `CO2 saved per day in ${displayInfo.month} ${displayInfo.year}`;
+    return 'CO2 saved';
   })();
 
   return (
@@ -171,7 +222,7 @@ function EnergyBarGraph({ setkwh }) {
       <TimescaleButtons currentDisplayInfo={displayInfo} changeDisplayInfo={setDisplayInfo} />
       <ResponsiveBar
         data={timeData}
-        keys={['kWh']}
+        keys={['kg']}
         indexBy="date"
         margin={{ top: 50, right: 130, bottom: 80, left: 120 }}
         padding={0.3}
@@ -189,7 +240,7 @@ function EnergyBarGraph({ setkwh }) {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'Yield (kWh)',
+          legend: 'CO2 Saved (kg)',
           legendPosition: 'middle',
           legendOffset: -80,
         }}
@@ -243,8 +294,8 @@ function EnergyBarGraph({ setkwh }) {
   );
 }
 
-EnergyBarGraph.propTypes = {
-  setkwh: PropTypes.func.isRequired,
+CO2BarGraph.propTypes = {
+  setCO2: PropTypes.func.isRequired,
 };
 
-export default EnergyBarGraph;
+export default CO2BarGraph;

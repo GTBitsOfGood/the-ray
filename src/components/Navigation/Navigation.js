@@ -35,6 +35,11 @@ function Navigation(props) {
     3000,
     3000,
     3000,
+    3000,
+    3000,
+    3000,
+    3000,
+    3000,
   ];
 
   useEffect(() => {
