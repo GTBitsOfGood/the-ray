@@ -13,14 +13,15 @@ function CrossBrowserAnimatedNumber(props) {
 
   const currNum = Math.round(sineProgress(start, target, currTime / transitionTime));
 
+  const currWrapper = (e) => {
+    if (pageIndex === e.detail) {
+      setCurrTime(0);
+    }
+  };
   useEffect(() => {
-    const listener = document.addEventListener('page-scroll', (e) => {
-      if (pageIndex === e.detail) {
-        setCurrTime(0);
-      }
-    });
+    document.addEventListener('page-scroll', currWrapper);
     return () => {
-      document.removeEventListener(listener);
+      document.removeEventListener('page-scroll', currWrapper);
     };
   }, []);
 

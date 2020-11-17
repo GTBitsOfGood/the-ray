@@ -84,7 +84,7 @@
   border: 1px solid white;
   height: 89px;
   left: 12%;
-  bottom: 45px;
+  bottom: 2.8em;
   z-index: 1;
 }
 
@@ -93,7 +93,7 @@
   border: 1px solid white;
   height: 80%;
   right: 12%;
-  bottom: 45px;
+  bottom: 2.8em;
   z-index: 1;
 }
 
@@ -102,7 +102,7 @@
   border: 1px solid white;
   height: 30%;
   right: 8%;
-  bottom: 30px;
+  bottom: 2em;
   z-index: 1;
 }
 
@@ -111,7 +111,7 @@
   border: 1px solid white;
   width: 55%;
   right: 10%;
-  bottom: 75px;
+  bottom: 4.67em;
   z-index: 1;
 }
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
@@ -6,7 +7,7 @@ import './CO2BarGraph.css';
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-function CO2BarGraph() {
+function CO2BarGraph({ setCO2 }) {
   const retrievedMonthsIndex =
     'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/co2/RETRIEVED_MONTHS.txt';
   const retrievedOverallMonthIndex =
@@ -182,6 +183,7 @@ function CO2BarGraph() {
               retrievedYearlyData.push(csvData);
             });
             retrievedYearlyData.reverse();
+            setCO2(retrievedYearlyData[retrievedYearlyData.length - 1].kg);
             setTotalData(retrievedYearlyData);
           });
       });
@@ -291,5 +293,9 @@ function CO2BarGraph() {
     </div>
   );
 }
+
+CO2BarGraph.propTypes = {
+  setCO2: PropTypes.func.isRequired,
+};
 
 export default CO2BarGraph;

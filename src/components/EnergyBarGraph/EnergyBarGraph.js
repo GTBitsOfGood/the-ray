@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
 import './EnergyBarGraph.css';
 
-function EnergyBarGraph() {
+function EnergyBarGraph({ setkwh }) {
   const retrievedMonthsIndex =
     'https://raw.githubusercontent.com/GTBitsOfGood/the-ray-crawler/data/pv4ev/RETRIEVED_MONTHS.txt';
   const retrievedYearsIndex =
@@ -132,6 +133,7 @@ function EnergyBarGraph() {
             return { date: day[0], kWh: parseFloat(day[1]) };
           })
           .filter((day) => !Number.isNaN(day.kWh));
+        setkwh(parsedData[parsedData.length - 1].kWh);
         setTotalData(parsedData);
       });
   }, []);
@@ -240,5 +242,9 @@ function EnergyBarGraph() {
     </div>
   );
 }
+
+EnergyBarGraph.propTypes = {
+  setkwh: PropTypes.func.isRequired,
+};
 
 export default EnergyBarGraph;

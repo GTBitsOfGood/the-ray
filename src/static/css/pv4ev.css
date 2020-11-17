@@ -118,3 +118,20 @@
 
   color: #ffffff;
 }
+
+.back-arrow {
+  z-index: 2;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  /* right: 30vh; */
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  margin: 0px;
+  position: absolute;
+  /* padding-top: 0px; */
+}
