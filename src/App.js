@@ -30,6 +30,7 @@ import HowItWorks from './pages/How-It-Works';
 import PvMiles from './pages/PvMiles';
 import PvMap from './pages/PvMap';
 import PvBigNum from './pages/PvBigNum';
+import PvFuelSavings from './pages/PvFuelSavings';
 import EnergyVisPage from './pages/EnergyVisPage';
 import CO2VisPage from './pages/CO2VisPage';
 
@@ -170,6 +171,10 @@ function App() {
 
             <div className="App">
               <PvEVStat />
+            </div>
+
+            <div className="App">
+              <PvFuelSavings />
             </div>
 
             <div className="App">

@@ -1,0 +1,48 @@
+.pv-fuel-background {
+  width: 70%;
+  height: 100vh;
+  background-color: #4c7d77;
+}
+
+.pv-fuel-highway {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.pv-fuel-squish-text {
+  position: relative;
+  text-align: center;
+  top: 35%;
+}
+
+.pv-fuel-text {
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+  width: 60%;
+  left: 18%;
+}
+
+.pv-fuel-text-large {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.pv-fuel-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pv-fuel-citation {
+  position: absolute;
+  left: 3.75%;
+  bottom: -20vh;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
