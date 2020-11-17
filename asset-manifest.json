@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.012d2c1d.chunk.css",
-    "main.js": "/the-ray/static/js/main.69113d03.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.69113d03.chunk.js.map",
+    "main.css": "/the-ray/static/css/main.20539c5d.chunk.css",
+    "main.js": "/the-ray/static/js/main.2d6fe1a3.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.2d6fe1a3.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
-    "static/js/2.c8ef6141.chunk.js": "/the-ray/static/js/2.c8ef6141.chunk.js",
-    "static/js/2.c8ef6141.chunk.js.map": "/the-ray/static/js/2.c8ef6141.chunk.js.map",
+    "static/js/2.0da330b0.chunk.js": "/the-ray/static/js/2.0da330b0.chunk.js",
+    "static/js/2.0da330b0.chunk.js.map": "/the-ray/static/js/2.0da330b0.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.ea6804e8246d855e609f0e30dc603b27.js": "/the-ray/precache-manifest.ea6804e8246d855e609f0e30dc603b27.js",
+    "precache-manifest.b6ae9e655a485235dc44e232aef7d4db.js": "/the-ray/precache-manifest.b6ae9e655a485235dc44e232aef7d4db.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.012d2c1d.chunk.css.map": "/the-ray/static/css/main.012d2c1d.chunk.css.map",
-    "static/js/2.c8ef6141.chunk.js.LICENSE.txt": "/the-ray/static/js/2.c8ef6141.chunk.js.LICENSE.txt",
+    "static/css/main.20539c5d.chunk.css.map": "/the-ray/static/css/main.20539c5d.chunk.css.map",
+    "static/js/2.0da330b0.chunk.js.LICENSE.txt": "/the-ray/static/js/2.0da330b0.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
     "static/media/PvMiles.css": "/the-ray/static/media/Earth.143d0ff6.png",
@@ -27,6 +27,7 @@
     "static/media/creditcards.png": "/the-ray/static/media/creditcards.9a9c36d0.png",
     "static/media/flat-tire-crop.jpg": "/the-ray/static/media/flat-tire-crop.85b2e1be.jpg",
     "static/media/flat-tire-icon.svg": "/the-ray/static/media/flat-tire-icon.2db87c39.svg",
+    "static/media/fuel-highway.png": "/the-ray/static/media/fuel-highway.af3740f8.png",
     "static/media/full-car.png": "/the-ray/static/media/full-car.85905356.png",
     "static/media/gas-icon-black.svg": "/the-ray/static/media/gas-icon-black.9612eca8.svg",
     "static/media/gas-icon.svg": "/the-ray/static/media/gas-icon.f310cdd7.svg",
@@ -67,8 +68,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
-    "static/js/2.c8ef6141.chunk.js",
-    "static/css/main.012d2c1d.chunk.css",
-    "static/js/main.69113d03.chunk.js"
+    "static/js/2.0da330b0.chunk.js",
+    "static/css/main.20539c5d.chunk.css",
+    "static/js/main.2d6fe1a3.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99c60cb6bc1dbe97cdfcd1c9f25d8dad",
+    "revision": "2e8fd26c549a1ff17015c690b9e3b228",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "f0215ced8297b938c09a",
-    "url": "/the-ray/static/css/main.012d2c1d.chunk.css"
+    "revision": "d4f0bcc879b1efce3ea3",
+    "url": "/the-ray/static/css/main.20539c5d.chunk.css"
   },
   {
-    "revision": "81151eb54a12fa3275ae",
-    "url": "/the-ray/static/js/2.c8ef6141.chunk.js"
+    "revision": "13758b486a80f6592cc1",
+    "url": "/the-ray/static/js/2.0da330b0.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-ray/static/js/2.c8ef6141.chunk.js.LICENSE.txt"
+    "url": "/the-ray/static/js/2.0da330b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f0215ced8297b938c09a",
-    "url": "/the-ray/static/js/main.69113d03.chunk.js"
+    "revision": "d4f0bcc879b1efce3ea3",
+    "url": "/the-ray/static/js/main.2d6fe1a3.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2db87c397ea8d5359730bc6acb340d03",
     "url": "/the-ray/static/media/flat-tire-icon.2db87c39.svg"
+  },
+  {
+    "revision": "af3740f85bd4396d82137240359d36fc",
+    "url": "/the-ray/static/media/fuel-highway.af3740f8.png"
   },
   {
     "revision": "85905356caa5961ddaa6467489fd80cd",
