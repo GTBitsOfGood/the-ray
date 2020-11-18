@@ -146,55 +146,55 @@ function App() {
         {project === 'PV4EV' && (
           <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
             <div className="App">
-              <PV4EV setProject={setProject} />
+              <PV4EV setProject={setProject} pageIndex={0} />
             </div>
 
             <div className="App">
-              <Problem selection="Problem" />
+              <Problem selection="Problem" pageIndex={1} />
             </div>
 
             <div className="App">
-              <Problem selection="Solution" />
+              <Problem selection="Solution" pageIndex={2} />
             </div>
 
             <div className="App">
-              <PVProjection />
+              <PVProjection pageIndex={3} />
             </div>
 
             <div className="App">
-              <PVPorts />
+              <PVPorts pageIndex={4} />
             </div>
 
             <div className="App">
-              <PvSolarStat />
+              <PvSolarStat pageIndex={5} />
             </div>
 
             <div className="App">
-              <PvEVStat />
+              <PvEVStat pageIndex={6} />
             </div>
 
             <div className="App">
-              <PvFuelSavings />
+              <PvFuelSavings pageIndex={7} />
             </div>
 
             <div className="App">
-              <HowItWorks />
+              <HowItWorks pageIndex={8} />
             </div>
 
             <div className="App">
-              <PvMap />
+              <PvMap pageIndex={9} />
             </div>
 
-            <PvBigNum pageIndex={9} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
+            <PvBigNum pageIndex={10} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
 
-            <PvBigNum pageIndex={10} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
+            <PvBigNum pageIndex={11} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
 
             <div className="App">
               <EnergyVisPage setkwh={setkwh} />
             </div>
 
             <div className="App">
-              <PvMiles kwh={kwh} />
+              <PvMiles kwh={kwh} pageIndex={13} />
             </div>
 
             <div className="App">
@@ -202,17 +202,20 @@ function App() {
             </div>
 
             <div className="App">
-              <PvMiles CO2={CO2} />
+              <PvMiles CO2={CO2} pageIndex={15} />
             </div>
 
             <div className="App">
-              <Help />
+              <Help pageIndex={16} />
             </div>
             <div className="App">
-              <Newsletter message="Join the team by making a donation and signing up for our newsletter." />
+              <Newsletter
+                message="Join the team by making a donation and signing up for our newsletter."
+                pageIndex={17}
+              />
             </div>
             <div className="App">
-              <Partners />
+              <Partners pageIndex={18} />
             </div>
           </Navigation>
         )}
