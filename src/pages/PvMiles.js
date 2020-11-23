@@ -24,7 +24,7 @@ function PvMiles({ kwh, CO2, pageIndex }) {
             <p className="pv-text pv-text-big">
               {kwh && 'MILES'}
               {CO2 && (
-                <span>
+                <span className="line-height">
                   TONS OF CO<sub>2</sub>
                 </span>
               )}
