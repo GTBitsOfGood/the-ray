@@ -1,19 +1,24 @@
 import React from 'react';
 import '../static/css/how-it-works.css';
+import PropTypes from 'prop-types';
 import solarTop from '../static/images/solar-top.png';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
 class HowItWorks extends React.PureComponent {
   render() {
+    const { pageIndex } = this.props;
     return (
       <div className="how-body" style={{ backgroundColor: '#092342' }}>
         <div className="how-box" style={{ zIndex: '12' }}>
-          <div className="how-title" style={{ left: '4%', top: '6%' }}>
-            How It Works
-          </div>
-          <div className="how-text" style={{ left: '4%', top: '32%', zIndex: '11', width: '600px' }}>
-            The photovoltaic cells of the solar panels absorb sunlight and generate energy which is stored and ready to
-            be used to charge your electric vehicle.
-          </div>
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+            <div className="how-title" style={{ left: '4%', top: '6%' }}>
+              How It Works
+            </div>
+            <div className="how-text" style={{ left: '4%', top: '32%', zIndex: '11', width: '600px' }}>
+              The photovoltaic cells of the solar panels absorb sunlight and generate energy which is stored and ready
+              to be used to charge your electric vehicle.
+            </div>
+          </ParallaxComponent>
         </div>
         <img className="how-image" src={solarTop} alt={solarTop} style={{ zIndex: '10' }} />
         <div style={{ width: '100%', top: '0%', border: '1px solid white', position: 'absolute' }} />
@@ -38,5 +43,9 @@ class HowItWorks extends React.PureComponent {
     );
   }
 }
+
+HowItWorks.propTypes = {
+  pageIndex: PropTypes.number.isRequired,
+};
 
 export default HowItWorks;

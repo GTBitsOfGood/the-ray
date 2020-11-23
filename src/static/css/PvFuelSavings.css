@@ -14,6 +14,7 @@
   position: relative;
   text-align: center;
   top: 35%;
+  left: -15%;
 }
 
 .pv-fuel-text {
@@ -36,8 +37,8 @@
 
 .pv-fuel-citation {
   position: absolute;
-  left: 3.75%;
-  bottom: -20vh;
+  left: 18.75%;
+  bottom: -41%;
 
   font-family: Roboto;
   font-style: normal;

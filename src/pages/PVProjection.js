@@ -1,22 +1,31 @@
 import React from 'react';
 import '../static/css/PvStat.css';
+import PropTypes from 'prop-types';
 import PvNumBox from '../components/Pages/PvStats/PvNumBox';
+import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
-function PVProjection() {
+const PVProjection = (props) => {
+  const { pageIndex } = props;
   return (
     <div className="pv-ev-projection-background pv-stat-background">
       <div className="pv-gradient-yellow-background">
         <div style={{ padding: '175px 0' }}>
-          <PvNumBox
-            subcolor="#000000"
-            toptext="Projection show that by 2030 there will be over"
-            bigtext="18.7 million"
-            bottomtext="electric vehicles on the road"
-          />
+          <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
+            <PvNumBox
+              subcolor="#000000"
+              toptext="Projection show that by 2030 there will be over"
+              bigtext="18.7 million"
+              bottomtext="electric vehicles on the road"
+            />
+          </ParallaxComponent>
         </div>
       </div>
     </div>
   );
-}
+};
+
+PVProjection.propTypes = {
+  pageIndex: PropTypes.number.isRequired,
+};
 
 export default PVProjection;
