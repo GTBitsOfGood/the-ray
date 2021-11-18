@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "865f5b2300bf08ebce416261adeeaeff",
+    "revision": "aa65f3f4234625f8e675dcf78ffe6deb",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "ac47cca3e14d258f44cf",
-    "url": "/the-ray/static/css/main.3c980950.chunk.css"
+    "revision": "e2c9e97a6abcbc8aff19",
+    "url": "/the-ray/static/css/main.dc60f4b5.chunk.css"
   },
   {
-    "revision": "13758b486a80f6592cc1",
-    "url": "/the-ray/static/js/2.0da330b0.chunk.js"
+    "revision": "df0e1f2608f9b90a5c1e",
+    "url": "/the-ray/static/js/2.e485c041.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-ray/static/js/2.0da330b0.chunk.js.LICENSE.txt"
+    "url": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac47cca3e14d258f44cf",
-    "url": "/the-ray/static/js/main.c5c39980.chunk.js"
+    "revision": "e2c9e97a6abcbc8aff19",
+    "url": "/the-ray/static/js/main.89a566b3.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
