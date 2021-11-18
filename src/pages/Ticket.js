@@ -13,7 +13,12 @@ function Ticket(props) {
           <div className={`ticket-box ticket-box-${bottomTicket ? 'bottom' : 'top'}`}>
             {!bottomTicket ? <div className="ticket-loop" /> : <div className="ticket-offset" />}
             <div style={{ position: 'absolute', width: '82%', height: `${bottomTicket ? '83%' : '94%'}` }}>
-              <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+              <ParallaxComponent
+                pageIndex={pageIndex}
+                transitionTime={1500}
+                transitionDelay={0}
+                styles={{ height: '100%' }}
+              >
                 {bottomTicket ? (
                   <CarComponent pageIndex={pageIndex} tireDepthCar heightPct={70} n1={7} n2={10} n3="> 6" n4={9} />
                 ) : (
@@ -24,11 +29,10 @@ function Ticket(props) {
           </div>
         </div>
       </div>
-      <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+      <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
         <div className="split ticket-text-box">
-          <hr hidden style={{ marginTop: '20%', visibility: 'hidden' }} />
           <h1 className="ticket-text">Ticket</h1>
-          <div className="ticket-text-box" style={{ marginTop: '50px' }}>
+          <div className="ticket-text-box">
             <p className="ticket-text">{subtext}</p>
           </div>
           <h5 className="ticket-text">{dataHeader}</h5>

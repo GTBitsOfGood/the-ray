@@ -43,7 +43,7 @@ function CarComponent(props) {
       <div className="ticket-car-box" style={{ right: 0, bottom: 0 }}>
         <p>{n4}</p>
       </div>
-      <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0}>
+      <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0} styles={{ height: '100%' }}>
         <img src={tireDepthCar ? tireCar : psiCar} alt="Car with Tire Pressure in PSI" />
       </ParallaxComponent>
       <svg>

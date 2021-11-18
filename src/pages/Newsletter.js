@@ -16,15 +16,22 @@ class Newsletter extends React.PureComponent {
           ) : (
             <img className="plug" src={plug} alt="Plug" />
           )}
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <p className="newsletter-main-text">
-              The Ray is a movement. <br />
-              <br />
-              {message}
-            </p>
-            <p className="newsletter-website">
-              visit&nbsp;<a href="https://theray.org/"> theray.org</a>
-            </p>
+          <ParallaxComponent
+            pageIndex={pageIndex}
+            transitionTime={1500}
+            transitionDelay={0}
+            styles={{ height: '100%' }}
+          >
+            <div className="newsletter-text-container">
+              <p className="newsletter-main-text">
+                The Ray is a movement. <br />
+                <br />
+                {message}
+              </p>
+              <p className="newsletter-website">
+                visit&nbsp;<a href="https://theray.org/"> theray.org</a>
+              </p>
+            </div>
           </ParallaxComponent>
         </div>
       </div>

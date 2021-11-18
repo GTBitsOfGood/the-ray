@@ -40,25 +40,18 @@
   -webkit-text-fill-color: transparent;
 }
 
-.theray-text {
-  position: relative;
-  white-space: nowrap;
-  transform: translate(0px, -390px);
-  /* transform: translate(0%, -1025%); */
+.wheelright-subheading {
+  position: absolute;
   left: 46.26%;
-  /*
-  right: 43.4%;
-  bottom: 66.78%;
-  width: 100px;
-  bottom: 56%; */
-  width: 20%;
+  top: 30%;
+}
 
+.theray-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 3vw;
-  line-height: 75%;
-
+  margin: 0.5rem 0;
   color: #ffffff;
 }
 
@@ -67,34 +60,21 @@
 }
 
 .title-text {
-  position: absolute;
-  left: 46.26%;
-  right: 43.4%;
-  top: 30%;
-  bottom: 66.78%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 8vw;
-  line-height: 169px;
+  font-size: 9vw;
   /* identical to box height */
   color: #ffffff;
+  margin: 1rem 0;
 }
 
 .tiresafety-title-text {
-  position: absolute;
-  left: 47%;
-  right: 43.4%;
-  top: 61.61%;
-  bottom: 66.78%;
-  white-space: nowrap;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 3vw;
+  margin: 0.5rem 0;
 
   color: #ffffff;
 }

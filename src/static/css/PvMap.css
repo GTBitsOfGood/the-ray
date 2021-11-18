@@ -14,18 +14,30 @@
 .pv-map-infobox {
   left: 0;
   position: relative;
-  margin-top: 79px;
+  margin-top: 5vh;
   text-align: center;
 }
 
 .pv-map-textbox {
   width: 80%;
-  position: relative;
-  margin: 30px auto;
+  margin: 3vw auto;
   text-align: left;
 }
 
 .pv-map-imagebox {
   right: 0;
   position: relative;
+}
+
+.pv-bulb {
+  height: 35vh;
+}
+
+.pv-text {
+  font-size: 1.7vw;
+}
+
+.pv-text-bold {
+  font-size: 3vw;
+  font-weight: bold;
 }

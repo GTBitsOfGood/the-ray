@@ -3,22 +3,26 @@
   text-align: center;
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .pv-num-box h1 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 168px;
+  font-size: 12vw;
   font-weight: bold;
 }
 
 .pv-num-box p {
   margin: 0;
-  font-size: 36px;
+  font-size: 3vw;
   line-height: 42px;
 }
 
 .pv-num-box-squish-text {
   width: 68%;
-  margin: auto;
+  margin: 0 auto;
 }

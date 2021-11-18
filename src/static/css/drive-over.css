@@ -5,40 +5,38 @@
   background: #d35c58;
 }
 
+.driveover-container {
+  position: absolute;
+  left: 4vw;
+  top: 20vh;
+  width: 40%;
+}
+
+.driveover-container p {
+  background-color: #d35c58;
+  margin: 0.5rem 0;
+}
+
 .image-tire {
-  margin-left: 59px;
-  margin-top: 237px;
-  margin-bottom: 388px;
+  width: 30%;
 }
 
 .drive-title {
-  position: absolute;
-  left: 3.89%;
-  /* right: 64.03%; */
-  top: 480px;
-  /* bottom: 27.22%; */
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 84px;
+  font-size: 5vw;
+  margin: 0;
 
   color: #ffffff;
 }
 
 .drive-text {
-  position: absolute;
-  left: 3.89%;
-  right: 652px;
-  top: 610px;
-  /* bottom: 17.89%; */
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.5vw;
+  margin: 0;
 
   color: #ffffff;
 }
@@ -59,21 +57,20 @@
   /* bottom: 13.33%; */
 }
 .image-dot {
-  position: absolute;
+  /* position: absolute; */
   right: 400px;
   top: 760px;
 }
 
 .hr {
-  /* align-self: center; */
-  top: 752.5px;
   display: block;
-  position: absolute;
-  left: 3.89%;
   height: 1px;
   border: 0;
   border-top: 10px solid #ffffff;
-  /* margin: 1em 0; */
   padding: 0;
+  width: 100%;
+}
+
+.drive-pointer {
   width: calc(100vw - 400px - 3.89% - 4px);
 }

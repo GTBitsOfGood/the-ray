@@ -8,72 +8,62 @@
 }
 
 .info-title {
-  position: absolute;
-  /* left: 44.03%;
-  right: 44.17%; */
-  /* top: 2%; */
-  /* bottom: 85.11%; */
-  margin-top: 35px;
-  width: 100%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 4vw;
+  margin: 1rem 0;
   /* identical to box height */
   color: #ffffff;
 }
 
 .info-text {
-  position: absolute;
-  /* display: block; */
-  /* left: 9%;
-  right: 9%; */
-  /* top: 18%;
-    bottom: 69.89%; */
-  margin-top: 130px;
-  width: 100%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  align-items: center;
-  text-align: center;
+  font-size: 1.5vw;
+  margin: 0;
 
   color: #ffffff;
 }
 
+.info-text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .image-phone {
   position: absolute;
-  width: 428.85px;
-  height: 800px;
+  width: 26.8vw;
+  height: 100vh;
   left: 15%;
-  top: 200px;
+  bottom: -25%;
 }
 
 .image-messages {
   position: absolute;
-  width: 428.85px;
-  height: 356.29px;
-  left: 15%;
-  top: 461.71px;
+  width: 20.8vw;
+  height: 100vh;
+  left: 18%;
+  bottom: -25%;
+  z-index: 1;
 }
 
 .image-ticket {
   position: absolute;
-  width: 463px;
-  height: 800px;
+  width: 30.8vw;
+  height: 100vh;
   right: 15%;
-  top: 195px;
+  bottom: -25%;
 }
 
 .image-icons {
   position: absolute;
-  width: 463px;
-  height: 344px;
-  right: 16.5%;
-  top: 439px;
+  width: 22.8vw;
+  height: 100vh;
+  right: 21%;
+  bottom: -25%;
+  z-index: 1;
 }

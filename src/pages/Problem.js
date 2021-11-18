@@ -10,17 +10,17 @@ class Problem extends React.PureComponent {
     const { selection, pageIndex } = this.props;
     return (
       <div className="problem-body">
-        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-          <p className="problem-title">{selection}</p>
-        </ParallaxComponent>
         {selection === 'Problem' && (
           <div>
             <img className="problem-icon" src={lowBattery} alt={lowBattery} />
             <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-              <p className="problem-text">
-                Electric vehicles continue to gain market share, but outside metro Atlanta, the infrastructure for
-                charging electric vehicles is lacking.
-              </p>
+              <div className="problem-container">
+                <p className="problem-title">{selection}</p>
+                <p className="problem-text">
+                  Electric vehicles continue to gain market share, but outside metro Atlanta, the infrastructure for
+                  charging electric vehicles is lacking.
+                </p>
+              </div>
             </ParallaxComponent>
           </div>
         )}
@@ -28,11 +28,14 @@ class Problem extends React.PureComponent {
           <div>
             <img className="problem-icon" src={fullBattery} alt={fullBattery} />
             <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-              <p className="problem-text">
-                I-85 is a major travel corridor that runs from Alabama to Virginia, connecting major metro areas
-                throughout the Southeast, offering a prime opportunity to reduce carbon emissions by providing
-                accessible solar-powered charging stations.
-              </p>
+              <div className="problem-container">
+                <p className="problem-title">{selection}</p>
+                <p className="problem-text">
+                  I-85 is a major travel corridor that runs from Alabama to Virginia, connecting major metro areas
+                  throughout the Southeast, offering a prime opportunity to reduce carbon emissions by providing
+                  accessible solar-powered charging stations.
+                </p>
+              </div>
             </ParallaxComponent>
           </div>
         )}

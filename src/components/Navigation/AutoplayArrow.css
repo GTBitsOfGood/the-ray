@@ -12,5 +12,7 @@
   bottom: 6.82%;
   width: 5%;
 
+  cursor: pointer;
+
   transition: filter 1s ease;
 }

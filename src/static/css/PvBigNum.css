@@ -25,7 +25,8 @@
   font-family: Roboto;
   font-weight: 400;
   overflow: visible;
-  margin-top: 256px;
+  display: flex;
+  align-items: center;
 }
 
 .pv-bignum-numbers {

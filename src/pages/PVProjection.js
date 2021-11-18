@@ -9,16 +9,14 @@ const PVProjection = (props) => {
   return (
     <div className="pv-ev-projection-background pv-stat-background">
       <div className="pv-gradient-yellow-background">
-        <div style={{ padding: '175px 0' }}>
-          <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
-            <PvNumBox
-              subcolor="#000000"
-              toptext="Projection show that by 2030 there will be over"
-              bigtext="18.7 million"
-              bottomtext="electric vehicles on the road"
-            />
-          </ParallaxComponent>
-        </div>
+        <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500} styles={{ height: '100%' }}>
+          <PvNumBox
+            subcolor="#000000"
+            toptext="Projection show that by 2030 there will be over"
+            bigtext="18.7 million"
+            bottomtext="electric vehicles on the road"
+          />
+        </ParallaxComponent>
       </div>
     </div>
   );

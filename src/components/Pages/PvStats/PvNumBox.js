@@ -8,7 +8,7 @@ function PvNumBox(props) {
   return (
     <div className="pv-num-box">
       <div className="pv-num-box-squish-text">
-        <p style={{ color: subcolor }}>{toptext}</p>
+        <p style={{ color: subcolor, margin: 0 }}>{toptext}</p>
       </div>
       <h1> {bigtext}</h1>
       <p style={{ color: subcolor }}> {bottomtext} </p>

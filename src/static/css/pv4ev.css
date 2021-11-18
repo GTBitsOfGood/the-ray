@@ -35,15 +35,14 @@
 
 .pv4ev-hollow-text {
   position: absolute;
-  left: 20px;
-  /* right: 39.44%; */
-  top: -70px;
-  /* bottom: 55.22%; */
+  left: 5vw;
+  top: 5vh;
+  margin: 0;
 
   font-family: Roboto;
   font-style: normal;
   /* font-weight: 900; */
-  font-size: 270px;
+  font-size: 18vw;
   /* line-height: 316px; */
 
   -webkit-text-stroke-width: 1px;
@@ -52,53 +51,41 @@
   color: transparent;
 }
 
-.pv4ev-title-text {
+.pv4ev-container {
   position: absolute;
-  left: 100px;
+  left: 10vw;
   /* right: 77.92%; */
-  top: 210px;
+  top: 20vh;
   /* bottom: 62.56%; */
+}
 
+.pv4ev-title-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3vw;
 
   color: #ffffff;
+  margin-bottom: 3vh;
 }
 
 .pv4ev-main-text {
-  position: absolute;
-  left: 180px;
-  /* right: 60.07%; */
-  top: 230px;
-  /* bottom: 42.67%; */
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 144px;
-  line-height: 169px;
-
-  /* identical to box height */
-
+  font-size: 10vw;
   color: #ffffff;
+  margin: 0;
 }
 
 .pv4ev-secondary-text {
-  position: absolute;
-  left: 180px;
-  /* right: 44.03%; */
-  top: 500px;
-  /* bottom: 28.22%; */
   text-align: left;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3vw;
+  margin: 0;
 
   color: #ffffff;
 }
@@ -113,8 +100,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 3vw;
 
   color: #ffffff;
 }
@@ -126,6 +112,7 @@
   left: 1em;
   top: 1em;
   /* right: 30vh; */
+  cursor: pointer;
 }
 
 .arrow-button {

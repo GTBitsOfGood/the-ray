@@ -8,8 +8,13 @@ class Help extends React.PureComponent {
     const { wheel, pageIndex } = this.props;
     return (
       <div className={wheel ? 'help-background' : 'pv-help-background'}>
-        <div className="find-body">
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+        <div className="help-body">
+          <ParallaxComponent
+            pageIndex={pageIndex}
+            transitionTime={1500}
+            transitionDelay={0}
+            styles={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
             <p className={wheel ? 'help-main-text' : 'pv-help-main-text'}>How you can help</p>
           </ParallaxComponent>
         </div>

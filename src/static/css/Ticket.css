@@ -44,7 +44,7 @@
 
 .ticket-box-top {
   height: 95.22%;
-  margin: 65px 56px 0 56px;
+  margin: 5vh 3vw 0 3vw;
   border: 10px solid #ffffff;
   border-bottom: none;
 }
@@ -71,33 +71,36 @@
 
 .ticket-text-box {
   min-height: 9.5%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .ticket-text {
   color: white;
   font-family: Roboto;
   font-style: normal;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
-h1 {
-  font-size: 144px;
+h1.ticket-text {
+  font-size: 10vw;
   font-weight: normal;
 }
 
-h3 {
+h3.ticket-text {
   font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 5vw;
 }
 
-h5 {
-  font-size: 36px;
+h5.ticket-text {
+  font-size: 2vw;
   font-weight: bold;
+  margin-top: 3vh;
 }
 
-p {
-  font-size: 24px;
-  line-height: 28px;
+p.ticket-text {
+  /* font-size: 24px; */
+  /* line-height: 28px; */
   font-weight: normal;
 }

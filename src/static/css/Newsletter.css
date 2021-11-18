@@ -24,41 +24,32 @@
   display: flex;
 }
 
-.newsletter-main-text {
+.newsletter-text-container {
   position: absolute;
   left: 51.74%;
   right: 8.54%;
-  top: 34.44%;
-  bottom: 46.89%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
 
+.newsletter-main-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  text-align: right;
+  font-size: 2vw;
+
+  margin-top: 30vh;
 
   color: #ffffff;
 }
 
 .newsletter-website {
-  position: absolute;
-  left: 61.81%;
-  right: 8.54%;
-  top: 57.22%;
-  bottom: 34.44%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
+  font-size: 5vw;
+  margin: 0;
 
   color: #ffffff;
 }

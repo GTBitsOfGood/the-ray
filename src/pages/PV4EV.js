@@ -1,5 +1,6 @@
 import React from 'react';
 import '../static/css/pv4ev.css';
+import '../static/css/commons.css';
 import PropTypes from 'prop-types';
 import greenRectangle from '../static/images/green-rectangle.svg';
 import solar from '../static/images/solar.png';
@@ -20,15 +21,17 @@ class PV4EV extends React.PureComponent {
         <img className="pv4ev-pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />
         <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
           <p className="pv4ev-hollow-text">PV4EV</p>
-          <p className="pv4ev-title-text">THE RAY</p>
-          <p className="pv4ev-main-text">PV4EV</p>
-          <p className="pv4ev-secondary-text">
-            SOLAR-POWERED ELECTRICAL
-            <br />
-            VEHICLE CHARGING STATION
-          </p>
-          <p className="pv4ev-scroll-text">scroll up to start the experience</p>
+          <div className="flex-col pv4ev-container">
+            <p className="pv4ev-title-text">THE RAY</p>
+            <p className="pv4ev-main-text">PV4EV</p>
+            <p className="pv4ev-secondary-text">
+              SOLAR-POWERED ELECTRICAL
+              <br />
+              VEHICLE CHARGING STATION
+            </p>
+          </div>
         </ParallaxComponent>
+        <p className="pv4ev-scroll-text">scroll up to start the experience</p>
       </div>
     );
   }

@@ -1,3 +1,50 @@
+@media only screen and (min-width: 640px) {
+  .start-image {
+    width: 10rem;
+  }
+  .start-button {
+    width: 14rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .start-image {
+    width: 12rem;
+  }
+  /* .start-button {width: 14rem; height: 3rem;} */
+}
+
+@media only screen and (min-width: 1024px) {
+  .start-image {
+    width: 16rem;
+  }
+  .start-button {
+    width: 14rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .start-image {
+    width: 20rem;
+  }
+  .start-button {
+    width: 15rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .start-image {
+    width: 28rem;
+  }
+  .start-button {
+    width: 18rem;
+    height: 5rem;
+  }
+}
+
 .start-body {
   position: relative;
   width: 100%;
@@ -5,15 +52,12 @@
   background: #010101;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.start-image {
-  position: absolute;
-  width: 494.77px;
-  height: 239px;
-  top: 50px;
+[class*='.start-image'] {
+  /* width: 494.77px; */
   z-index: 10;
   text-align: center;
   display: block;
@@ -25,10 +69,10 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 33px;
-
   color: #ffffff;
+  padding: 0;
+  margin: 0px 2rem;
+  line-height: normal;
 }
 
 .start-deaths {
@@ -75,16 +119,16 @@
   border: 1px solid white;
   width: 100%;
   left: 10%;
-  bottom: 110px;
+  bottom: 15%;
   z-index: 1;
 }
 
 .start-line2 {
   position: absolute;
   border: 1px solid white;
-  height: 89px;
+  height: 15%;
   left: 12%;
-  bottom: 2.8em;
+  bottom: 4%;
   z-index: 1;
 }
 
@@ -92,8 +136,8 @@
   position: absolute;
   border: 1px solid white;
   height: 80%;
-  right: 12%;
-  bottom: 2.8em;
+  right: 10%;
+  bottom: 7%;
   z-index: 1;
 }
 
@@ -101,8 +145,8 @@
   position: absolute;
   border: 1px solid white;
   height: 30%;
-  right: 8%;
-  bottom: 2em;
+  right: 6%;
+  bottom: 5%;
   z-index: 1;
 }
 
@@ -110,33 +154,38 @@
   position: absolute;
   border: 1px solid white;
   width: 55%;
-  right: 10%;
-  bottom: 4.67em;
+  right: 9%;
+  bottom: 10%;
   z-index: 1;
 }
 
+.button-array {
+  height: 30%;
+}
+
 .start-wheelright {
-  position: absolute;
   border: 3px solid white;
   border-radius: 5px;
-  top: 69%;
-  right: 53%;
-  width: 311px;
-  height: 103px;
-  background: transparent;
+  background: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
   z-index: 50;
+  cursor: pointer;
 }
 
 .start-pv4ev {
-  position: absolute;
   border: 3px solid white;
   border-radius: 5px;
-  top: 69%;
-  left: 53%;
+  background: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  z-index: 50;
+  cursor: pointer;
+}
+
+[class*='.start-button'] {
   width: 311px;
   height: 103px;
-  background: transparent;
-  z-index: 50;
 }
 
 /* PV4EV below */
@@ -148,17 +197,35 @@
   position: relative;
 }
 
+.start-green-sheet {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: #4c7d77;
+}
+
+.start-shadow-sheet {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .start-background {
   position: absolute;
   height: 100vh;
+  z-index: 2;
   right: 18.6vmin;
 }
 
 .start-solar {
   right: 0%;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   height: 100%;
+  opacity: 75%;
 }
 
 .start-pv4evsvg {
@@ -166,17 +233,14 @@
   position: absolute;
   right: 40.9vh;
   bottom: 18vh;
+  z-index: 2;
   height: 61vh;
 }
 
 .start-hollow-text {
-  position: absolute;
-  left: 20px;
-  top: -70px;
-
   font-family: Roboto;
   font-style: normal;
-  font-size: 270px;
+  margin: 0;
 
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
@@ -217,17 +281,11 @@
 }
 
 .start-secondary-text {
-  position: absolute;
-  top: 400px;
-  text-align: left;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-
   color: #ffffff;
+  margin-top: -1rem;
 }
 
 /* WheelRight below */
@@ -237,34 +295,41 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: absolute;
+}
+
+.start-title-sheet {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(211, 92, 88, 0.44);
 }
 
 .start-title-body {
-  position: relative;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 1;
   display: flex;
-  background: rgba(211, 92, 88, 0.44);
+  margin-top: auto;
 }
 
 .start-title-border-text {
-  position: relative;
-  transform: translate(0%, -50%);
+  /* position: relative; */
+  /* transform: translate(0%, -50%); */
   display: inline-block;
-  left: 1.18%;
+  /* left: 1.18%;
   right: 1.11%;
   top: -15%;
-  bottom: 59.44%;
+  bottom: 59.44%; */
+  margin: 0;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 19.5vw;
-  line-height: 316px;
+  /* font-size: 19.5vw; */
+  /* line-height: 316px; */
 
   align-items: center;
   text-align: center;
@@ -309,11 +374,7 @@
 }
 
 .start-tiresafety-title-text {
-  position: absolute;
-  left: 47%;
-  right: 43.4%;
-  top: 61.61%;
-  bottom: 66.78%;
+  /* position: absolute; */
   white-space: nowrap;
 
   font-family: Roboto;
@@ -321,6 +382,8 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 70px;
+  text-align: center;
+  margin-top: -2rem;
 
   color: #ffffff;
 }
