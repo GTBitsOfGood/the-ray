@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa65f3f4234625f8e675dcf78ffe6deb",
+    "revision": "8c6895f867b0f39a99ebccde8b970145",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "e2c9e97a6abcbc8aff19",
-    "url": "/the-ray/static/css/main.dc60f4b5.chunk.css"
+    "revision": "9cf9ff82630e856b0862",
+    "url": "/the-ray/static/css/main.62423e34.chunk.css"
   },
   {
     "revision": "df0e1f2608f9b90a5c1e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2c9e97a6abcbc8aff19",
+    "revision": "9cf9ff82630e856b0862",
     "url": "/the-ray/static/js/main.89a566b3.chunk.js"
   },
   {
