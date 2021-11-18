@@ -15,7 +15,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false &&react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "lint": "eslint \"**/*.{js,jsx}\"",
     "lint:fix": "eslint \"**/*.{js,jsx}\" --fix",
