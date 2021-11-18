@@ -62,7 +62,7 @@
 .stats-image {
   position: absolute;
   width: 100%;
-  opacity: 44%;
+  opacity: 0.44;
 }
 
 .stats-lower-container {

@@ -225,7 +225,7 @@
   position: absolute;
   z-index: 0;
   height: 100%;
-  opacity: 75%;
+  opacity: 0.75;
 }
 
 .start-pv4evsvg {
