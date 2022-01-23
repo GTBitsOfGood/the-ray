@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 function ParallaxComponent(props) {
-  const { children, transitionTime, transitionDelay, resetTime, pageIndex } = props;
+  const { children, transitionTime, transitionDelay, resetTime, pageIndex, styles } = props;
 
   const parallaxContainer = useRef(null);
 
@@ -53,13 +53,16 @@ function ParallaxComponent(props) {
       ref={parallaxContainer}
       className="parallax-scroll"
       style={{
-        position: 'absolute',
-        transform: `translate(0, 200px)`,
-        transition: `transform ${transitionTime}ms ease-in-out`,
-        transitionDelay: `${transitionDelay}ms`,
-        width: '100%',
-        height: '100%',
-        zIndex: '1',
+        ...styles,
+        ...{
+          // position: 'absolute',
+          transform: `translate(0, 200px)`,
+          transition: `transform ${transitionTime}ms ease-in-out`,
+          transitionDelay: `${transitionDelay}ms`,
+          width: '100%',
+          // height: '100%',
+          zIndex: '1',
+        },
       }}
     >
       {children}
@@ -73,6 +76,7 @@ ParallaxComponent.propTypes = {
   transitionTime: PropTypes.number,
   transitionDelay: PropTypes.number,
   resetTime: PropTypes.number,
+  styles: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 ParallaxComponent.defaultProps = {
@@ -81,6 +85,7 @@ ParallaxComponent.defaultProps = {
   transitionTime: 1000,
   transitionDelay: 100,
   resetTime: 1000,
+  styles: {},
 };
 
 export default ParallaxComponent;

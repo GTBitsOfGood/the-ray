@@ -1,5 +1,7 @@
 import React from 'react';
 import '../static/css/Start.css';
+import '../static/css/responsive.css';
+import '../static/css/commons.css';
 import PropTypes from 'prop-types';
 import rayFuture from '../static/images/ray-future.jpg';
 import greenRectangle from '../static/images/green-rectangle.svg';
@@ -30,30 +32,30 @@ class Start extends React.PureComponent {
   render() {
     const { setWheelright, setPv4ev } = this.props;
     const { isHovered } = this.state;
+    const getCurrentScreen = () => {
+      // return 'solar';
+      if (isHovered === 1) return 'wheel';
+      if (isHovered === 2) return 'solar';
+      return 'home';
+    };
     return (
       <div className="start-body">
-        {isHovered === 0 && (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        {getCurrentScreen() === 'home' && (
+          <div className="flex-col items-center mt-auto">
             <img className="start-image" src={rayFuture} alt={rayFuture} />
-            <div className="start-deaths">
+            <div className="flex">
+              <p className="start-text ">
+                <span className="header-lg">0</span> DEATHS
+              </p>
               <p className="start-text">
-                <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> DEATHS
+                <span className="header-lg">0</span> WASTE
+              </p>
+              <p className="start-text">
+                <span className="header-lg">0</span> IMPACT
               </p>
             </div>
-            <div className="start-center">
-              <div className="start-waste">
-                <p className="start-text">
-                  <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> WASTE
-                </p>
-              </div>
-            </div>
-            <div className="start-impact">
-              <p className="start-text">
-                <span style={{ fontWeight: 'bold', fontSize: '114px', lineHeight: '134px' }}>0</span> IMPACT
-              </p>
-            </div>
-            <p style={{ position: 'relative', top: '10vh' }}>
-              Click on one of the projects below to view interactive info and data visualizations
+            <p>
+              <center>Click on one of the projects below to view interactive info and data visualizations</center>
             </p>
             <div className="start-line1" />
             <div className="start-line2" />
@@ -63,93 +65,56 @@ class Start extends React.PureComponent {
           </div>
         )}
 
-        {isHovered === 1 && (
-          <div className="start-title-background">
-            <div className="start-title-body">
-              <p className="start-title-border-text">WheelRight</p>
-              <p className="start-tiresafety-title-text" style={{ top: '40%', left: '30.5%' }}>
-                TIRE SAFETY CHECK STATION
-              </p>
-            </div>
-          </div>
-        )}
-
-        {isHovered === 2 && (
-          <div className="start-body" style={{ backgroundColor: '#4c7d77' }}>
-            <img className="start-background" src={greenRectangle} alt="Background" />
-            <img className="start-solar" src={solar} alt="Solar" />
-            <img className="start-pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />
-            <p className="start-hollow-text">PV4EV</p>
-            <p className="start-secondary-text" style={{ display: 'flex', alignItems: 'center', whiteSpace: 'nowrap' }}>
-              SOLAR-POWERED ELECTRICAL
-              <br />
-              VEHICLE CHARGING STATION
+        {getCurrentScreen() === 'wheel' && <div className="start-title-background" />}
+        {getCurrentScreen() === 'wheel' && <div className="start-title-sheet" />}
+        {getCurrentScreen() === 'wheel' && (
+          <div className="start-title-body">
+            <p className="start-title-border-text header-xl">WheelRight</p>
+            <p className="start-tiresafety-title-text" style={{ top: '40%', left: '30.5%' }}>
+              TIRE SAFETY CHECK STATION
             </p>
           </div>
         )}
 
-        <button
-          type="button"
-          className="start-wheelright"
-          onMouseEnter={() => this.toggleWheelright()}
-          onMouseLeave={() => this.toggleTitle()}
-          onClick={setWheelright}
-          style={isHovered === 1 ? { background: 'white' } : { background: 'transparent' }}
-        >
-          {isHovered !== 1 ? (
-            <p
-              className="start-text"
-              style={{ left: '12%', top: '-4%', fontWeight: '900', fontSize: '36px', lineHeight: '42px' }}
-            >
+        {getCurrentScreen() === 'solar' && <div className="start-green-sheet" />}
+        {getCurrentScreen() === 'solar' && <div className="start-shadow-sheet" />}
+        {getCurrentScreen() === 'solar' && <img className="start-background" src={greenRectangle} alt="Background" />}
+        {getCurrentScreen() === 'solar' && <img className="start-solar" src={solar} alt="Solar" />}
+        {getCurrentScreen() === 'solar' && <img className="start-pv4evsvg" src={pv4evsvg} alt="Solar Overlay" />}
+        {getCurrentScreen() === 'solar' && (
+          <div className="flex-col items-center mt-auto" style={{ zIndex: 3 }}>
+            <p className="start-hollow-text header-xl">PV4EV</p>
+            <p className="start-secondary-text header-sm">
+              <center>SOLAR-POWERED VEHICLE CHARGING STATION</center>
+            </p>
+          </div>
+        )}
+        <div className="flex button-array">
+          <button
+            type="button"
+            className="start-wheelright start-button"
+            onMouseEnter={() => this.toggleWheelright()}
+            onMouseLeave={() => this.toggleTitle()}
+            onClick={setWheelright}
+            style={isHovered === 1 ? { background: 'white' } : {}}
+          >
+            <p className="start-text" style={getCurrentScreen() === 'wheel' ? { color: 'black' } : {}}>
               WHEELRIGHT
             </p>
-          ) : (
-            <p
-              className="start-text"
-              style={{
-                left: '12%',
-                top: '-4%',
-                fontWeight: '900',
-                fontSize: '36px',
-                lineHeight: '42px',
-                color: 'black',
-              }}
-            >
-              WHEELRIGHT
-            </p>
-          )}
-        </button>
-        <button
-          type="button"
-          className="start-pv4ev"
-          onMouseEnter={() => this.togglePV4EV()}
-          onMouseLeave={() => this.toggleTitle()}
-          onClick={setPv4ev}
-          style={isHovered === 2 ? { background: 'white' } : { background: 'transparent' }}
-        >
-          {isHovered !== 2 ? (
-            <p
-              className="start-text"
-              style={{ left: '19%', top: '-4%', fontWeight: '900', fontSize: '36px', lineHeight: '42px' }}
-            >
+          </button>
+          <button
+            type="button"
+            className="start-pv4ev start-button"
+            onMouseEnter={() => this.togglePV4EV()}
+            onMouseLeave={() => this.toggleTitle()}
+            onClick={setPv4ev}
+            style={isHovered === 2 ? { background: 'white' } : {}}
+          >
+            <p className="start-text" style={getCurrentScreen() === 'solar' ? { color: 'black' } : {}}>
               PV4EV
             </p>
-          ) : (
-            <p
-              className="start-text"
-              style={{
-                left: '19%',
-                top: '-4%',
-                fontWeight: '900',
-                fontSize: '36px',
-                lineHeight: '42px',
-                color: 'black',
-              }}
-            >
-              PV4EV
-            </p>
-          )}
-        </button>
+          </button>
+        </div>
       </div>
     );
   }

@@ -8,7 +8,7 @@ const WhatWeDo = (props) => {
   return (
     <div className="what-background">
       <div className="what-body">
-        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
           <p className="what-text">What We Do</p>
         </ParallaxComponent>
       </div>

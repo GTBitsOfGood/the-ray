@@ -9,16 +9,14 @@ const PVPorts = (props) => {
   return (
     <div className="pv-ev-ports-background pv-stat-background">
       <div className="pv-gradient-yellow-background">
-        <div style={{ padding: '175px 0' }}>
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <PvNumBox
-              subcolor="#000000"
-              toptext="This amount of electric vehicle uptake will require"
-              bigtext="9.6 million"
-              bottomtext="charging ports"
-            />
-          </ParallaxComponent>
-        </div>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
+          <PvNumBox
+            subcolor="#000000"
+            toptext="This amount of electric vehicle uptake will require"
+            bigtext="9.6 million"
+            bottomtext="charging ports"
+          />
+        </ParallaxComponent>
       </div>
     </div>
   );

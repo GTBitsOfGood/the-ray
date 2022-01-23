@@ -17,14 +17,14 @@ const PvFuelSavings = (props) => {
               <p className="pv-fuel-text">
                 Over the life of the vehicle, compared to owning a comparable gas-powered vehicle*
               </p>
-              <p className="pv-fuel-citation">
-                * Preston, B. (2020, October 8). EVs Offer Big Savings Over Traditional Gas-Powered Cars.
-              </p>
             </div>
           </ParallaxComponent>
         </div>
         <img className="pv-fuel-highway" src={highway} alt="highway" />
       </div>
+      <p className="pv-fuel-citation">
+        * Preston, B. (2020, October 8). EVs Offer Big Savings Over Traditional Gas-Powered Cars.
+      </p>
     </div>
   );
 };

@@ -29,18 +29,19 @@
   color: #ffffff;
 }
 
-.partners-drive {
+.links-container {
   position: absolute;
-  width: 559px;
-  height: 226px;
+  width: 30vw;
   left: 5%;
-  top: 22%;
+  top: 40vh;
+}
 
+.partners-drive {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 5vw;
-  line-height: 112px;
+  margin: 0;
 
   color: #ffffff;
 }
@@ -68,7 +69,7 @@
   /* width: 12%;
   height: 16%; */
   width: 12vw;
-  height: 16vh;
+  /* height: 16vh; */
   left: 58%;
   top: 0.01%;
   z-index: 6;
@@ -81,36 +82,10 @@
   /* width: 18%;
   height: 12%; */
   width: 18vw;
-  height: 13vh;
+  /* height: 13vh; */
   left: 40%;
   top: 1.5%;
   z-index: 6;
-}
-
-.facebook {
-  position: absolute;
-  left: 6.37%;
-  right: 92.11%;
-  top: 84.11%;
-  bottom: 11.39%;
-
-  /* background: #FFFFFF; */
-}
-
-.twitter {
-  position: absolute;
-  left: 9.14%;
-  right: 87.39%;
-  top: 84.11%;
-  bottom: 11.39%;
-}
-
-.linkedin {
-  position: absolute;
-  left: 14%;
-  right: 55%;
-  top: 84.11%;
-  bottom: 11.39%;
 }
 
 .hannah {
@@ -129,16 +104,12 @@
   /* width: 15%;
   height: 13%; */
   width: 15vw;
-  height: 13vh;
+  /* height: 13vh; */
   left: 42%;
-  top: 13%;
+  top: 22%;
   z-index: 6;
 }
 
-.instagram {
-  position: absolute;
-  left: 17.94%;
-  right: 79.25%;
-  top: 84.11%;
-  bottom: 11.39%;
+.logo {
+  margin-right: 1rem;
 }

@@ -26,30 +26,21 @@
 }
 
 .stats-main-text {
-  position: absolute;
-  left: 50%;
-  /* top: 60%; */
-  top: -40%;
-  transform: translate(-50%, -50%);
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 10vw;
-  line-height: 169px;
 
   color: #ffffff;
 }
 
 .stats-secondary-text {
-  top: 49.56%;
-  bottom: 45.78%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: calc(10px + 1.8vw);
-  line-height: 42px;
+  /* flex-grow: 1; */
+  margin: 0;
 
   color: #ffffff;
   align-self: center;
@@ -57,14 +48,11 @@
 }
 
 .stats-tertiary-text {
-  top: 49.56%;
-  bottom: 45.78%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: calc(8px + 1.4vw);
-  line-height: 42px;
+  margin: 0;
 
   color: #ffffff;
   align-self: center;
@@ -72,38 +60,42 @@
 }
 
 .stats-image {
-  display: flex;
-  flex: 1;
+  position: absolute;
   width: 100%;
-  opacity: 44%;
+  opacity: 0.44;
 }
 
 .stats-lower-container {
-  position: absolute;
-  bottom: 10px;
-  top: 23vw;
-  right: 0px;
-  left: 0px;
+  height: 60%;
   background: #092342;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .stats-image-container {
+  height: 45%;
   position: relative;
   text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .stats-lower-elements {
+  height: 100%;
   display: flex;
   flex: 10;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
 }
 
 .stats-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  height: 60%;
   position: relative;
 }
 .stats-icon {
@@ -120,8 +112,6 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 2vw;
-  line-height: 28px;
-
   color: #ffffff;
 }
 
@@ -158,9 +148,9 @@ hr {
 
 .source {
   position: absolute;
-  left: 3.75%;
+  left: 1.75%;
   right: 73.54%;
-  top: 85%;
+  top: 75%;
 
   font-family: Roboto;
   font-style: normal;

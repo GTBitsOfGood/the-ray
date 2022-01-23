@@ -9,7 +9,9 @@ const RubberEnd = (props) => {
     <div className="rubber-background">
       <div className="rubber-body">
         <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-          <p className="rubber-text">Time to put the rubber to the road</p>
+          <p className="rubber-text">
+            <center>Time to put the rubber to the road</center>
+          </p>
         </ParallaxComponent>
       </div>
     </div>

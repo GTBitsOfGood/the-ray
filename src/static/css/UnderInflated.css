@@ -37,179 +37,58 @@
   height: 62vw;
 }
 
-.itra-text {
+.underinflated-left {
   position: absolute;
+  width: 70%;
   left: 12.72%;
   right: 64.87%;
   top: 21.86%;
   bottom: 67.81%;
-  white-space: nowrap;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
+  color: white;
 }
 
-.underinflated-text {
-  position: absolute;
-  left: 12.74%;
-  right: 62.79%;
-  top: 35.56%;
-  bottom: 43.78%;
-  white-space: nowrap;
+.underinflated-left p {
+  margin: 0;
+  font-size: 2.5vw;
+}
 
+.underinflated-left .underinflated-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 5vw;
+  margin: 1rem 0;
 
   color: #ffffff;
 }
 
-.failure-text {
+.underinflated-icon-container {
   position: absolute;
-  left: 12.74%;
-  right: 62.29%;
-  top: 65.44%;
-  bottom: 29.22%;
-  white-space: nowrap;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
-}
-
-.dangers-text {
-  position: absolute;
-  left: 60.42%;
+  left: 10.42%;
   right: 10.14%;
   top: 11.67%;
   bottom: 83.67%;
-  white-space: nowrap;
+  color: white;
+  width: 70%;
+  font-size: 2vw;
+}
 
+.underinflated-icon-row img {
+  margin-left: 5%;
+  margin-right: 10%;
+  width: 12%;
+}
+
+.dangers-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
 }
 
-.skidding-text {
-  /* skidding */
-
-  position: absolute;
-  left: 72.54%;
-  right: 18.01%;
-  top: 28.91%;
-  bottom: 66.43%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
-}
-
-.hydroplaning-text {
-  position: absolute;
-  left: 72.54%;
-  right: 13.08%;
-  top: 44.37%;
-  bottom: 50.96%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
-}
-
-.flat-tire-underinflated-text {
-  position: absolute;
-  left: 72.89%;
-  right: 18.01%;
-  top: 59.05%;
-  bottom: 36.29%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
-}
-
-.tire-blowout-text {
-  position: absolute;
-  left: 72.54%;
-  right: 13.01%;
-  top: 74.51%;
-  bottom: 20.82%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #ffffff;
-}
-
-.skidding-image {
-  position: absolute;
-  width: 74.6px;
-  height: 78.38px;
-  left: 61.54%;
-  right: 18.01%;
-  top: 31.91%;
-  bottom: 66.43%;
-}
-
-.hydroplaning-image {
-  position: absolute;
-  width: 60.38px;
-  height: 56.39px;
-  left: 62.54%;
-  right: 13.08%;
-  top: 49.37%;
-  bottom: 50.96%;
-}
-
-.flattire-image {
-  position: absolute;
-  width: 50.19px;
-  height: 50.19px;
-
-  left: 62.89%;
-  right: 18.01%;
-  top: 66.05%;
-  bottom: 36.29%;
-}
-
-.blowout-image {
-  position: absolute;
-  width: 78.4px;
-  height: 63.16px;
-  left: 62.54%;
-  right: 13.01%;
-  top: 80.5%;
-  bottom: 20.82%;
+.underinflated-right {
+  height: 100%;
+  width: 50vw;
+  transform: translate(50vw);
 }
 
 .underinflated-right-background {

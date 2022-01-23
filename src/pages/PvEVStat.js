@@ -9,11 +9,9 @@ const PvEVStat = (props) => {
   return (
     <div className="pv-ev-stat-background pv-stat-background">
       <div className="pv-gradient-blue-background">
-        <div style={{ padding: '175px 0' }}>
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <PvNumBox toptext="enough to power" bigtext="12 million" bottomtext="passenger EVs annually" />
-          </ParallaxComponent>
-        </div>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
+          <PvNumBox toptext="enough to power" bigtext="12 million" bottomtext="passenger EVs annually" />
+        </ParallaxComponent>
       </div>
     </div>
   );

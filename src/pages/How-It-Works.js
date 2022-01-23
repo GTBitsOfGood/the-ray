@@ -11,12 +11,12 @@ class HowItWorks extends React.PureComponent {
       <div className="how-body" style={{ backgroundColor: '#092342' }}>
         <div className="how-box" style={{ zIndex: '12' }}>
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <div className="how-title" style={{ left: '4%', top: '6%' }}>
-              How It Works
-            </div>
-            <div className="how-text" style={{ left: '4%', top: '32%', zIndex: '11', width: '600px' }}>
-              The photovoltaic cells of the solar panels absorb sunlight and generate energy which is stored and ready
-              to be used to charge your electric vehicle.
+            <div className="how-container">
+              <div className="how-title">How It Works</div>
+              <div className="how-text">
+                The photovoltaic cells of the solar panels absorb sunlight and generate energy which is stored and ready
+                to be used to charge your electric vehicle.
+              </div>
             </div>
           </ParallaxComponent>
         </div>

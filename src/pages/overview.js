@@ -13,7 +13,7 @@ const Overview = (props) => {
     <div className="overview-body">
       <div className="overview-left">
         <img className="overview-left-background" src={Left} alt="Left background" />
-        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
           <img className="overview-left-image" src={Graphic} alt="Car Graphic" />
           <p className="overview-left-text">Traditional tire inflation and monitoring methods are a hassle.</p>
         </ParallaxComponent>
@@ -21,7 +21,7 @@ const Overview = (props) => {
       <div className="overview-right">
         <img className="overview-right-image" src={Car} alt="The Ray Car" />
         <img className="overview-right-background" src={Right} alt="Right background" />
-        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
           <p className="overview-right-text">
             <b>WheelRight </b> strives to make this process easier to{' '}
             <b>save time, fuel, money, and most importantly</b>

@@ -11,8 +11,6 @@
 
 .help-body {
   position: relative;
-  /* width: 1440px; */
-  /* min-height: 10000px; */
   width: 100%;
   min-height: 100vh;
   background: rgba(80, 166, 195, 0.38);
@@ -23,7 +21,7 @@
 }
 
 .help-main-text {
-  transform: translate(0px, 325px);
+  /* transform: translate(0px, 325px); */
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -36,10 +34,8 @@
 }
 
 .pv-help-main-text {
-  position: absolute;
+  /* position: absolute; */
   left: 60.07%;
-  /* right: 40.28%; */
-  /* top: 57.22%; */
   bottom: 8%;
 
   font-family: Roboto;

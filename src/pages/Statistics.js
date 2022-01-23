@@ -30,9 +30,11 @@ class Statistics extends React.PureComponent {
           </ParallaxComponent>
         </div>
         <div className="stats-lower-container">
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ flexGrow: 1 }}>
             <div className="stats-lower-elements">
-              <p className="stats-secondary-text">{text}</p>
+              <p className="stats-secondary-text">
+                <center>{text}</center>
+              </p>
               <hr />
               <div className="stats-icons">
                 <div className="stats-icon">

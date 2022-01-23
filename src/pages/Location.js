@@ -9,7 +9,12 @@ const Location = (props) => {
     <div className="location-background">
       <div className="split left">
         <div className="location-body">
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+          <ParallaxComponent
+            pageIndex={pageIndex}
+            transitionTime={1500}
+            transitionDelay={0}
+            styles={{ height: '100vh' }}
+          >
             <p className="help-location-text">
               The Ray Welcome Center <br />
             </p>

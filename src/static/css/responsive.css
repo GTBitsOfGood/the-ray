@@ -1,0 +1,70 @@
+/*
+  Copying from Tailwind conventions: https://tailwindcss.com/
+  Breakpoints:
+  mobile
+  640px tablet
+  768px small screen
+  1024px large screen
+  1280px extra large screen
+  1536px super wide screen
+*/
+
+/* For mobile phones: */
+[class*='header-'] {
+  font-size: 3rem;
+  /* font-weight: bold; */
+}
+
+@media only screen and (min-width: 640px) {
+  .header-sm {
+    font-size: 2rem;
+  }
+  .header-lg {
+    font-size: 3rem;
+  }
+  .header-xl {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-lg {
+    font-size: 4rem;
+  }
+  .header-xl {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-sm {
+    font-size: 3rem;
+  }
+  .header-lg {
+    font-size: 5rem;
+  }
+  .header-xl {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-lg {
+    font-size: 6rem;
+  }
+  .header-xl {
+    font-size: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .header-sm {
+    font-size: 4rem;
+  }
+  .header-lg {
+    font-size: 7rem;
+  }
+  .header-xl {
+    font-size: 20rem;
+  }
+}

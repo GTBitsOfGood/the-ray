@@ -10,14 +10,12 @@ function PvBigNum(props) {
       <div className="pv-bignum-body">
         <div className="split pv-bignum-textbox">
           <div className="pv-bignum-numbers">
-            <div style={{ fontSize: '288px' }}>
-              <CrossBrowserAnimatedNumber
-                pageIndex={pageIndex}
-                transitionTime={transitionTime}
-                target={targetNum}
-                percentage={percentage}
-              />
-            </div>
+            <CrossBrowserAnimatedNumber
+              pageIndex={pageIndex}
+              transitionTime={transitionTime}
+              target={targetNum}
+              percentage={percentage}
+            />
             <p style={{ fontSize: '75px', marginTop: '0px' }}> {label} </p>
           </div>
         </div>

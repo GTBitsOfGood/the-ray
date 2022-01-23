@@ -10,28 +10,17 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
-  display: flex;
   background: rgba(80, 166, 195, 0.44);
 }
 
 .rubber-text {
-  position: absolute;
-  left: 24%;
-  top: 45.78%;
-  bottom: 45.89%;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
-  line-height: 75px;
-  /* identical to box height */
-
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  text-align: center;
 
   color: #ffffff;
 }

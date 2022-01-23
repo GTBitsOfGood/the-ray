@@ -15,6 +15,7 @@
   padding-bottom: 19.2%;
   text-align: center;
   line-height: 19.2%;
+  white-space: nowrap;
 }
 
 .ticket-car-box p {

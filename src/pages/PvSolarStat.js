@@ -9,14 +9,12 @@ const PvSolarStat = (props) => {
   return (
     <div className="pv-solar-stat-background pv-stat-background">
       <div className="pv-gradient-blue-background">
-        <div style={{ padding: '225px 0' }}>
-          <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
-            <PvNumBox
-              toptext="Solar panels installed in interstate interchanges in the US could generate up to"
-              bigtext="36 TWh/year"
-            />
-          </ParallaxComponent>
-        </div>
+        <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500} styles={{ height: '100%' }}>
+          <PvNumBox
+            toptext="Solar panels installed in interstate interchanges in the US could generate up to"
+            bigtext="36 TWh/year"
+          />
+        </ParallaxComponent>
       </div>
     </div>
   );
