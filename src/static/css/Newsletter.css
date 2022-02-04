@@ -37,7 +37,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: max(2vw, 50px);
 
   margin-top: 30vh;
 
@@ -48,7 +48,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: max(5vw, 90px);
   margin: 0;
 
   color: #ffffff;

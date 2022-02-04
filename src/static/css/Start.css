@@ -351,7 +351,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: max(3vw, 80px);
   line-height: 56px;
 
   color: #ffffff;
@@ -367,7 +367,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 8vw;
+  font-size: max(8vw, 90px);
   line-height: 169px;
   /* identical to box height */
   color: #ffffff;
@@ -399,7 +399,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: max(2vw, 50px);
   line-height: 42px;
 
   color: #ffffff;

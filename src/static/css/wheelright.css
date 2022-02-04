@@ -26,7 +26,7 @@
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22vw;
+  font-size: max(22vw, 150px);
   line-height: 24vw;
 
   display: flex;

@@ -84,17 +84,17 @@
 }
 
 h1.ticket-text {
-  font-size: 10vw;
+  font-size: max(10vw, 100px);
   font-weight: normal;
 }
 
 h3.ticket-text {
   font-weight: bold;
-  font-size: 5vw;
+  font-size: max(5vw, 90px);
 }
 
 h5.ticket-text {
-  font-size: 2vw;
+  font-size: max(2vw, 50px);
   font-weight: bold;
   margin-top: 3vh;
 }
