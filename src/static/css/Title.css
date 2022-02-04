@@ -30,7 +30,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 19.5vw;
+  font-size: max(19.5vw, 120px);
   line-height: 316px;
 
   align-items: center;
@@ -50,7 +50,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: max(3vw, 100px);
   margin: 0.5rem 0;
   color: #ffffff;
 }
@@ -63,7 +63,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 9vw;
+  font-size: max(9vw, 110px);
   /* identical to box height */
   color: #ffffff;
   margin: 1rem 0;
@@ -73,7 +73,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: max(3vw, 80px);
   margin: 0.5rem 0;
 
   color: #ffffff;
@@ -90,7 +90,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: max(2vw, 50px);
   line-height: 42px;
 
   color: #ffffff;

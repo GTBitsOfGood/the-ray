@@ -42,7 +42,7 @@
   font-family: Roboto;
   font-style: normal;
   /* font-weight: 900; */
-  font-size: 18vw;
+  font-size: max(40vw, 400px);
   /* line-height: 316px; */
 
   -webkit-text-stroke-width: 1px;
@@ -63,7 +63,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 3vw;
+  font-size: max(3vw, 100px);
 
   color: #ffffff;
   margin-bottom: 3vh;
@@ -73,7 +73,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 10vw;
+  font-size: max(10vw, 100px);
   color: #ffffff;
   margin: 0;
 }
@@ -84,7 +84,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: max(3vw, 80px);
   margin: 0;
 
   color: #ffffff;
@@ -100,7 +100,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 3vw;
+  font-size: max(3vw, 80px);
 
   color: #ffffff;
 }

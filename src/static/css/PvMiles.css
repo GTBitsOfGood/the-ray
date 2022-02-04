@@ -36,15 +36,15 @@
 }
 
 .pv-text-huge {
-  font-size: 12vw;
+  font-size: max(12vw, 110px);
 }
 
 .pv-text-regular {
-  font-size: 3vw;
+  font-size: max(3vw, 80px);
 }
 
 .pv-text-big {
-  font-size: 6vw;
+  font-size: max(6vw, 90px);
 }
 
 .pv-secondary-text {

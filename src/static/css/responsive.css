@@ -11,60 +11,60 @@
 
 /* For mobile phones: */
 [class*='header-'] {
-  font-size: 3rem;
+  font-size: max(3rem, 24px);
   /* font-weight: bold; */
 }
 
 @media only screen and (min-width: 640px) {
   .header-sm {
-    font-size: 2rem;
+    font-size: max(2rem, 16px);
   }
   .header-lg {
-    font-size: 3rem;
+    font-size: max(3rem, 24px);
   }
   .header-xl {
-    font-size: 8rem;
+    font-size: max(8rem, 64px);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .header-lg {
-    font-size: 4rem;
+    font-size: max(4rem, 32px);
   }
   .header-xl {
-    font-size: 10rem;
+    font-size: max(10rem, 80px);
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .header-sm {
-    font-size: 3rem;
+    font-size: max(3rem, 24px);
   }
   .header-lg {
-    font-size: 5rem;
+    font-size: max(5rem, 40px);
   }
   .header-xl {
-    font-size: 12rem;
+    font-size: max(12rem, 96px);
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .header-lg {
-    font-size: 6rem;
+    font-size: max(6rem, 48px);
   }
   .header-xl {
-    font-size: 15rem;
+    font-size: max(15rem, 120px);
   }
 }
 
 @media only screen and (min-width: 1536px) {
   .header-sm {
-    font-size: 4rem;
+    font-size: max(4rem, 32px);
   }
   .header-lg {
-    font-size: 7rem;
+    font-size: max(7rem, 56px);
   }
   .header-xl {
-    font-size: 20rem;
+    font-size: max(20rem, 160px);
   }
 }
