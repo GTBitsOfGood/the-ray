@@ -27,7 +27,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: max(4vw, 34px);
   line-height: 84px;
   color: #ffffff;
 }
