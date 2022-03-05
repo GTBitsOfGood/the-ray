@@ -11,7 +11,6 @@ const PVProjection = (props) => {
       <div className="pv-gradient-yellow-background">
         <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500} styles={{ height: '100%' }}>
           <PvNumBox
-            background-size="cover"
             subcolor="#000000"
             toptext="Projection show that by 2030 there will be over"
             bigtext="18.7 million"
