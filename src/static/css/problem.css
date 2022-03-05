@@ -1,47 +1,86 @@
-.problem-body {
-  background: #873856;
-  /* background: #ffffff; */
-  width: 100%;
-  height: 100vh;
-  position: relative;
+@media only screen and (max-width: 414px) {
+  .problem-body {
+    background: #873856;
+    /* background: #ffffff; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .problem-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-left: 20%;
+
+    color: #ffffff;
+  }
+
+  .problem-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 42px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+    color: #ffffff;
+  }
+  .problem-icon {
+    height: 40vh;
+    margin-left: 40%;
+  }
 }
+@media only screen and (min-width: 414px) {
+  .problem-body {
+    background: #873856;
+    /* background: #ffffff; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
 
-.problem-container {
-  position: absolute;
-  left: 50%;
-  top: 20vh;
-  width: 40vw;
-  /* bottom: 57.78%; */
-  display: flex;
-  flex-direction: column;
-}
+  .problem-container {
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+    width: 40vw;
+    /* bottom: 57.78%; */
+    display: flex;
+    flex-direction: column;
+  }
 
-.problem-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 5vw;
-  margin: 0;
+  .problem-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.problem-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2vw;
-  line-height: 42px;
+  .problem-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 42px;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.problem-icon {
-  position: absolute;
-  height: 80vh;
-  /* left: 20%; */
-  right: 65%;
-  /* right: 31.39%; */
-  top: 10%;
-  bottom: 0%;
+  .problem-icon {
+    position: absolute;
+    height: 80vh;
+    /* left: 20%; */
+    right: 65%;
+    /* right: 31.39%; */
+    top: 10%;
+    bottom: 0%;
+  }
 }
