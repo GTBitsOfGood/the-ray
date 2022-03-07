@@ -11,7 +11,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 4vw;
+  font-size: max(4vw, 34px);
   margin: 1rem 0;
   /* identical to box height */
   color: #ffffff;
@@ -21,7 +21,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5vw;
+  font-size: max(1.5vw, 16.5px);
   margin: 0;
 
   color: #ffffff;

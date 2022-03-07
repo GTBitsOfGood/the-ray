@@ -34,10 +34,10 @@
 }
 
 .pv-text {
-  font-size: 1.7vw;
+  font-size: max(1.7vw, 17.5px);
 }
 
 .pv-text-bold {
-  font-size: 3vw;
+  font-size: max(3vw, 27px);
   font-weight: bold;
 }
