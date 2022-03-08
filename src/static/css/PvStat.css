@@ -13,22 +13,18 @@
 
 .pv-solar-stat-background {
   background-image: url('../images/SolarStatBackground.png');
-  background-size: cover;
 }
 
 .pv-ev-projection-background {
   background-image: url('../images/projection.png');
-  background-size: cover;
 }
 
 .pv-ev-ports-background {
   background-image: url('../images/ports.png');
-  background-size: cover;
 }
 
 .pv-ev-stat-background {
   background-image: url('../images/EVStatBackground.png');
-  background-size: cover;
 }
 
 .pv-gradient-blue-background {
