@@ -1,52 +1,108 @@
-.pv-fuel-background {
-  width: 70%;
-  height: 100vh;
-  background-color: #4c7d77;
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 414px) {
+  .pv-fuel-background {
+    width: 70%;
+    height: 100vh;
+    background-color: #4c7d77;
+    display: flex;
+    align-items: center;
+  }
+
+  .pv-fuel-highway {
+    position: absolute;
+    height: 100%;
+    right: 0;
+  }
+
+  .pv-fuel-squish-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15%;
+  }
+
+  .pv-fuel-text {
+    font-size: max(2vw, 20px);
+    font-weight: 100;
+  }
+
+  .pv-fuel-text-large {
+    font-size: max(5vw, 50px);
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .pv-fuel-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pv-fuel-citation {
+    position: absolute;
+
+    width: 60%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: -4.5rem;
+    margin-left: 1rem;
+    line-height: 15px;
+    color: #ffffff;
+  }
 }
+@media only screen and (min-width: 414px) {
+  .pv-fuel-background {
+    width: 70%;
+    height: 100vh;
+    background-color: #4c7d77;
+    display: flex;
+    align-items: center;
+  }
 
-.pv-fuel-highway {
-  position: absolute;
-  height: 100%;
-  right: 0;
-}
+  .pv-fuel-highway {
+    position: absolute;
+    height: 100%;
+    right: 0;
+  }
 
-.pv-fuel-squish-text {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 15%;
-}
+  .pv-fuel-squish-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15%;
+  }
 
-.pv-fuel-text {
-  font-size: max(2vw, 20px);
-  font-weight: 100;
-}
+  .pv-fuel-text {
+    font-size: max(2vw, 20px);
+    font-weight: 100;
+  }
 
-.pv-fuel-text-large {
-  font-size: max(5vw, 50px);
-  font-weight: 900;
-  margin: 0;
-}
+  .pv-fuel-text-large {
+    font-size: max(5vw, 50px);
+    font-weight: 900;
+    margin: 0;
+  }
 
-.pv-fuel-container {
-  display: flex;
-  flex-direction: row;
-}
+  .pv-fuel-container {
+    display: flex;
+    flex-direction: row;
+  }
 
-.pv-fuel-citation {
-  position: absolute;
+  .pv-fuel-citation {
+    position: absolute;
 
-  width: 60%;
+    width: 60%;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1rem;
-  margin-top: -4.5rem;
-  margin-left: 1rem;
-  line-height: 15px;
-  color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: -4.5rem;
+    margin-left: 1rem;
+    line-height: 15px;
+    color: #ffffff;
+  }
 }
