@@ -1,51 +1,106 @@
-.help-background {
-  background-image: url('../images/how-you-can-help.png');
-  background-size: cover;
+@media only screen and (max-width: 414px) {
+  .help-background {
+    background-image: url('../images/how-you-can-help.png');
+    background-size: cover;
+  }
+
+  .pv-help-background {
+    background-image: url('../images/pvHelp.png');
+    background-size: cover;
+    position: relative;
+  }
+
+  .help-body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(80, 166, 195, 0.38);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+  }
+
+  .help-main-text {
+    /* transform: translate(0px, 325px); */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .pv-help-main-text {
+    /* position: absolute; */
+    left: 60.07%;
+    bottom: 8%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
 }
+@media only screen and (min-width: 414px) {
+  .help-background {
+    background-image: url('../images/how-you-can-help.png');
+    background-size: cover;
+  }
 
-.pv-help-background {
-  background-image: url('../images/pvHelp.png');
-  background-size: cover;
-  position: relative;
-}
+  .pv-help-background {
+    background-image: url('../images/pvHelp.png');
+    background-size: cover;
+    position: relative;
+  }
 
-.help-body {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: rgba(80, 166, 195, 0.38);
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  display: flex;
-}
+  .help-body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(80, 166, 195, 0.38);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+  }
 
-.help-main-text {
-  /* transform: translate(0px, 325px); */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 84px;
-  align-items: center;
-  text-align: center;
+  .help-main-text {
+    /* transform: translate(0px, 325px); */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    align-items: center;
+    text-align: center;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.pv-help-main-text {
-  /* position: absolute; */
-  left: 60.07%;
-  bottom: 8%;
+  .pv-help-main-text {
+    /* position: absolute; */
+    left: 60.07%;
+    bottom: 8%;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 84px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
