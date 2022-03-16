@@ -2,7 +2,7 @@
   .partners-background {
     background-image: url('../images/partners-pic.png');
     background-size: cover;
-    background-position: bottom;
+    background-position: -270px;
   }
 
   .partners-body {
@@ -17,32 +17,34 @@
 
   .partners-toptext {
     position: absolute;
-    width: 30%;
-    height: 50%;
+    width: 70%;
+
     left: 10%;
-    top: 50;
+    top: 60%;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: max(3vw, 27px);
-    line-height: 56px;
+    font-size: 35px;
+    line-height: 116px;
     color: #ffffff;
   }
 
   .links-container {
     position: absolute;
     width: 30vw;
-    left: 5%;
-    top: 40vh;
+    left: 3%;
+    top: 55vh;
   }
 
   .partners-drive {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: max(5vw, 50px);
-    margin: 0;
+    font-size: 55px;
+    width: 100vw;
+
+    margin-bottom: 10px;
 
     color: #ffffff;
   }
@@ -51,13 +53,13 @@
     position: absolute;
     width: 80%;
     height: 50%;
-    left: 72%;
+    left: 27%;
     top: 84%;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: max(2vw, 20px);
+    font-size: 18px;
     line-height: 42px;
 
     color: #ffffff;
@@ -69,10 +71,10 @@
   height: 170px; */
     /* width: 12%;
   height: 16%; */
-    width: 12vw;
-    /* height: 16vh; */
-    left: 58%;
-    top: 0.01%;
+    width: 30vw;
+    /* height: 13vh; */
+    left: 60%;
+    top: 15%;
     z-index: 6;
   }
 
@@ -82,10 +84,10 @@
   height: 135px; */
     /* width: 18%;
   height: 12%; */
-    width: 18vw;
+    width: 40vw;
     /* height: 13vh; */
-    left: 40%;
-    top: 1.5%;
+    left: 8%;
+    top: 17%;
     z-index: 6;
   }
 
@@ -93,10 +95,10 @@
     position: absolute;
     /* width: 13%;
   height: 6%; */
-    width: 13vw;
-    height: 6vh;
+    width: 40vw;
+    height: 40vh;
     left: 58%;
-    top: 17%;
+    top: 25%;
     z-index: 6;
   }
 
@@ -104,15 +106,21 @@
     position: absolute;
     /* width: 15%;
   height: 13%; */
-    width: 15vw;
+    width: 30vw;
     /* height: 13vh; */
-    left: 42%;
-    top: 22%;
+    left: 12%;
+    top: 27%;
     z-index: 6;
   }
 
   .logo {
     margin-right: 1rem;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 20px;
+  }
+  .flex {
+    width: 200px;
   }
 }
 @media only screen and (min-width: 414px) {

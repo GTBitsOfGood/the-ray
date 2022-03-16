@@ -8,6 +8,9 @@
     background: #092342;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: right;
     z-index: 1;
     display: flex;
   }
@@ -21,26 +24,27 @@
     background: #d35c58;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
     z-index: 1;
     display: flex;
   }
 
   .newsletter-text-container {
-    position: absolute;
-    left: 51.74%;
-    right: 8.54%;
     display: flex;
     flex-direction: column;
     text-align: right;
+    line-height: 30px;
+
+    margin-left: 10%;
+    margin-right: 8%;
   }
 
   .newsletter-main-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: max(2vw, 20px);
-
-    margin-top: 30vh;
+    font-size: 22px;
 
     color: #ffffff;
   }
@@ -49,7 +53,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: max(5vw, 50px);
+    font-size: 30px;
     margin: 0;
 
     color: #ffffff;
@@ -60,21 +64,17 @@
   }
 
   .credit-card {
-    position: absolute;
-    width: 30%;
-    height: 60%;
-    left: 10%;
-    top: 20%;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 50px;
     z-index: 6;
+    margin-top: 25%;
   }
 
   .plug {
-    position: absolute;
-    width: 20%;
-    height: 80%;
-    left: 13%;
-    top: 0%;
-    z-index: 6;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 414px) {

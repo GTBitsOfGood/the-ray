@@ -1,4 +1,4 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   .help-background {
     background-image: url('../images/how-you-can-help.png');
     background-size: cover;
@@ -7,6 +7,8 @@
   .pv-help-background {
     background-image: url('../images/pvHelp.png');
     background-size: cover;
+    background-position: 90%;
+
     position: relative;
   }
 
@@ -26,8 +28,12 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 84px;
+    width: 75%;
+    height: 20%;
+    font-size: 38px;
+    line-height: 54px;
+    display: flex;
+    align-items: flex-end;
     align-items: center;
     text-align: center;
 
@@ -42,16 +48,18 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 38px;
     line-height: 84px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
+
+    height: 70%;
 
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 415px) {
   .help-background {
     background-image: url('../images/how-you-can-help.png');
     background-size: cover;
