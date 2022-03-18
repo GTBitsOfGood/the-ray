@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.c3674445.chunk.css",
-    "main.js": "/the-ray/static/js/main.89a566b3.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.89a566b3.chunk.js.map",
+    "main.css": "/the-ray/static/css/main.57978fe7.chunk.css",
+    "main.js": "/the-ray/static/js/main.f3d8c8c8.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.f3d8c8c8.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
     "static/js/2.e485c041.chunk.js": "/the-ray/static/js/2.e485c041.chunk.js",
     "static/js/2.e485c041.chunk.js.map": "/the-ray/static/js/2.e485c041.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.3374103e3eeb0163a741ea1cf6fc9ed5.js": "/the-ray/precache-manifest.3374103e3eeb0163a741ea1cf6fc9ed5.js",
+    "precache-manifest.5d548cd11dfb2fe9002ea9eacbbdd386.js": "/the-ray/precache-manifest.5d548cd11dfb2fe9002ea9eacbbdd386.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.c3674445.chunk.css.map": "/the-ray/static/css/main.c3674445.chunk.css.map",
+    "static/css/main.57978fe7.chunk.css.map": "/the-ray/static/css/main.57978fe7.chunk.css.map",
     "static/js/2.e485c041.chunk.js.LICENSE.txt": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
@@ -18,7 +18,7 @@
     "static/media/Full-battery-icon.svg": "/the-ray/static/media/Full-battery-icon.1e4d7536.svg",
     "static/media/Low-battery-icon.svg": "/the-ray/static/media/Low-battery-icon.5e747edb.svg",
     "static/media/TheRayMap.png": "/the-ray/static/media/TheRayMap.71d96deb.png",
-    "static/media/arrow_downward_24px.svg": "/the-ray/static/media/arrow_downward_24px.197d73a0.svg",
+    "static/media/arrow_downward_24px.svg": "/the-ray/static/media/arrow_downward_24px.33d3144b.svg",
     "static/media/blown-out.svg": "/the-ray/static/media/blown-out.58c6fcf1.svg",
     "static/media/car-accident-icon-black.svg": "/the-ray/static/media/car-accident-icon-black.e76797c1.svg",
     "static/media/car-accident-icon.svg": "/the-ray/static/media/car-accident-icon.e6e4e4cc.svg",
@@ -69,7 +69,7 @@
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
     "static/js/2.e485c041.chunk.js",
-    "static/css/main.c3674445.chunk.css",
-    "static/js/main.89a566b3.chunk.js"
+    "static/css/main.57978fe7.chunk.css",
+    "static/js/main.f3d8c8c8.chunk.js"
   ]
 }

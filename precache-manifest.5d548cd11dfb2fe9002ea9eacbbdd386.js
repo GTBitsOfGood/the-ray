@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99ce916bf394fa0b78a9c3102d7a4c81",
+    "revision": "482fd98ed3a554404dce4b92c755fd59",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "24543e7f4d1cdac8cdee",
-    "url": "/the-ray/static/css/main.c3674445.chunk.css"
+    "revision": "9b95791263ecfa0a6a80",
+    "url": "/the-ray/static/css/main.57978fe7.chunk.css"
   },
   {
     "revision": "df0e1f2608f9b90a5c1e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24543e7f4d1cdac8cdee",
-    "url": "/the-ray/static/js/main.89a566b3.chunk.js"
+    "revision": "9b95791263ecfa0a6a80",
+    "url": "/the-ray/static/js/main.f3d8c8c8.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/TheRayMap.71d96deb.png"
   },
   {
-    "revision": "197d73a03a50912e09026604e079882d",
-    "url": "/the-ray/static/media/arrow_downward_24px.197d73a0.svg"
+    "revision": "33d3144b48d04a41cdcdeaada90e70d0",
+    "url": "/the-ray/static/media/arrow_downward_24px.33d3144b.svg"
   },
   {
     "revision": "58c6fcf1042c99c5343bf38267f8b869",
