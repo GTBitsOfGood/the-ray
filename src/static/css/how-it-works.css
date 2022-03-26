@@ -12,23 +12,21 @@
   }
 
   .how-image {
-    height: 100vh;
-    width: auto;
-    /* z-index: 2; */
-    right: 0%;
     position: absolute;
-    opacity: 1;
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .how-box {
     background: #092342;
     /* outline: 1px solid #ffffff; */
-    height: calc(70px + 30vh);
+    height: 20vh;
     display: flex;
     position: absolute;
-    width: 50vw;
-    top: 20vh;
-    left: 5%;
+    width: 80%;
+    top: 50vh;
+    left: 3.75%;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
@@ -43,7 +41,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: max(4vw, 34px);
+    font-size: 40px;
     margin-bottom: 5px;
 
     color: #ffffff;
@@ -53,7 +51,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: max(2.5vw, 23.5px);
+    font-size: 18px;
     max-width: 600px;
 
     color: #ffffff;
