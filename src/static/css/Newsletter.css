@@ -69,8 +69,8 @@
 
 .plug {
   position: absolute;
-  width: 20%;
-  height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   left: 13%;
   top: 0%;
   z-index: 6;
