@@ -125,3 +125,32 @@
 
   color: #ffffff;
 }
+
+@media only screen and (max-width: 768px) {
+  .underinflated-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .underinflated-left-image {
+    width: 100%;
+    position: static;
+    background-image: url('../images/under-inflated-tire.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .underinflated-right {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+
+  .underinflated-text {
+    font-size: 40px !important;
+  }
+
+  .underinflated-icon-container {
+    flex-direction: column;
+  }
+}
