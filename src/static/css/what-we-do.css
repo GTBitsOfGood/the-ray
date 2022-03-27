@@ -17,15 +17,18 @@
 }
 
 .what-text {
+  display: center;
+  margin-top: 425px;
   position: absolute;
-  left: 5.42%;
+  left: 7.5%;
   top: 75.56%;
   bottom: 0%;
-
+  color: white;
+  text-shadow: 2px 4px 4px rgba(54, 58, 67, 0.6);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 75px;
 
   text-align: center;
