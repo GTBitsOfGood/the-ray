@@ -1,76 +1,165 @@
-.drive-background {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #d35c58;
+@media only screen and (max-width: 391px) {
+  .drive-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #d35c58;
+  }
+
+  .driveover-container {
+    position: absolute;
+
+    top: 8.12vh;
+    width: 100vw;
+    height: 40vh;
+    background: #d35c58;
+  }
+
+  .driveover-container p {
+    background-color: #d35c58;
+    margin-left: 20px;
+    width: 65vw;
+  }
+
+  .image-tire {
+    width: 18%;
+    margin-left: 20px;
+    margin-top: 75px;
+  }
+
+  .drive-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(5vw, 40px);
+    margin: 0;
+    margin-top: 10px;
+
+    color: #ffffff;
+  }
+
+  .drive-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    margin: 0;
+    margin-top: 10px;
+
+    color: #ffffff;
+  }
+
+  .image-car {
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    right: 0px;
+    top: 350px;
+  }
+
+  .image-line {
+    position: absolute;
+    width: auto;
+    left: 0%;
+    right: 400px;
+    top: 768px;
+    /* bottom: 13.33%; */
+  }
+  .image-dot {
+    /* position: absolute; */
+    right: 400px;
+    top: 760px;
+    height: 0px;
+  }
+
+  .hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #ffffff;
+    padding: 0;
+    width: 100%;
+  }
+
+  .drive-pointer {
+    width: calc(100vw - 400px - 3.89% - 4px);
+  }
 }
+@media only screen and (min-width: 391px) {
+  .drive-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #d35c58;
+  }
 
-.driveover-container {
-  position: absolute;
-  left: 4vw;
-  top: 20vh;
-  width: 40%;
-}
+  .driveover-container {
+    position: absolute;
+    left: 4vw;
+    top: 20vh;
+    width: 40%;
+  }
 
-.driveover-container p {
-  background-color: #d35c58;
-  margin: 0.5rem 0;
-}
+  .driveover-container p {
+    background-color: #d35c58;
+    margin: 0.5rem 0;
+  }
 
-.image-tire {
-  width: 30%;
-}
+  .image-tire {
+    width: 30%;
+  }
 
-.drive-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(5vw, 40px);
-  margin: 0;
+  .drive-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(5vw, 40px);
+    margin: 0;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.drive-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: max(2.5vw, 20px);
-  margin: 0;
+  .drive-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: max(2.5vw, 20px);
+    margin: 0;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.image-car {
-  width: 652px;
-  height: 900px;
-  position: absolute;
-  right: 0%;
-}
+  .image-car {
+    width: 652px;
+    height: 900px;
+    position: absolute;
+    right: 0%;
+  }
 
-.image-line {
-  position: absolute;
-  width: auto;
-  left: 0%;
-  right: 400px;
-  top: 768px;
-  /* bottom: 13.33%; */
-}
-.image-dot {
-  /* position: absolute; */
-  right: 400px;
-  top: 760px;
-}
+  .image-line {
+    position: absolute;
+    width: auto;
+    left: 0%;
+    right: 400px;
+    top: 768px;
+    /* bottom: 13.33%; */
+  }
+  .image-dot {
+    /* position: absolute; */
+    right: 400px;
+    top: 760px;
+  }
 
-.hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 10px solid #ffffff;
-  padding: 0;
-  width: 100%;
-}
+  .hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #ffffff;
+    padding: 0;
+    width: 100%;
+  }
 
-.drive-pointer {
-  width: calc(100vw - 400px - 3.89% - 4px);
+  .drive-pointer {
+    width: calc(100vw - 400px - 3.89% - 4px);
+  }
 }
