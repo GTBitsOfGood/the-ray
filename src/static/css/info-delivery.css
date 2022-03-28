@@ -22,7 +22,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: max(1.5vw, 16.5px);
-  margin: 0;
+  margin: auto;
+  width: 75%;
 
   color: #ffffff;
 }
@@ -66,4 +67,56 @@
   right: 21%;
   bottom: -25%;
   z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-ticket {
+    width: 55%;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0px;
+    bottom: -35.5%;
+  }
+
+  .image-icons {
+    width: 40%;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 20px;
+    bottom: -34%;
+  }
+
+  .image-phone {
+    width: 55%;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 190px;
+    bottom: -7%;
+  }
+
+  .image-messages {
+    width: 40%;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 215px;
+    bottom: -7%;
+  }
+
+  .info-title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .info-text {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .info-text-container {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+  }
 }
