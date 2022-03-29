@@ -109,14 +109,13 @@
 
   .info-text {
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
   }
 
   .info-text-container {
     margin-top: 30px;
     padding-left: 15px;
-    padding-right: 15px;
-    width: auto;
+    width: calc(100% - 15px);
   }
 }
