@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+// Start Mobile pages
+import StartMobile from './pages/StartMobile/StartMobile';
+import StartMobileWheelright from './pages/StartMobile/StartMobileWheelright';
+import StartMobilePV4EV from './pages/StartMobile/StartMobilePV4EV';
+
 // Wheelright Pages
 import Statistics from './pages/Statistics';
 import Ticket from './pages/Ticket';
@@ -33,20 +38,28 @@ import PvBigNum from './pages/PvBigNum';
 import PvFuelSavings from './pages/PvFuelSavings';
 import EnergyVisPage from './pages/EnergyVisPage';
 import CO2VisPage from './pages/CO2VisPage';
+import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
   const [project, setProject] = useState('Title');
   const [kwh, setkwh] = useState(0);
   const [CO2, setCO2] = useState(0);
+  const isPageMobile = useMediaQuery('(max-width: 850px)');
+  // const isPageTablet = useMediaQuery('(max-width: 1000px)');
 
   return (
     <div>
       <div>
-        {project === 'Title' && (
-          <div className="App">
-            <Start setWheelright={() => setProject('Wheelright')} setPv4ev={() => setProject('PV4EV')} />
-          </div>
+        {project === 'Title' && !isPageMobile && (
+          <Start setWheelright={() => setProject('Wheelright')} setPv4ev={() => setProject('PV4EV')} />
+        )}
+        {project === 'Title' && isPageMobile && (
+          <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+            <StartMobile pageIndex={0} />
+            <StartMobileWheelright setWheelright={() => setProject('Wheelright')} pageIndex={1} />
+            <StartMobilePV4EV setPv4ev={() => setProject('PV4EV')} pageIndex={2} />
+          </Navigation>
         )}
       </div>
       {project === 'Wheelright' && (
