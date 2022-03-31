@@ -1,4 +1,4 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 800px) {
   .how-body {
     background: #092342;
     /* background: #ffffff; */
@@ -13,9 +13,14 @@
 
   .how-image {
     position: absolute;
+
     height: 40%;
     width: 100%;
+
     object-fit: cover;
+    object-position: center 24%;
+
+    background: red;
   }
 
   .how-box {
@@ -57,7 +62,7 @@
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 800px) {
   .how-body {
     background: #092342;
     /* background: #ffffff; */
