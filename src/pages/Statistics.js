@@ -27,14 +27,16 @@ class Statistics extends React.PureComponent {
           <img className="stats-image" src={currImage} alt={currImage} />
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
             <div className="stats-main-text">{number}</div>
+            <div className="stats-secondary-text">
+              <p>
+                <center>{text}</center>
+              </p>
+            </div>
           </ParallaxComponent>
         </div>
         <div className="stats-lower-container">
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ flexGrow: 1 }}>
             <div className="stats-lower-elements">
-              <p className="stats-secondary-text">
-                <center>{text}</center>
-              </p>
               <hr />
               <div className="stats-icons">
                 <div className="stats-icon">

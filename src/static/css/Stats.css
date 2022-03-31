@@ -1,4 +1,4 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 800px) {
   .stats-body {
     position: relative;
     width: 100%;
@@ -32,16 +32,15 @@
   }
 
   .stats-main-text {
-    position: absolute;
-    bottom: 5px;
     width: 100%;
+
     display: flex;
     justify-content: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 55px;
-
+    margin-top: 70px;
     color: #ffffff;
   }
 
@@ -50,11 +49,10 @@
     font-style: normal;
     font-size: 31px;
     /* flex-grow: 1; */
-    margin: 0;
-
+    margin-left: 4%;
+    margin-right: 2%;
+    overflow: hidden;
     color: #ffffff;
-    position: absolute;
-    bottom: 540px;
 
     text-align: center;
   }
@@ -63,8 +61,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
-    margin-top: 15px;
+    font-size: 20px;
 
     color: #ffffff;
     align-self: center;
@@ -72,28 +69,28 @@
   }
 
   .stats-image {
-    height: 75%;
+    height: 100%;
     position: absolute;
-    left: -320px;
-    width: 200%;
-    background-size: cover;
+    object-position: -80px;
   }
 
   .stats-lower-container {
-    height: 60%;
+    height: 100%;
     background: #092342;
     display: flex;
     flex-direction: column;
 
-    align-items: start;
+    align-items: center;
+    justify-content: center;
   }
 
   .stats-image-container {
-    height: 50%;
+    height: 90%;
     position: relative;
     text-align: center;
-    overflow: hidden;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -101,27 +98,25 @@
   .stats-lower-elements {
     height: 100%;
     display: flex;
-    flex: 10;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .stats-icons {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
+  }
+
+  .stats-icons {
     position: absolute;
-    bottom: 20px;
-    left: 150px;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 80%;
   }
   .stats-icon {
     display: flex;
     flex-direction: column;
-    padding-bottom: 70px;
-    position: relative;
-    justify-content: start;
+
     align-items: center;
   }
 
@@ -129,7 +124,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 27px;
     color: #ffffff;
   }
 
@@ -163,7 +158,7 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 800px) {
   .stats-body {
     position: relative;
     width: 100%;
