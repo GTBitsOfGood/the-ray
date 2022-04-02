@@ -1,4 +1,4 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 800px) {
   .problem-body {
     background: #873856;
     /* background: #ffffff; */
@@ -13,8 +13,10 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
+
     font-size: max(5vw, 50px);
-    margin-left: 20%;
+    margin-left: 12%;
+    margin-top: 16%;
 
     color: #ffffff;
   }
@@ -25,17 +27,17 @@
     font-weight: 300;
     font-size: max(2vw, 20px);
     line-height: 42px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 12%;
+    margin-left: 12%;
 
     color: #ffffff;
   }
   .problem-icon {
-    height: 40vh;
-    margin-left: 40%;
+    height: 30vh;
+    width: 100%;
   }
 }
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 800px) {
   .problem-body {
     background: #873856;
     /* background: #ffffff; */
