@@ -24,3 +24,13 @@
 
   color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+  .rubber-background {
+    background-position: -300px;
+  }
+
+  .rubber-text {
+    font-size: 45px;
+  }
+}
