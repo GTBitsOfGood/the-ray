@@ -45,3 +45,14 @@
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
 }
+@media only screen and (max-width: 768px) {
+  .arrow {
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+  }
+
+  .arrow-image {
+    height: 36px;
+  }
+}
