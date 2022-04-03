@@ -12,6 +12,7 @@
   top: 86.56%;
   bottom: 6.82%;
   transition: filter 1s ease;
+  filter: drop-shadow(1px 1px 3px #000000);
 }
 
 .arrow-image-light:hover {
@@ -25,4 +26,22 @@
 
 .arrow-image-dark:hover {
   filter: invert(75%);
+}
+.down-arrow {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  -ms-transition: -ms-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  filter: drop-shadow(-1px -1px 3px #000000);
+}
+
+.up-arrow {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  -ms-transition: -ms-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
 }

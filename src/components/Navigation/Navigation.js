@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-import ProgressBar from './progressBar';
 import NextArrow from './NextArrow';
 import AutoplayArrow from './AutoplayArrow';
 
 function Navigation(props) {
-  const { children, progressBarColor, transitionTime, pageIndex, changePageIndex } = props;
+  const { children, transitionTime, pageIndex, changePageIndex } = props;
 
   const [isScrolling, changeScrollState] = useState(false);
 
@@ -148,14 +147,12 @@ function Navigation(props) {
           changeAutoplay(!isAutoplay);
         }}
       />
-      <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
 }
 
 Navigation.propTypes = {
   children: PropTypes.arrayOf(React.Component),
-  progressBarColor: PropTypes.string,
   transitionTime: PropTypes.number,
   pageIndex: PropTypes.number,
   changePageIndex: PropTypes.func,
@@ -163,7 +160,6 @@ Navigation.propTypes = {
 
 Navigation.defaultProps = {
   children: [],
-  progressBarColor: '#6a1b9a',
   transitionTime: 1000,
   pageIndex: 0,
   changePageIndex: () => {},

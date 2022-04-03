@@ -15,7 +15,7 @@ const StartMobileWheelright = ({ setWheelright }) => {
         <p className="start-wheelright-title-border-text header-lg">WheelRight</p>
         <p className="start-wheelright-tiresafety-title-text ">TIRE SAFETY CHECK STATION</p>
       </div>
-      <button type="button" className="transparent-button header-sm" onClick={setWheelright}>
+      <button type="button" className="transparent-button header-sm px-8" onClick={setWheelright}>
         WHEELRIGHT
       </button>
     </div>

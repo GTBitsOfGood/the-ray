@@ -42,6 +42,7 @@ import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
+  const [startPageIndex, changeStartPageIndex] = useState(0);
   const [project, setProject] = useState('Title');
   const [kwh, setkwh] = useState(0);
   const [CO2, setCO2] = useState(0);
@@ -55,7 +56,7 @@ function App() {
           <Start setWheelright={() => setProject('Wheelright')} setPv4ev={() => setProject('PV4EV')} />
         )}
         {project === 'Title' && isPageMobile && (
-          <Navigation progressBarColor="#fff" pageIndex={pageIndex} changePageIndex={changePageIndex}>
+          <Navigation progressBarColor="#fff" pageIndex={startPageIndex} changePageIndex={changeStartPageIndex}>
             <StartMobile pageIndex={0} />
             <StartMobileWheelright setWheelright={() => setProject('Wheelright')} pageIndex={1} />
             <StartMobilePV4EV setPv4ev={() => setProject('PV4EV')} pageIndex={2} />
