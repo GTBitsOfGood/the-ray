@@ -40,20 +40,12 @@ class Statistics extends React.PureComponent {
                 <div className="stats-icon">
                   {selection === '0' && (
                     <div className="stats-border-container">
-                      <img
-                        src={gasIconBlack}
-                        alt="gasIconBlack"
-                        style={{ width: 'calc(10px + 3vw)', height: 'calc(10px + 6vw)' }}
-                      />
+                      <img src={gasIconBlack} alt="gasIconBlack" className="gasIcon" />
                     </div>
                   )}
                   {selection !== '0' && (
                     <div className="stats-no-border-container">
-                      <img
-                        src={gasIcon}
-                        alt="gasIcon"
-                        style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }}
-                      />
+                      <img src={gasIcon} alt="gasIcon" className="gasIcon" />
                     </div>
                   )}
                   <p className="stats-tertiary-text">gas</p>
@@ -62,20 +54,12 @@ class Statistics extends React.PureComponent {
                   <div>
                     {selection !== '0' && (
                       <div className="stats-border-container">
-                        <img
-                          src={carAccidentIconBlack}
-                          alt="carAccidentIconBlack"
-                          style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
-                        />
+                        <img src={carAccidentIconBlack} alt="carAccidentIconBlack" className="gasIcon" />
                       </div>
                     )}
                     {selection === '0' && (
                       <div className="stats-no-border-container">
-                        <img
-                          src={carAccidentIcon}
-                          alt="carAccidentIcon"
-                          style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
-                        />
+                        <img src={carAccidentIcon} alt="carAccidentIcon" className="gasIcon" />
                       </div>
                     )}
                   </div>
