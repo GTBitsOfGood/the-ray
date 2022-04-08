@@ -34,7 +34,7 @@
 }
 
 .newsletter-main-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: max(2vw, 20px);
@@ -45,7 +45,7 @@
 }
 
 .newsletter-website {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(5vw, 50px);

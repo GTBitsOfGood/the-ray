@@ -10,7 +10,7 @@
   }
 
   .problem-title {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
 
@@ -22,7 +22,7 @@
   }
 
   .problem-text {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: max(2vw, 20px);
@@ -57,7 +57,7 @@
   }
 
   .problem-title {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: max(5vw, 50px);
@@ -67,7 +67,7 @@
   }
 
   .problem-text {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: max(2vw, 20px);

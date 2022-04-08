@@ -66,7 +66,7 @@
 }
 
 .start-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
@@ -238,7 +238,7 @@
 }
 
 .start-hollow-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   margin: 0;
 
@@ -255,7 +255,7 @@
   left: 100px;
   top: 210px;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -269,7 +269,7 @@
   left: 325px;
   top: 230px;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 144px;
@@ -281,7 +281,7 @@
 }
 
 .start-secondary-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
@@ -325,7 +325,7 @@
   bottom: 59.44%; */
   margin: 0;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   /* font-size: 19.5vw; */
@@ -348,7 +348,7 @@
   bottom: 66.78%;
   width: 100px;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(3vw, 27px);
@@ -364,7 +364,7 @@
   top: 30%;
   bottom: 66.78%;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(8vw, 68px);
@@ -377,7 +377,7 @@
   /* position: absolute; */
   white-space: nowrap;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -396,7 +396,7 @@
   bottom: 7.78%;
   white-space: nowrap;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: max(2vw, 20px);

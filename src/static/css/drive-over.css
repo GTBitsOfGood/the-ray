@@ -22,7 +22,7 @@
 }
 
 .drive-title {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(5vw, 40px);
@@ -32,7 +32,7 @@
 }
 
 .drive-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: max(2.5vw, 20px);
