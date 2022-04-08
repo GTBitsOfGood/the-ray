@@ -8,11 +8,11 @@ function Ticket(props) {
   const { bottomTicket, subtext, dataHeader, data, note, pageIndex } = props;
   return (
     <div className="ticket-background">
-      <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+      <div className="car-image-container" style={{ width: '100%', height: '100%', position: 'absolute' }}>
         <div className="split ticket-img-box">
           <div className={`ticket-box ticket-box-${bottomTicket ? 'bottom' : 'top'}`}>
             {!bottomTicket ? <div className="ticket-loop" /> : <div className="ticket-offset" />}
-            <div style={{ position: 'absolute', width: '82%', height: `${bottomTicket ? '83%' : '94%'}` }}>
+            <div className="car-image" style={{ height: `${bottomTicket ? '83%' : '94%'}` }}>
               <ParallaxComponent
                 pageIndex={pageIndex}
                 transitionTime={1500}

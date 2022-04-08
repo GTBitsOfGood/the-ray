@@ -104,3 +104,23 @@ p.ticket-text {
   /* line-height: 28px; */
   font-weight: normal;
 }
+
+.car-image {
+  position: 'absolute';
+  width: '82%';
+}
+
+@media only screen and (max-width: 800px) {
+  .ticket-background {
+    display: 'flex';
+    flex-direction: 'column';
+  }
+
+  .car-image-container {
+    position: 'static' !important;
+  }
+
+  .car-image {
+    position: 'static';
+  }
+}
