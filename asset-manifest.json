@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.75d39a64.chunk.css",
-    "main.js": "/the-ray/static/js/main.407dc1b1.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.407dc1b1.chunk.js.map",
+    "main.css": "/the-ray/static/css/main.db056c71.chunk.css",
+    "main.js": "/the-ray/static/js/main.0b6902ca.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.0b6902ca.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
-    "static/js/2.e485c041.chunk.js": "/the-ray/static/js/2.e485c041.chunk.js",
-    "static/js/2.e485c041.chunk.js.map": "/the-ray/static/js/2.e485c041.chunk.js.map",
+    "static/js/2.4adefc93.chunk.js": "/the-ray/static/js/2.4adefc93.chunk.js",
+    "static/js/2.4adefc93.chunk.js.map": "/the-ray/static/js/2.4adefc93.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.bfa790226958eb49c44255d2b6bf388f.js": "/the-ray/precache-manifest.bfa790226958eb49c44255d2b6bf388f.js",
+    "precache-manifest.31f7e02306b909441a52d0b6e5bcbb8c.js": "/the-ray/precache-manifest.31f7e02306b909441a52d0b6e5bcbb8c.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.75d39a64.chunk.css.map": "/the-ray/static/css/main.75d39a64.chunk.css.map",
-    "static/js/2.e485c041.chunk.js.LICENSE.txt": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt",
+    "static/css/main.db056c71.chunk.css.map": "/the-ray/static/css/main.db056c71.chunk.css.map",
+    "static/js/2.4adefc93.chunk.js.LICENSE.txt": "/the-ray/static/js/2.4adefc93.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
     "static/media/PvMiles.css": "/the-ray/static/media/Earth.143d0ff6.png",
@@ -34,6 +34,7 @@
     "static/media/gas-station-crop.jpg": "/the-ray/static/media/gas-station-crop.f6c69d2b.jpg",
     "static/media/PvBigNum.css": "/the-ray/static/media/gaspump.e32fc4f4.png",
     "static/media/green-rectangle.svg": "/the-ray/static/media/green-rectangle.e75569ca.svg",
+    "static/media/green-triangle.svg": "/the-ray/static/media/green-triangle.7512151b.svg",
     "static/media/half-car.png": "/the-ray/static/media/half-car.20cf7648.png",
     "static/media/hannahlogo.png": "/the-ray/static/media/hannahlogo.f1c86cec.png",
     "static/media/Help.css": "/the-ray/static/media/pvHelp.796dcb4a.png",
@@ -61,15 +62,15 @@
     "static/media/tire-skid.svg": "/the-ray/static/media/tire-skid.8867552e.svg",
     "static/media/UnderInflated.css": "/the-ray/static/media/under-inflated-tire.5b735101.jpg",
     "static/media/what-we-do.css": "/the-ray/static/media/what-we-do.20224910.jpg",
-    "static/media/Start.css": "/the-ray/static/media/wheelright-page1.6630deb5.jpg",
+    "static/media/Title.css": "/the-ray/static/media/wheelright-page1.6630deb5.jpg",
     "static/media/wheelright.css": "/the-ray/static/media/wheelright.e9c2db87.jpg",
     "static/media/findUs.css": "/the-ray/static/media/where-to-find-us.2d3c8b24.jpg",
     "static/media/yellow-dot.svg": "/the-ray/static/media/yellow-dot.f3f4ee9a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
-    "static/js/2.e485c041.chunk.js",
-    "static/css/main.75d39a64.chunk.css",
-    "static/js/main.407dc1b1.chunk.js"
+    "static/js/2.4adefc93.chunk.js",
+    "static/css/main.db056c71.chunk.css",
+    "static/js/main.0b6902ca.chunk.js"
   ]
 }

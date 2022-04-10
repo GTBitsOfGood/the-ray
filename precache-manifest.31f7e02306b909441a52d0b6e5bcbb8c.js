@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4033c5ab8b745594abfe5bf9fef663f2",
+    "revision": "45686855666f397bd0c87108a9670cc2",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "e1c67030bda09750eb5d",
-    "url": "/the-ray/static/css/main.75d39a64.chunk.css"
+    "revision": "4a3861ea79c3208a7581",
+    "url": "/the-ray/static/css/main.db056c71.chunk.css"
   },
   {
-    "revision": "df0e1f2608f9b90a5c1e",
-    "url": "/the-ray/static/js/2.e485c041.chunk.js"
+    "revision": "404c59c435499d8f5795",
+    "url": "/the-ray/static/js/2.4adefc93.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-ray/static/js/2.e485c041.chunk.js.LICENSE.txt"
+    "url": "/the-ray/static/js/2.4adefc93.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1c67030bda09750eb5d",
-    "url": "/the-ray/static/js/main.407dc1b1.chunk.js"
+    "revision": "4a3861ea79c3208a7581",
+    "url": "/the-ray/static/js/main.0b6902ca.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -114,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e75569ca854bc1d82fdbc5d98dc6595c",
     "url": "/the-ray/static/media/green-rectangle.e75569ca.svg"
+  },
+  {
+    "revision": "7512151bacb14b017e9d934a4e89a22d",
+    "url": "/the-ray/static/media/green-triangle.7512151b.svg"
   },
   {
     "revision": "20cf7648ba2390931132f2ce7882dc30",
