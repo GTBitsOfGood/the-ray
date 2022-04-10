@@ -29,3 +29,9 @@
 .px-16 {
   padding: 16px;
 }
+
+.main-btn {
+  width: 14rem;
+  height: 4rem;
+  font-weight: bold;
+}
