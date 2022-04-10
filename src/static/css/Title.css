@@ -27,7 +27,7 @@
   top: -15%;
   bottom: 59.44%;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 19.5vw;
@@ -47,7 +47,7 @@
 }
 
 .theray-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(3vw, 27px);
@@ -60,7 +60,7 @@
 }
 
 .title-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(9vw, 69px);
@@ -70,7 +70,7 @@
 }
 
 .tiresafety-title-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(3vw, 27px);
@@ -87,7 +87,7 @@
   bottom: 7.78%;
   white-space: nowrap;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: max(2vw, 20px);
