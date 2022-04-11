@@ -12,6 +12,16 @@
   overflow: hidden;
 }
 
+.ticket-background-mobile {
+  background: #092342;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
 .split {
   position: fixed;
   height: 100%;
@@ -28,6 +38,7 @@
 
 .ticket-text-box {
   right: 0;
+  width: 90vw;
 }
 
 .ticket-box {
@@ -105,22 +116,44 @@ p.ticket-text {
   font-weight: normal;
 }
 
-.car-image {
-  position: absolute;
-  width: 82%;
-}
-
 @media only screen and (max-width: 800px) {
-  .ticket-background {
+  .text-container {
+    color: white;
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    padding: 15px;
   }
 
-  .car-image-container {
-    position: static !important;
+  h1.text-container {
+    font-size: 36px;
   }
 
-  .car-image {
-    position: static;
+  p.text-container {
+    font-size: 18px;
+  }
+
+  .ticket-text-box {
+    color: white;
+  }
+
+  h1.ticket-text {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  p.ticket-text {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h5.ticket-text {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  h3.ticket-text {
+    font-weight: 700;
+    font-size: 33px;
   }
 }
