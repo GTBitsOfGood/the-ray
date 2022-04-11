@@ -34,13 +34,13 @@
 .pv-gradient-blue-background {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #50a6c3 22.88%, rgba(255, 255, 255, 0) 117.39%), rgba(80, 166, 195, 0.44);
+  background: linear-gradient(180deg, #70c6df 22.88%, rgba(255, 255, 255, 0) 117.39%), rgba(112, 198, 223, 0.44);
 }
 
 .pv-gradient-yellow-background {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #f0d27e 0%, rgba(240, 210, 126, 0.828125) 50%, rgba(240, 210, 126, 0) 100%);
+  background: linear-gradient(180deg, #e9e969 0%, rgba(233, 233, 105, 0.828125) 50%, rgba(240, 210, 126, 0) 100%);
 }
 
 [class*='.pv-gradient'] {
