@@ -1,4 +1,4 @@
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 800px) {
   .title-background {
     background-image: url('../images/wheelright-page1.jpg');
     background-size: cover;
@@ -15,6 +15,11 @@
     align-items: center;
     z-index: 1;
     background: rgba(211, 92, 88, 0.44);
+  }
+
+  .arrow-button {
+    position: absolute;
+    top: 0px;
   }
 
   .title-border-text {
@@ -86,7 +91,7 @@
   }
 }
 
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 800px) {
   .title-background {
     background-image: url('../images/wheelright-page1.jpg');
     background-size: cover;
