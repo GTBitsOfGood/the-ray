@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58f5927d6d0df28e4d57534dbd78afce",
+    "revision": "38d7bb240118834e26722231dcf81df0",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "3ad858d2621991e19618",
-    "url": "/the-ray/static/css/main.83819003.chunk.css"
+    "revision": "e33f9556bf743265aa15",
+    "url": "/the-ray/static/css/main.bd4df362.chunk.css"
   },
   {
     "revision": "404c59c435499d8f5795",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/js/2.4adefc93.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ad858d2621991e19618",
-    "url": "/the-ray/static/js/main.0b6902ca.chunk.js"
+    "revision": "e33f9556bf743265aa15",
+    "url": "/the-ray/static/js/main.265f8286.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/Earth.143d0ff6.png"
   },
   {
-    "revision": "1e4d75364b30bba523a75cc743b58337",
-    "url": "/the-ray/static/media/Full-battery-icon.1e4d7536.svg"
+    "revision": "f43c79b1de0655aff1b72a7de60015a2",
+    "url": "/the-ray/static/media/Full-battery-icon.f43c79b1.svg"
   },
   {
-    "revision": "5e747edb401a7b63b7dee6779a0eb388",
-    "url": "/the-ray/static/media/Low-battery-icon.5e747edb.svg"
+    "revision": "41f2eef4aae176d63670d0e1038ef30f",
+    "url": "/the-ray/static/media/Low-battery-icon.41f2eef4.svg"
   },
   {
     "revision": "84a4103a6eb21a13c2fc3ce084aebea6",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/car-crash-crop.d9174d63.jpg"
   },
   {
-    "revision": "dcdf9613292c948179079379038be5c7",
-    "url": "/the-ray/static/media/car-graphic.dcdf9613.svg"
+    "revision": "5a67cdcbb2453198f47e3b5a6b2c8fe5",
+    "url": "/the-ray/static/media/car-graphic.5a67cdcb.svg"
   },
   {
     "revision": "9a9c36d06e3527aafc7a1b0afee71477",
@@ -112,12 +112,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/gaspump.e32fc4f4.png"
   },
   {
-    "revision": "e75569ca854bc1d82fdbc5d98dc6595c",
-    "url": "/the-ray/static/media/green-rectangle.e75569ca.svg"
+    "revision": "285143f0a87632fd976bbd221fe2e48b",
+    "url": "/the-ray/static/media/green-rectangle.285143f0.svg"
   },
   {
-    "revision": "7512151bacb14b017e9d934a4e89a22d",
-    "url": "/the-ray/static/media/green-triangle.7512151b.svg"
+    "revision": "6ad180fc09993d07359594e442acca53",
+    "url": "/the-ray/static/media/green-triangle.6ad180fc.svg"
   },
   {
     "revision": "20cf7648ba2390931132f2ce7882dc30",
@@ -136,8 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/hydroplaning.7ff9a9ac.svg"
   },
   {
-    "revision": "0e02bf998fbd7713362f546e9d02a1d8",
-    "url": "/the-ray/static/media/left-background.0e02bf99.svg"
+    "revision": "b722c8d2d8f9b8018346c13f51167465",
+    "url": "/the-ray/static/media/left-background.b722c8d2.svg"
   },
   {
     "revision": "0a1d8ce727f4c0ba2803504b0bef8c22",
@@ -164,8 +164,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/pause.3ca503dd.png"
   },
   {
-    "revision": "601205722ba2cfc133879c0eb11d78cc",
-    "url": "/the-ray/static/media/phone.60120572.svg"
+    "revision": "ec68b00c339c5c48bc97b31c57952f14",
+    "url": "/the-ray/static/media/phone.ec68b00c.svg"
   },
   {
     "revision": "997368b2ff83b26a0f88dcac4c8e5c8a",
@@ -180,8 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/psi-car.f370c72a.svg"
   },
   {
-    "revision": "3063e3ef9b4349f36364afe81b73ef7e",
-    "url": "/the-ray/static/media/pv4ev.3063e3ef.svg"
+    "revision": "7c1f7f7ad92a842290cde0a88f9cf5a0",
+    "url": "/the-ray/static/media/pv4ev.7c1f7f7a.svg"
   },
   {
     "revision": "796dcb4aa023d577c3bfac3f04e0c00e",
@@ -196,8 +196,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/ray-future.95d2c79c.jpg"
   },
   {
-    "revision": "45a233d88570fc81da2d5f8c506ed20f",
-    "url": "/the-ray/static/media/right-background.45a233d8.svg"
+    "revision": "88285a2ef9979c7be4601b7dac78d6dd",
+    "url": "/the-ray/static/media/right-background.88285a2e.svg"
   },
   {
     "revision": "f007f57f735cf2522cfaf1334d577bff",
@@ -216,8 +216,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/ticket-icons.92839e46.svg"
   },
   {
-    "revision": "f1cfa130647668794887ea8f8d57c583",
-    "url": "/the-ray/static/media/ticket.f1cfa130.svg"
+    "revision": "095fcce018f9a0ddfbf49bdaf21e741f",
+    "url": "/the-ray/static/media/ticket.095fcce0.svg"
   },
   {
     "revision": "709860bb55d80ea2422d71fabaa856e3",
