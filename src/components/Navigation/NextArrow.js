@@ -3,17 +3,15 @@ import PropTypes from 'prop-types';
 
 import './NextArrow.css';
 import downarrow from './arrow_downward_24px.svg';
-import uparrow from '../../static/images/upward.png';
 
 function NextArrow(props) {
   const { goNextPage, dark, up } = props;
+  const arrowClassName = `arrow-image ${up ? 'down-arrow ' : 'up-arrow '}${
+    dark ? 'arrow-image-dark ' : 'arrow-image-light'
+  }`;
   return (
     <button type="button" className="arrow" onClick={goNextPage}>
-      <img
-        src={up ? uparrow : downarrow}
-        alt="Go to next page"
-        className={dark ? 'arrow-image arrow-image-dark' : 'arrow-image arrow-image-light'}
-      />
+      <img src={downarrow} alt="Go to next page" className={arrowClassName} />
     </button>
   );
 }
