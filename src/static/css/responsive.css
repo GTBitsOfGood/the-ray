@@ -10,9 +10,24 @@
 */
 
 /* For mobile phones: */
+/* depricated */
 [class*='header-'] {
   font-size: max(3rem, 48px);
   /* font-weight: bold; */
+}
+
+/* mobile views */
+@media only screen and (min-width: 300px) {
+  .header-xl {
+    font-size: min(6rem, 100px);
+  }
+
+  .header-lg {
+    font-size: min(4rem, 75px);
+  }
+  .header-sm {
+    font-size: min(2rem, 28px);
+  }
 }
 
 @media only screen and (min-width: 640px) {

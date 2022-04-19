@@ -15,5 +15,23 @@
 }
 
 .mb-4 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.px-8 {
+  padding: 8px;
+}
+
+.px-12 {
+  padding: 12px;
+}
+
+.px-16 {
+  padding: 16px;
+}
+
+.main-btn {
+  width: 14rem;
+  height: 4rem;
+  font-weight: bold;
 }

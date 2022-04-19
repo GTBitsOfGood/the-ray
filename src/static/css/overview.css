@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #4c7d77;
+  background-color: #2d9f8f;
   z-index: -2;
 }
 
@@ -36,7 +36,7 @@
 
   z-index: 10;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(3vw, 27px);
@@ -71,7 +71,7 @@
   left: 55%;
   z-index: 2;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   /* font-weight: bold; */
   font-size: max(2vw, 20px);

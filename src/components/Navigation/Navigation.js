@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-import ProgressBar from './progressBar';
 import NextArrow from './NextArrow';
 import AutoplayArrow from './AutoplayArrow';
 
+const TOUCH_START_TYPE = 'touchstart';
+const TOUCH_END_TYPE = 'touchend';
+
 function Navigation(props) {
-  const { children, progressBarColor, transitionTime, pageIndex, changePageIndex } = props;
+  const { children, transitionTime, pageIndex, changePageIndex } = props;
 
   const [isScrolling, changeScrollState] = useState(false);
 
@@ -15,6 +17,8 @@ function Navigation(props) {
   const pageContainer = useRef(null);
 
   const [isAutoplay, changeAutoplay] = useState(false);
+
+  const [touchStart, setTouchStart] = useState({ startX: 0, startY: 0 });
 
   const pageTimes = [
     2000,
@@ -88,16 +92,33 @@ function Navigation(props) {
   const onScroll = (event) => {
     if (!isScrolling) {
       changeScrollState(true);
-
       if (event.deltaY < 0) {
         pageUp();
       } else {
         pageDown();
       }
-
       setTimeout(() => {
         changeScrollState(false);
-      }, transitionTime);
+      }, 1500);
+    }
+  };
+
+  const onMobileScroll = (event) => {
+    event.preventDefault();
+    if (event.type === TOUCH_START_TYPE) {
+      setTouchStart({ startX: event.touches[0].clientX, startY: event.touches[0].clientY });
+    } else if (event.type === TOUCH_END_TYPE) {
+      const { startY } = touchStart;
+      const endY = event.changedTouches[0].clientY;
+      const deltaY = endY - startY;
+
+      if (deltaY < -10) {
+        // Scroll Down
+        pageDown();
+      } else if (deltaY > 10) {
+        // Scroll Up
+        pageUp();
+      }
     }
   };
 
@@ -123,11 +144,11 @@ function Navigation(props) {
     <div
       style={{
         height: '100vh',
-        width: '100vw',
         overflow: 'hidden',
       }}
     >
       <div
+        className="navigation-container"
         ref={pageContainer}
         style={{
           height: '100%',
@@ -136,6 +157,8 @@ function Navigation(props) {
           outline: 'none',
         }}
         onWheel={onScroll}
+        onTouchEnd={onMobileScroll}
+        onTouchStart={onMobileScroll}
       >
         {children}
       </div>
@@ -148,14 +171,12 @@ function Navigation(props) {
           changeAutoplay(!isAutoplay);
         }}
       />
-      <ProgressBar bgcolor={progressBarColor} completed={(pageIndex / (Object.keys(children).length - 1)) * 100} />
     </div>
   );
 }
 
 Navigation.propTypes = {
   children: PropTypes.arrayOf(React.Component),
-  progressBarColor: PropTypes.string,
   transitionTime: PropTypes.number,
   pageIndex: PropTypes.number,
   changePageIndex: PropTypes.func,
@@ -163,7 +184,6 @@ Navigation.propTypes = {
 
 Navigation.defaultProps = {
   children: [],
-  progressBarColor: '#6a1b9a',
   transitionTime: 1000,
   pageIndex: 0,
   changePageIndex: () => {},

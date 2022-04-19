@@ -17,10 +17,20 @@
 }
 
 .rubber-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .rubber-background {
+    background-position: -300px;
+  }
+
+  .rubber-text {
+    font-size: 45px;
+  }
 }

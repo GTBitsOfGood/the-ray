@@ -22,7 +22,7 @@
 
 .help-main-text {
   /* transform: translate(0px, 325px); */
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -38,7 +38,7 @@
   left: 60.07%;
   bottom: 8%;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;

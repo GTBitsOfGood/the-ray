@@ -1,6 +1,5 @@
 .pv-map-background {
-  background-color: #50a6c3;
-  background-size: cover;
+  background-color: #70c6df;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -12,6 +11,7 @@
 }
 
 .pv-map-infobox {
+  background-size: cover;
   left: 0;
   position: relative;
   margin-top: 5vh;
@@ -19,12 +19,14 @@
 }
 
 .pv-map-textbox {
+  background-size: cover;
   width: 80%;
   margin: 3vw auto;
   text-align: left;
 }
 
 .pv-map-imagebox {
+  background-size: cover;
   right: 0;
   position: relative;
 }
