@@ -8,7 +8,6 @@ import '../../static/css/StartMobile.css';
 const StartMobileWheelright = ({ setWheelright }) => {
   return (
     <div className="start-body-mobile wheelright-title-background">
-      {/* <img className="start-wheelright-background" src={wheelrightPage1} alt="frontpage" /> */}
       <div className="start-wheelright-title-sheet" />
       <div className="start-wheelright-title-body">
         <p className="start-wheelright-title-border-text header-lg">WheelRight</p>
