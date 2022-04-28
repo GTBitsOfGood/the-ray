@@ -10,7 +10,12 @@ const Title = (props) => {
   return (
     <div className="title-background">
       <div className="title-body">
-        <button type="button" className="arrow-button" onClick={() => setProject('Title')}>
+        <button
+          type="button"
+          className="arrow-button"
+          onClick={() => setProject('Title')}
+          onTouchStart={() => setProject('Title')}
+        >
           <img className="back-arrow" src={arrow} alt="back" />
         </button>
         <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
