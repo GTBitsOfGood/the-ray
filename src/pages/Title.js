@@ -17,7 +17,7 @@ const Title = (props) => {
           <div className="uppertext">
             <p className="title-border-text">WheelRight</p>
           </div>
-          <div className="wheelright-subheading flex-col">
+          <div className="wheelright-subheading">
             <p className="theray-text">THE RAY</p>
             <p className="title-text">WheelRight</p>
             <p className="tiresafety-title-text">TIRE SAFETY CHECK STATION</p>

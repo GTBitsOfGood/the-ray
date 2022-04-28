@@ -1,39 +1,80 @@
-.wheelright-background {
-  background-image: url('../images/wheelright.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+@media only screen and (max-width: 800px) {
+  .wheelright-background {
+    background-image: url('../images/wheelright.jpg');
+    background-size: cover;
+    background-position: 65%;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .wheelright-body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    justify-content: center;
+    background: rgba(135, 56, 86, 0.44);
+  }
+
+  .wheelright-text {
+    display: flex;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    mix-blend-mode: normal;
+    -webkit-text-stroke: 6px white;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-.wheelright-body {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  display: flex;
-  background: rgba(135, 56, 86, 0.44);
-}
+@media only screen and (min-width: 800px) {
+  .wheelright-background {
+    background-image: url('../images/wheelright.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
 
-.wheelright-text {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 7%;
-  bottom: 7%;
+  .wheelright-body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    background: rgba(135, 56, 86, 0.44);
+  }
 
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(22vw, 160px);
-  line-height: 24vw;
+  .wheelright-text {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 7%;
+    bottom: 7%;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(22vw, 160px);
+    line-height: 24vw;
 
-  mix-blend-mode: normal;
-  -webkit-text-stroke: 6px white;
-  -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    mix-blend-mode: normal;
+    -webkit-text-stroke: 6px white;
+    -webkit-text-fill-color: transparent;
+  }
 }

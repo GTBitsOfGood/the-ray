@@ -1,97 +1,187 @@
-.title-background {
-  background-image: url('../images/wheelright-background.JPG');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
+@media only screen and (max-width: 800px) {
+  .title-background {
+    background-image: url('../images/wheelright-background.JPG');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .title-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background: rgba(211, 92, 88, 0.44);
+  }
+  .arrow-button {
+    position: absolute;
+    top: 0px;
+  }
+
+  .title-border-text {
+    position: relative;
+    transform: translate(0%, 100%);
+    display: center;
+    top: 1%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5vw;
+
+    align-items: center;
+    text-align: center;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .wheelright-subheading {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+
+  .theray-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0px;
+    margin: 0.5rem 0;
+    color: #ffffff;
+  }
+
+  .title-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0px;
+    /* identical to box height */
+    color: #ffffff;
+    margin: 1rem 0;
+  }
+
+  .tiresafety-title-text {
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: max(9vw, 26px);
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .scroll-title-text {
+    position: absolute;
+    left: 56.21%;
+    right: 9.79%;
+    top: 83.56%;
+    bottom: 7.78%;
+    white-space: nowrap;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0px;
+    line-height: 42px;
+
+    color: #ffffff;
+  }
 }
 
-.title-body {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  display: flex;
-  background: rgba(211, 92, 88, 0.44);
-}
+@media only screen and (min-width: 800px) {
+  .title-background {
+    background-image: url('../images/wheelright-page1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
 
-.title-border-text {
-  position: relative;
-  transform: translate(0%, -75%);
-  display: inline-block;
-  margin-bottom: 0%;
-  left: 1.18%;
-  right: 1.11%;
-  top: -15%;
-  bottom: 59.44%;
+  .title-body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    background: rgba(211, 92, 88, 0.44);
+  }
 
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 19.5vw;
-  line-height: 316px;
+  .title-border-text {
+    position: relative;
+    transform: translate(0%, -75%);
+    display: inline-block;
+    margin-bottom: 0%;
+    left: 1.18%;
+    right: 1.11%;
+    top: -15%;
+    bottom: 59.44%;
 
-  align-items: center;
-  text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5vw;
+    line-height: 316px;
 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: transparent;
-}
+    align-items: center;
+    text-align: center;
 
-.wheelright-subheading {
-  position: absolute;
-  left: 46.26%;
-  top: 30%;
-}
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+  }
 
-.theray-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(3vw, 27px);
-  margin: 0.5rem 0;
-  color: #ffffff;
-}
+  .wheelright-subheading {
+    position: absolute;
+    left: 46.26%;
+    top: 30%;
+  }
 
-.uppertext {
-  display: inline-block;
-}
+  .theray-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(3vw, 27px);
+    margin: 0.5rem 0;
+    color: #ffffff;
+  }
 
-.title-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(9vw, 69px);
-  /* identical to box height */
-  color: #ffffff;
-  margin: 1rem 0;
-}
+  .title-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(9vw, 69px);
+    /* identical to box height */
+    color: #ffffff;
+    margin: 1rem 0;
+  }
 
-.tiresafety-title-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: max(3vw, 27px);
-  margin: 0.5rem 0;
+  .tiresafety-title-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(3vw, 27px);
+    margin: 0.5rem 0;
 
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 
-.scroll-title-text {
-  position: absolute;
-  left: 56.21%;
-  right: 9.79%;
-  top: 83.56%;
-  bottom: 7.78%;
-  white-space: nowrap;
+  .scroll-title-text {
+    position: absolute;
+    left: 56.21%;
+    right: 9.79%;
+    top: 83.56%;
+    bottom: 7.78%;
+    white-space: nowrap;
 
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: max(2vw, 20px);
-  line-height: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: max(2vw, 20px);
+    line-height: 42px;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
