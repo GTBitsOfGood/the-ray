@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.779d7c22.chunk.css",
-    "main.js": "/the-ray/static/js/main.4de3fcaf.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.4de3fcaf.chunk.js.map",
+    "main.css": "/the-ray/static/css/main.d412fffc.chunk.css",
+    "main.js": "/the-ray/static/js/main.b98d786a.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.b98d786a.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
-    "static/js/2.778c0361.chunk.js": "/the-ray/static/js/2.778c0361.chunk.js",
-    "static/js/2.778c0361.chunk.js.map": "/the-ray/static/js/2.778c0361.chunk.js.map",
+    "static/js/2.2457b382.chunk.js": "/the-ray/static/js/2.2457b382.chunk.js",
+    "static/js/2.2457b382.chunk.js.map": "/the-ray/static/js/2.2457b382.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.1d9825057bfa7ffe12baf31d5e3fae15.js": "/the-ray/precache-manifest.1d9825057bfa7ffe12baf31d5e3fae15.js",
+    "precache-manifest.22d80ba6daf7ee901434510b5ee1f5b4.js": "/the-ray/precache-manifest.22d80ba6daf7ee901434510b5ee1f5b4.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.779d7c22.chunk.css.map": "/the-ray/static/css/main.779d7c22.chunk.css.map",
-    "static/js/2.778c0361.chunk.js.LICENSE.txt": "/the-ray/static/js/2.778c0361.chunk.js.LICENSE.txt",
+    "static/css/main.d412fffc.chunk.css.map": "/the-ray/static/css/main.d412fffc.chunk.css.map",
+    "static/js/2.2457b382.chunk.js.LICENSE.txt": "/the-ray/static/js/2.2457b382.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
     "static/media/PvMiles.css": "/the-ray/static/media/Earth.143d0ff6.png",
@@ -62,6 +62,8 @@
     "static/media/tire-skid.svg": "/the-ray/static/media/tire-skid.8867552e.svg",
     "static/media/UnderInflated.css": "/the-ray/static/media/under-inflated-tire.5b735101.jpg",
     "static/media/what-we-do.css": "/the-ray/static/media/what-we-do.20224910.jpg",
+    "static/media/Start.css": "/the-ray/static/media/wheelright-background-2.1db39c63.jpg",
+    "static/media/StartMobile.css": "/the-ray/static/media/wheelright-background-mobile.9c19c4b6.png",
     "static/media/Title.css": "/the-ray/static/media/wheelright-page1.6630deb5.jpg",
     "static/media/wheelright.css": "/the-ray/static/media/wheelright.e9c2db87.jpg",
     "static/media/findUs.css": "/the-ray/static/media/where-to-find-us.2d3c8b24.jpg",
@@ -69,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
-    "static/js/2.778c0361.chunk.js",
-    "static/css/main.779d7c22.chunk.css",
-    "static/js/main.4de3fcaf.chunk.js"
+    "static/js/2.2457b382.chunk.js",
+    "static/css/main.d412fffc.chunk.css",
+    "static/js/main.b98d786a.chunk.js"
   ]
 }
