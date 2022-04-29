@@ -1,34 +1,75 @@
-.what-background {
-  background-image: url('../images/what-we-do.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+@media only screen and (max-width: 800px) {
+  .what-background {
+    background-image: url('../images/what-we-do.jpg');
+    background-size: cover;
+    background-position: 55%;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .what-body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    background: rgba(76, 125, 119, 0.44);
+  }
+
+  .what-text {
+    display: center;
+    margin-top: 425px;
+    position: absolute;
+    left: 7.5%;
+    top: 75.56%;
+    bottom: 0%;
+    color: white;
+    text-shadow: 2px 4px 4px rgba(54, 58, 67, 0.6);
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 75px;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
 }
+@media only screen and (min-width: 800px) {
+  .what-background {
+    background-image: url('../images/what-we-do.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
 
-.what-body {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  display: flex;
-  background: rgba(76, 125, 119, 0.44);
-}
+  .what-body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    background: rgba(76, 125, 119, 0.44);
+  }
 
-.what-text {
-  position: absolute;
-  left: 5.42%;
-  top: 75.56%;
-  bottom: 0%;
+  .what-text {
+    position: absolute;
+    left: 5.42%;
+    top: 75.56%;
+    bottom: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+    text-align: center;
 
-  text-align: center;
-
-  color: #ffffff;
+    color: #ffffff;
+  }
 }

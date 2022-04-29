@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './progressBar.css';
+
 const ProgressBar = (props) => {
   const { bgcolor, completed } = props;
 
@@ -23,7 +25,7 @@ const ProgressBar = (props) => {
   };
 
   return (
-    <div style={containerStyles}>
+    <div style={containerStyles} className="progress">
       <div style={fillerStyles}>{/* <span style={labelStyles}>{`${completed}%`}</span> */}</div>
     </div>
   );

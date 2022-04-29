@@ -22,7 +22,7 @@
     left: 10%;
     top: 60%;
 
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
@@ -38,7 +38,7 @@
   }
 
   .partners-drive {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 55px;

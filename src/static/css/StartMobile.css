@@ -1,0 +1,133 @@
+/* Mobile view css */
+@media only screen and (min-width: 300px) {
+  .start-body-mobile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #010101;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wheelright-title-background {
+    background-image: url('../images/wheelright-background-mobile.png');
+    background-size: cover;
+  }
+
+  .green-background {
+    background-color: #2d9f8f;
+  }
+
+  .start-green-triangle {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+
+  .start-solar-mobile {
+    right: 0%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+    width: 151vw;
+    opacity: 0.75;
+  }
+
+  .pv4ev-bg-svg {
+    position: absolute;
+    z-index: 3;
+    width: 70vw;
+    right: 42vw;
+    top: 16vh;
+  }
+
+  .start-pv4ev-mobile {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 2rem;
+    background-color: #ffffff;
+    margin-right: 2rem;
+    z-index: 50;
+    cursor: pointer;
+    color: black;
+  }
+
+  .start-text-mobile {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    color: #2d9f8f;
+    padding: 0;
+    margin: 0px 2rem;
+    line-height: normal;
+  }
+
+  .start-wheelright-background {
+    position: absolute;
+    top: 0;
+    left: -50%;
+  }
+
+  .start-wheelright-title-sheet {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(236, 106, 111, 0.45);
+  }
+
+  .start-wheelright-title-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    /* margin-top: auto; */
+  }
+
+  .start-wheelright-title-border-text {
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+  }
+  .start-wheelright-tiresafety-title-text {
+    /* position: absolute; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+    margin-top: -2rem;
+  }
+
+  .start-wheelright-wheelright {
+    border: 3px solid white;
+    border-radius: 5px;
+    background: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    z-index: 50;
+    cursor: pointer;
+  }
+
+  .transparent-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    color: #000;
+    mix-blend-mode: screen;
+    display: block;
+    z-index: 50;
+  }
+}

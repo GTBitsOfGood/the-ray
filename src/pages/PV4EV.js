@@ -12,8 +12,13 @@ class PV4EV extends React.PureComponent {
   render() {
     const { setProject, pageIndex } = this.props;
     return (
-      <div className="pv4ev-body" style={{ backgroundColor: '#4c7d77' }}>
-        <button type="button" className="arrow-button" onClick={() => setProject('Title')}>
+      <div className="pv4ev-body" style={{ backgroundColor: '#2d9f8f' }}>
+        <button
+          type="button"
+          className="arrow-button"
+          onClick={() => setProject('Title')}
+          onTouchStart={() => setProject('Title')}
+        >
           <img className="back-arrow" src={arrow} alt="back" />
         </button>
         <img className="pv4ev-background" src={greenRectangle} alt="Background" />

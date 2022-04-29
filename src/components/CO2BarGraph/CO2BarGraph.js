@@ -226,7 +226,7 @@ function CO2BarGraph({ setCO2 }) {
         indexBy="date"
         margin={{ top: 50, right: 130, bottom: 80, left: 120 }}
         padding={0.3}
-        colors={() => `#873856`} // The Ray's Mauvelous color
+        colors={() => `#f7914b`} // The Ray's Mauvelous color
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
           tickSize: 5,
@@ -266,12 +266,12 @@ function CO2BarGraph({ setCO2 }) {
         onMouseEnter={(_, event) => {
           const { style } = event.target;
           style.transition = 'fill 0.4s';
-          style.fill = '#D35C58';
+          style.fill = '#ec6a6f';
         }}
         onMouseLeave={(_, event) => {
           const { style } = event.target;
           style.transition = 'fill 0.2s';
-          style.fill = '#873856';
+          style.fill = '#f7914b';
         }}
         theme={{
           axis: {

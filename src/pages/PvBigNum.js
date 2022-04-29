@@ -16,7 +16,7 @@ function PvBigNum(props) {
               target={targetNum}
               percentage={percentage}
             />
-            <p style={{ fontSize: '75px', marginTop: '0px' }}> {label} </p>
+            <p style={{ fontSize: '30px', marginTop: '60px' }}> {label} </p>
           </div>
         </div>
       </div>

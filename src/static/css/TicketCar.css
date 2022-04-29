@@ -19,11 +19,11 @@
 }
 
 .ticket-car-box p {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  color: #092342;
+  color: #2d9f8f;
   position: absolute;
   top: 50%;
   left: 50%;
