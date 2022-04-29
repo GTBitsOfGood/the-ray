@@ -1,4 +1,4 @@
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 800) {
   .pv-map-background {
     background-color: #70c6df;
     background-size: cover;
@@ -52,7 +52,7 @@
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 800px) {
   .pv-map-background {
     background-color: #50a6c3;
     width: 100%;
@@ -87,11 +87,11 @@
 
   .pv-map-imagebox {
     position: absolute;
-    top: -350px;
-    left: -48px;
+    top: -500px;
+    left: -180px;
 
-    height: 250px;
-    width: 375px;
+    height: 500px;
+    width: 525px;
   }
 
   .pv-bulb {
