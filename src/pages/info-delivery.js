@@ -19,7 +19,6 @@ const InfoDelivery = (props) => {
             <br />
             <br />
             Within seconds, WheelRight has crunched the data for every individual tire and can deliver the information
-            <br />
             where and how you need it--a text message, a printed ticket, or organized in the cloud for fleet management.
           </p>
         </div>

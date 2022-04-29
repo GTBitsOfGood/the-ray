@@ -24,7 +24,12 @@ const StartMobilePV4EV = ({ setPv4ev }) => {
           </p>
         </>
       </div>
-      <button type="button" className="transparent-button header-sm main-btn" onClick={setPv4ev}>
+      <button
+        type="button"
+        className="transparent-button header-sm main-btn"
+        onClick={setPv4ev}
+        onTouchStart={setPv4ev}
+      >
         PV4EV
       </button>
     </div>

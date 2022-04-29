@@ -1,6 +1,6 @@
 @media only screen and (max-width: 800px) {
   .problem-body {
-    background: #873856;
+    background: #b25d96;
     /* background: #ffffff; */
     width: 100%;
     height: 100vh;
@@ -39,7 +39,7 @@
 }
 @media only screen and (min-width: 800px) {
   .problem-body {
-    background: #873856;
+    background: #b25d96;
     /* background: #ffffff; */
     width: 100%;
     height: 100vh;

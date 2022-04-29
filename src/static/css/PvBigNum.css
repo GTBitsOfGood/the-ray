@@ -1,37 +1,78 @@
-.pv-bignum-background {
-  background-image: url('../images/gaspump.png');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
-  overflow: hidden;
-}
+@media only screen and (max-width: 391px) {
+  .pv-bignum-background {
+    background-image: url('../images/gaspump.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    overflow: hidden;
+  }
 
-.pv-bignum-body {
-  width: 100%;
-  height: 100%;
-  background: rgba(80, 166, 195, 0.44);
-}
+  .pv-bignum-body {
+    width: 100%;
+    height: 100%;
+    background: rgba(80, 166, 195, 0.44);
+  }
 
-.pv-bignum-textbox {
-  left: 0;
-  position: absolute;
-  text-align: right;
-  color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  overflow: visible;
-  display: flex;
-  align-items: center;
-}
+  .pv-bignum-textbox {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
 
-.pv-bignum-numbers {
-  right: 0;
-  width: 70%;
-  position: absolute;
-  text-align: center;
+  .pv-bignum-numbers {
+    font-size: '49vw';
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 391px) {
+  .pv-bignum-background {
+    background-image: url('../images/gaspump.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .pv-bignum-body {
+    width: 100%;
+    height: 100%;
+    background: rgba(80, 166, 195, 0.44);
+  }
+
+  .pv-bignum-textbox {
+    left: 0;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  .pv-bignum-numbers {
+    width: 100%;
+    text-align: center;
+  }
 }

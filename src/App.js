@@ -40,6 +40,8 @@ import EnergyVisPage from './pages/EnergyVisPage';
 import CO2VisPage from './pages/CO2VisPage';
 import useMediaQuery from './hooks/useMediaQuery';
 
+import './static/css/globals.css';
+
 function App() {
   const [pageIndex, changePageIndex] = useState(0);
   const [startPageIndex, changeStartPageIndex] = useState(0);

@@ -9,8 +9,7 @@ const PvMap = (props) => {
   const { pageIndex } = props;
   return (
     <div className="pv-map-background">
-      <div className="pv-map-infobox split">
-        <img className="pv-bulb" src={lightbulbs} alt="lightbulbs" />
+      <div className="pv-map-infobox">
         <div className="pv-map-textbox">
           <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
             <h2 className="pv-text pv-text-bold">Location</h2>
@@ -23,10 +22,13 @@ const PvMap = (props) => {
               transportation.
             </p>
           </ParallaxComponent>
+          <div className="pv-map-imagebox">
+            <img width="100%" height="100%" src={pvMapImg} alt="I85 Map" />
+          </div>
+          <div className="pv-bulb">
+            <img className="pv-bulb" src={lightbulbs} alt="lightbulbs" />
+          </div>
         </div>
-      </div>
-      <div className="split pv-map-imagebox">
-        <img width="100%" height="100%" src={pvMapImg} alt="I85 Map" />
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ const PvFuelSavings = (props) => {
   return (
     <div>
       <div className="pv-fuel-container">
+        <img className="pv-fuel-highway" src={highway} alt="highway" />
         <div className="pv-fuel-background">
           <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
             <div className="pv-fuel-squish-text">
@@ -17,14 +18,13 @@ const PvFuelSavings = (props) => {
               <p className="pv-fuel-text">
                 Over the life of the vehicle, compared to owning a comparable gas-powered vehicle*
               </p>
+              <p className="pv-fuel-citation">
+                * Preston, B. (2020, October 8). EVs Offer Big Savings Over Traditional Gas-Powered Cars.
+              </p>
             </div>
           </ParallaxComponent>
         </div>
-        <img className="pv-fuel-highway" src={highway} alt="highway" />
       </div>
-      <p className="pv-fuel-citation">
-        * Preston, B. (2020, October 8). EVs Offer Big Savings Over Traditional Gas-Powered Cars.
-      </p>
     </div>
   );
 };
