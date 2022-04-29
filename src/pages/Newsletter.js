@@ -7,7 +7,7 @@ import plug from '../static/images/Plug.png';
 
 class Newsletter extends React.PureComponent {
   render() {
-    const { card, message, pageIndex } = this.props;
+    const { card, message, pageIndex, wheel } = this.props;
     return (
       <div className="background">
         <div className={card ? 'news-body' : 'newsletter-body'}>
@@ -22,7 +22,7 @@ class Newsletter extends React.PureComponent {
             transitionDelay={0}
             styles={{ height: '100%' }}
           >
-            <div className="newsletter-text-container">
+            <div className={wheel ? 'wheel-newsletter-text-container' : 'newsletter-text-container'}>
               <p className="newsletter-main-text">
                 The Ray is a movement. <br />
                 <br />
@@ -41,12 +41,14 @@ class Newsletter extends React.PureComponent {
 
 Newsletter.propTypes = {
   card: PropTypes.bool,
+  wheel: PropTypes.bool,
   message: PropTypes.string,
   pageIndex: PropTypes.number,
 };
 
 Newsletter.defaultProps = {
   card: false,
+  wheel: false,
   message: 'Power the team by making a donation and signing up for our newsletter.',
   pageIndex: -2,
 };

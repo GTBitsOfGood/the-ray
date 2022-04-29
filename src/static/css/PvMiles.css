@@ -1,6 +1,5 @@
 .pv-miles-background {
-  background-image: url('../images/Earth.png');
-  background-size: cover;
+  background: none;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -11,13 +10,29 @@
   overflow: hidden;
 }
 
+.pv-miles-background::before {
+  content: '';
+  background-image: url('../images/Earth.png');
+  background-size: cover;
+  background-position: bottom;
+  width: 100vh;
+  height: 100vw;
+  position: absolute;
+  min-height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  transform: rotate(90deg);
+}
+
 .pv-miles-textbox {
   position: absolute;
   right: 0;
+  margin-top: 8em;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .pv-miles-textbox p {
@@ -55,4 +70,22 @@
 
 .line-height {
   line-height: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+  .pv-miles-background {
+    background-image: url('../images/Earth.png');
+    background-size: cover;
+    background-position: initial;
+    transform: rotate(0);
+  }
+
+  .pv-miles-background::before {
+    display: none;
+  }
+
+  .pv-miles-textbox {
+    width: 50%;
+    margin-top: 0;
+  }
 }

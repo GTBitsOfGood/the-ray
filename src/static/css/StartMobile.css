@@ -58,7 +58,7 @@
   }
 
   .start-text-mobile {
-    font-family: Roboto;
+    font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
     color: #2d9f8f;
@@ -92,7 +92,7 @@
 
   .start-wheelright-title-border-text {
     display: inline-block;
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     align-items: center;
@@ -102,7 +102,7 @@
   }
   .start-wheelright-tiresafety-title-text {
     /* position: absolute; */
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
