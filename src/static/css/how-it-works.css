@@ -53,7 +53,7 @@
   }
 
   .how-text {
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -104,7 +104,7 @@
 
   .how-title {
     position: relative;
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: max(4vw, 34px);

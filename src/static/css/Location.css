@@ -177,7 +177,7 @@
     left: 6%;
     top: 55%;
 
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: max(4vw, 34px);
@@ -192,7 +192,7 @@
     left: 6%;
     top: 74%;
 
-    font-family: Roboto;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: max(1.5vw, 16.5px);
