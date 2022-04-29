@@ -10,14 +10,19 @@ const Title = (props) => {
   return (
     <div className="title-background">
       <div className="title-body">
-        <button type="button" className="arrow-button" onClick={() => setProject('Title')}>
+        <button
+          type="button"
+          className="arrow-button"
+          onClick={() => setProject('Title')}
+          onTouchStart={() => setProject('Title')}
+        >
           <img className="back-arrow" src={arrow} alt="back" />
         </button>
         <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
           <div className="uppertext">
             <p className="title-border-text">WheelRight</p>
           </div>
-          <div className="wheelright-subheading flex-col">
+          <div className="wheelright-subheading">
             <p className="theray-text">THE RAY</p>
             <p className="title-text">WheelRight</p>
             <p className="tiresafety-title-text">TIRE SAFETY CHECK STATION</p>

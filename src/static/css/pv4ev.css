@@ -1,5 +1,5 @@
 .pv4ev-body {
-  background: #4c7d77;
+  background: #2d9f8f;
   /* background: #ffffff; */
   width: 100%;
   height: 100vh;
@@ -39,7 +39,7 @@
   top: 5vh;
   margin: 0;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   /* font-weight: 900; */
   font-size: max(18vw, 132px);
@@ -60,7 +60,7 @@
 }
 
 .pv4ev-title-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: max(3vw, 27px);
@@ -70,7 +70,7 @@
 }
 
 .pv4ev-main-text {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(10vw, 76px);
@@ -81,7 +81,7 @@
 .pv4ev-secondary-text {
   text-align: left;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: max(3vw, 27px);
@@ -97,7 +97,7 @@
   /* top: 89.33%; */
   top: 85%;
 
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: max(3vw, 27px);
@@ -121,4 +121,131 @@
   margin: 0px;
   position: absolute;
   /* padding-top: 0px; */
+}
+
+@media only screen and (max-width: 800px) {
+  .pv4ev-body {
+    background: #2d9f8f;
+    /* background: #ffffff; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+  }
+
+  .pv4ev-background {
+    /* left: 0%; */
+    /* top: 20%; */
+    /* height: 100vh; */
+    position: absolute;
+    height: 100vh;
+    right: 20px;
+  }
+
+  .pv4ev-solar {
+    right: -185px;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+
+  .pv4ev-pv4evsvg {
+    z-index: 0;
+    position: absolute;
+    right: 155px;
+    bottom: 18vh;
+    height: 61vh;
+  }
+
+  .pv4ev-hollow-text {
+    position: absolute;
+    left: 5vw;
+    top: 40vh;
+    margin: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    /* font-weight: 900; */
+    font-size: max(18vw, 120px);
+    /* line-height: 316px; */
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+
+    color: transparent;
+  }
+
+  .pv4ev-container {
+    position: absolute;
+    left: 10vw;
+    /* right: 77.92%; */
+    top: 52vh;
+    /* bottom: 62.56%; */
+  }
+
+  .pv4ev-title-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: max(3vw, 27px);
+
+    color: #ffffff;
+    margin-bottom: 3vh;
+  }
+
+  .pv4ev-main-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(10vw, 76px);
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .pv4ev-secondary-text {
+    text-align: left;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: max(3vw, 27px);
+    margin: 0;
+
+    color: #ffffff;
+  }
+
+  .pv4ev-scroll-text {
+    position: absolute;
+    /* left: 45.28%; */
+    left: 20px;
+    /* top: 89.33%; */
+    top: 90%;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: max(3vw, 22px);
+
+    color: #ffffff;
+  }
+
+  .back-arrow {
+    z-index: 2;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    /* right: 30vh; */
+    cursor: pointer;
+  }
+
+  .arrow-button {
+    background: none;
+    border: none;
+    margin: 0px;
+    position: absolute;
+    /* padding-top: 0px; */
+  }
 }

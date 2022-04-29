@@ -36,7 +36,7 @@ function CrossBrowserAnimatedNumber(props) {
     };
   }, [currTime]);
 
-  return <p style={{ 'font-size': '18vw', margin: 0 }}>{currNum.toString() + (percentage ? '%' : '')}</p>;
+  return <p style={{ 'font-size': '39vw', 'margin-bottom': '0px' }}>{currNum.toString() + (percentage ? '%' : '')}</p>;
 }
 
 export default CrossBrowserAnimatedNumber;

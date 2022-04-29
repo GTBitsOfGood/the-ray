@@ -8,7 +8,7 @@ class HowItWorks extends React.PureComponent {
   render() {
     const { pageIndex } = this.props;
     return (
-      <div className="how-body" style={{ backgroundColor: '#092342' }}>
+      <div className="how-body" style={{ backgroundColor: '#2d9f8f' }}>
         <div className="how-box" style={{ zIndex: '12' }}>
           <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
             <div className="how-container">
