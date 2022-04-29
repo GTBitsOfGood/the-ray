@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/the-ray/static/css/main.f9005f93.chunk.css",
-    "main.js": "/the-ray/static/js/main.02fbd378.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.02fbd378.chunk.js.map",
+    "main.js": "/the-ray/static/js/main.71b2ae8b.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.71b2ae8b.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
     "static/js/2.7b455673.chunk.js": "/the-ray/static/js/2.7b455673.chunk.js",
     "static/js/2.7b455673.chunk.js.map": "/the-ray/static/js/2.7b455673.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.2a2725e2f67032a49da49e9439e0be1f.js": "/the-ray/precache-manifest.2a2725e2f67032a49da49e9439e0be1f.js",
+    "precache-manifest.347481b1e4a83a967cc70224e08a315c.js": "/the-ray/precache-manifest.347481b1e4a83a967cc70224e08a315c.js",
     "service-worker.js": "/the-ray/service-worker.js",
     "static/css/main.f9005f93.chunk.css.map": "/the-ray/static/css/main.f9005f93.chunk.css.map",
     "static/js/2.7b455673.chunk.js.LICENSE.txt": "/the-ray/static/js/2.7b455673.chunk.js.LICENSE.txt",
@@ -73,6 +73,6 @@
     "static/js/runtime-main.bfd88035.js",
     "static/js/2.7b455673.chunk.js",
     "static/css/main.f9005f93.chunk.css",
-    "static/js/main.02fbd378.chunk.js"
+    "static/js/main.71b2ae8b.chunk.js"
   ]
 }
