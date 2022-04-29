@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
 import './CO2BarGraph.css';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -22,6 +23,8 @@ function CO2BarGraph({ setCO2 }) {
   const [displayInfo, setDisplayInfo] = useState({
     timescale: 'total',
   });
+
+  const isPageMobile = useMediaQuery('(max-width: 800px)');
 
   useEffect(() => {
     // Retrieve monthly data using the index
@@ -224,21 +227,21 @@ function CO2BarGraph({ setCO2 }) {
         data={timeData}
         keys={['kg']}
         indexBy="date"
-        margin={{ top: 50, right: 130, bottom: 80, left: 120 }}
+        margin={{ top: 50, right: isPageMobile ? 0 : 130, bottom: 80, left: isPageMobile ? 40 : 120 }}
         padding={0.3}
         colors={() => `#f7914b`} // The Ray's Mauvelous color
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: isPageMobile ? 0 : 5,
+          tickPadding: isPageMobile ? 0 : 5,
           tickRotation: 0,
           legend: `${legendTime}`,
           legendPosition: 'middle',
           legendOffset: 60,
         }}
         axisLeft={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: isPageMobile ? 0 : 5,
+          tickPadding: isPageMobile ? 0 : 5,
           tickRotation: 0,
           legend: 'CO2 Saved (kg)',
           legendPosition: 'middle',

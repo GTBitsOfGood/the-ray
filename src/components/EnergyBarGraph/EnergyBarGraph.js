@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ResponsiveBar } from '@nivo/bar';
 import TimescaleButtons from './TimescaleButtons';
 import './EnergyBarGraph.css';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 function EnergyBarGraph({ setkwh }) {
   const retrievedMonthsIndex =
@@ -21,6 +22,8 @@ function EnergyBarGraph({ setkwh }) {
   const [displayInfo, setDisplayInfo] = useState({
     timescale: 'total',
   });
+
+  const isPageMobile = useMediaQuery('(max-width: 800px)');
 
   useEffect(() => {
     // Retrieve monthly data using the index
@@ -173,21 +176,21 @@ function EnergyBarGraph({ setkwh }) {
         data={timeData}
         keys={['kWh']}
         indexBy="date"
-        margin={{ top: 50, right: 130, bottom: 80, left: 120 }}
+        margin={{ top: 50, right: isPageMobile ? 0 : 130, bottom: 80, left: isPageMobile ? 40 : 120 }}
         padding={0.3}
         colors={() => `#f7914b`} // The Ray's Mauvelous color
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: isPageMobile ? 0 : 5,
+          tickPadding: isPageMobile ? 0 : 5,
           tickRotation: 0,
           legend: `${legendTime}`,
           legendPosition: 'middle',
           legendOffset: 60,
         }}
         axisLeft={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: isPageMobile ? 0 : 5,
+          tickPadding: isPageMobile ? 0 : 5,
           tickRotation: 0,
           legend: 'Yield (kWh)',
           legendPosition: 'middle',
