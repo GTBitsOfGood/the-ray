@@ -52,7 +52,9 @@
   width: 52.75vw;
   height: 30vw;
 }
-
+.overview-right-background_mobile {
+  display: none;
+}
 .overview-right-image {
   position: absolute;
   top: 0%;
@@ -78,4 +80,36 @@
   line-height: 3.5vw;
 
   color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .overview-right-background {
+    display: none;
+  }
+  .overview-right-background_mobile {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 32vw;
+    z-index: 0;
+    height: 100%;
+  }
+  .overview-left-text {
+    width: 308px;
+    height: 56px;
+    top: 33vh;
+    left: 9vw;
+    line-height: 3.5vh;
+    font-size: 24px;
+    z-index: 10;
+  }
+  .overview-right-text {
+    width: 308px;
+    height: 112px;
+    top: 50vh;
+    left: 9vw;
+    line-height: 3.5vh;
+    font-size: 24px;
+    text-align: right;
+  }
 }
