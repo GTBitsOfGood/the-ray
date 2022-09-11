@@ -99,12 +99,15 @@ function App() {
               source="* National Highway Traffic Safety Administration (NHTSA)"
             />
           </div>
+
           <div className="App">
-            <RubberEnd pageIndex={4} />
+            <UnderInflated pageIndex={4} />
           </div>
+
           <div className="App">
-            <UnderInflated pageIndex={5} />
+            <RubberEnd pageIndex={5} />
           </div>
+
           <div className="App">
             <Wheelright pageIndex={6} />
           </div>

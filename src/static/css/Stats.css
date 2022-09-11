@@ -53,7 +53,6 @@
   font-weight: 300;
   font-size: calc(8px + 1.4vw);
   margin: 0;
-
   color: #ffffff;
   align-self: center;
   text-align: center;
@@ -61,8 +60,10 @@
 
 .stats-image {
   position: absolute;
+  height: 100%;
   width: 100%;
   opacity: 0.44;
+  object-fit: cover;
 }
 
 .stats-lower-container {
