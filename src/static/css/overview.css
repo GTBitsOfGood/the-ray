@@ -33,9 +33,7 @@
   left: 4%;
   right: 50%;
   top: 33vw;
-
   z-index: 10;
-
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -54,6 +52,7 @@
 }
 .overview-right-background_mobile {
   display: none;
+  width: 53%;
 }
 .overview-right-image {
   position: absolute;
