@@ -1,4 +1,10 @@
-@media only screen and (max-width: 414px) {
+.parallax-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
   .location-background {
     position: relative;
     width: 100%;
@@ -8,30 +14,24 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    display: flex;
-  }
-
-  .split {
-    width: 50%;
-    /* position: fixed; */
-    top: 0;
-    overflow-x: hidden;
+    /* display: flex; */
   }
 
   .left {
     position: relative;
     background-color: #2d9f8f;
     width: 100%;
+    height: 50vh;
   }
 
   /* Control the right side */
   .right {
-    position: relative;
-    right: 0;
-    background-image: url('../images/location2.png');
+    background-image: url('../images/location2-mobile.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+    height: 50vh;
+    width: 100%;
+    /* background-size: 100% auto; */
+    /* border: 4px solid black; */
   }
 
   .location-body {
@@ -45,23 +45,7 @@
     display: flex;
   }
 
-  .location-body2 {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    display: flex;
-  }
-
   .help-location-text {
-    position: absolute;
-    /* width: 100%; */
-    height: 0%;
-    left: 6%;
-    top: 55%;
-
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -71,12 +55,6 @@
   }
 
   .help-location-text2 {
-    position: absolute;
-    width: 90%;
-    height: 0%;
-    left: 6%;
-    top: 74%;
-
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -85,7 +63,8 @@
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 414px) {
+
+@media only screen and (min-width: 800px) {
   .location-background {
     position: relative;
     width: 100%;
@@ -101,26 +80,24 @@
   .split {
     height: 100vh;
     width: 50%;
-    /* position: fixed; */
     top: 0;
     overflow-x: hidden;
   }
 
   .left {
     position: relative;
-    /* left: 0; */
     background-image: url('../images/locations.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 1000px;
+    width: 50%;
   }
 
   /* Control the right side */
   .right {
     position: relative;
-    right: 0;
-    background-image: url('../images/location2.png');
+    width: 50%;
+    background-image: url('../images/location2-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -135,6 +112,7 @@
     flex-direction: column;
     z-index: 1;
     display: flex;
+    justify-content: flex-end;
   }
 
   .location-body2 {
@@ -148,12 +126,6 @@
   }
 
   .help-location-text {
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    left: 6%;
-    top: 55%;
-
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -163,17 +135,16 @@
   }
 
   .help-location-text2 {
-    position: absolute;
-    width: 90%;
-    height: 0%;
-    left: 6%;
-    top: 74%;
-
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: max(1.5vw, 16.5px);
     line-height: 120%;
     color: #ffffff;
+  }
+
+  .parallax-content {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -143,9 +143,11 @@ function App() {
           <div className="App">
             <Find pageIndex={13} />
           </div>
+
           <div className="App">
             <Location pageIndex={14} />
           </div>
+
           <div className="App">
             <Help pageIndex={15} wheel />
           </div>

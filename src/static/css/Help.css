@@ -1,6 +1,6 @@
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 800px) {
   .help-background {
-    background-image: url('../images/how-you-can-help.png');
+    background-image: url('../images/how-you-can-help-mobile.png');
     background-size: cover;
   }
 
@@ -59,7 +59,7 @@
     color: #ffffff;
   }
 }
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 800px) {
   .help-background {
     background-image: url('../images/how-you-can-help.png');
     background-size: cover;
