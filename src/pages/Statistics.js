@@ -3,7 +3,7 @@ import '../static/css/Stats.css';
 import PropTypes from 'prop-types';
 import Crash from '../static/images/car-crash-crop.jpg';
 import FlatTire from '../static/images/flat-tire-crop.jpg';
-import GasStation from '../static/images/gas-station-crop.jpg';
+import GasStation from '../static/images/gas-station-crop.png';
 import GasStationMobile from '../static/images/gas-station-crop-mobile.png';
 import carAccidentIcon from '../static/images/car-accident-icon.svg';
 import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
@@ -31,7 +31,7 @@ const Statistics = ({ image, selection, number, text, pageIndex, source }) => {
       <div className="stats-image-container">
         <img className="stats-image" src={currImage} alt={currImage} />
         <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0}>
-          <div className="stats-main-text">{number}</div>
+          <div className="stats-text stats-main-text">{number}</div>
         </ParallaxComponent>
       </div>
       <div className="stats-lower-container">
