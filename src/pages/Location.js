@@ -24,7 +24,7 @@ const Location = (props) => {
         </div>
       </div>
 
-      <div className="right">{/* <div className="location-body2" /> */}</div>
+      <div className="right" />
     </div>
   );
 };
