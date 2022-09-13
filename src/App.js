@@ -91,7 +91,7 @@ function App() {
           </div>
           <div className="App" style={{ width: '100vw', height: '100vh' }}>
             <Statistics
-              text="increase in serious crashes by driving on underinflated tires"
+              text="increase in serious crashes by driving on underinflated tires*"
               image="FlatTire"
               number="300%"
               selection="1"

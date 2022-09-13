@@ -25,23 +25,22 @@
   flex: 1;
 }
 
-.stats-main-text {
+.stats-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: max(10vw, 76px);
-
   color: #ffffff;
+  align-self: center;
+  text-align: center;
+}
+.stats-main-text {
+  font-size: max(10vw, 60px);
 }
 
 .stats-secondary-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: 300;
   font-size: calc(10px + 1.8vw);
   /* flex-grow: 1; */
   margin: 0;
-
   color: #ffffff;
   align-self: center;
   text-align: center;
@@ -89,23 +88,16 @@
   display: flex;
   flex: 10;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 30px;
 }
 
-.stats-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 60%;
-  position: relative;
-}
 .stats-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
   position: relative;
   align-items: center;
+  line-height: 2;
 }
 
 p {
@@ -127,37 +119,33 @@ hr {
   width: 50%;
 }
 
+.stats-container {
+  width: max(100px, calc(30px + 6vw));
+  height: max(100px, calc(30px + 6vw));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .stats-border-container {
   border-color: white;
   border-style: solid;
   border-radius: 50%;
-  width: calc(30px + 6vw);
-  height: calc(30px + 6vw);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
 }
 
-.stats-no-border-container {
-  width: calc(30px + 6vw);
-  height: calc(30px + 6vw);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.stats-outline-container {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
 }
 
 .source {
   position: absolute;
   left: 1.75%;
-  right: 73.54%;
-  top: 75%;
+  top: 90%;
 
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: 300;
   font-size: 13px;
   line-height: 15px;
-
-  color: #ffffff;
 }
