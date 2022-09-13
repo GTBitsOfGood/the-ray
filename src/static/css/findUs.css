@@ -7,8 +7,6 @@
 
 .find-body {
   position: relative;
-  /* width: 1440px; */
-  /* min-height: 10000px; */
   width: 100%;
   min-height: 100vh;
   background: rgba(76, 125, 119, 0.5);
@@ -30,4 +28,10 @@
   font-size: max(4vw, 34px);
   line-height: 84px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+  .find-background {
+    background-image: url('../images/where-to-find-us-mobile.png');
+  }
 }

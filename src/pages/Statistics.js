@@ -4,82 +4,96 @@ import PropTypes from 'prop-types';
 import Crash from '../static/images/car-crash-crop.jpg';
 import FlatTire from '../static/images/flat-tire-crop.jpg';
 import GasStation from '../static/images/gas-station-crop.png';
+import GasStationMobile from '../static/images/gas-station-crop-mobile.png';
 import carAccidentIcon from '../static/images/car-accident-icon.svg';
 import carAccidentIconBlack from '../static/images/car-accident-icon-black.svg';
 import gasIcon from '../static/images/gas-icon.svg';
 import gasIconBlack from '../static/images/gas-icon-black.svg';
 import ParallaxComponent from '../components/Parallax/ParallaxComponent';
+import useMediaQuery from '../hooks/useMediaQuery';
 
-class Statistics extends React.PureComponent {
-  render() {
-    const { image, selection, number, text, pageIndex, source } = this.props;
+const getBackgroundImg = (isMobile, image) => {
+  if (image === 'Crash') {
+    return Crash;
+  }
+  if (image === 'FlatTire') {
+    return FlatTire;
+  }
+  return isMobile ? GasStationMobile : GasStation;
+};
 
-    let currImage = GasStation;
+const Statistics = ({ image, selection, number, text, pageIndex, source }) => {
+  const isMobile = useMediaQuery('(max-width: 800px)');
+  const currImage = getBackgroundImg(isMobile, image);
 
-    if (image === 'Crash') {
-      currImage = Crash;
-    } else if (image === 'FlatTire') {
-      currImage = FlatTire;
-    }
-    return (
-      <div className="stats-body">
-        <div className="stats-image-container">
-          <img className="stats-image" src={currImage} alt={currImage} />
-        </div>
-        <div className="stats-middle">
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
-            <div className="stats-main-text stats-text">{number}</div>
-            <div className="stats-secondary-text stats-text">
+  return (
+    <div className="stats-body">
+      <div className="stats-image-container">
+        <img className="stats-image" src={currImage} alt={currImage} />
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0}>
+          <div className="stats-text stats-main-text">{number}</div>
+        </ParallaxComponent>
+      </div>
+      <div className="stats-lower-container">
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={2000} transitionDelay={0} styles={{ flexGrow: 1 }}>
+          <div className="stats-lower-elements">
+            <p className="stats-secondary-text">
               <center>{text}</center>
-            </div>
-          </ParallaxComponent>
-        </div>
-        <div className="stats-lower-container">
-          <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ flexGrow: 1 }}>
-            <div className="stats-lower-elements">
-              <hr className="stats-only-desktop" style={{ marginTop: '10px', marginBottom: '30px' }} />
-              <div className="stats-icons">
-                <div className="stats-icon">
-                  {selection === '0' && (
-                    <div className="stats-container stats-border-container">
-                      <img src={gasIconBlack} alt="gasIconBlack" style={{ width: 'max(50px,4.5vw)' }} />
-                    </div>
-                  )}
-                  {selection !== '0' && (
-                    <div className="stats-container stats-outline-container">
-                      <img src={gasIcon} alt="gasIcon" style={{ width: 'max(50px,4.5vw)' }} />
-                    </div>
-                  )}
-                  <p className="stats-tertiary-text stats-text">fuel</p>
-                </div>
-                <div className="stats-icon">
-                  <div>
-                    {selection !== '0' && (
-                      <div className="stats-container stats-border-container">
-                        <img
-                          src={carAccidentIconBlack}
-                          alt="carAccidentIconBlack"
-                          style={{ width: 'max(94px, 7.25vw)' }}
-                        />
-                      </div>
-                    )}
-                    {selection === '0' && (
-                      <div className="stats-container stats-outline-container">
-                        <img src={carAccidentIcon} alt="carAccidentIcon" style={{ width: 'max(94px, 7.25vw)' }} />
-                      </div>
-                    )}
+            </p>
+            <hr />
+            <div className="stats-icons">
+              <div className="stats-icon">
+                {selection === '0' && (
+                  <div className="stats-border-container">
+                    <img
+                      src={gasIconBlack}
+                      alt="gasIconBlack"
+                      style={{ width: 'calc(10px + 3vw)', height: 'calc(10px + 6vw)' }}
+                    />
                   </div>
-                  <p className="stats-tertiary-text stats-text">car crashes</p>
+                )}
+                {selection !== '0' && (
+                  <div className="stats-no-border-container">
+                    <img
+                      src={gasIcon}
+                      alt="gasIcon"
+                      style={{ width: 'calc(10px + 4vw)', height: 'calc(10px + 8vw)' }}
+                    />
+                  </div>
+                )}
+                <p className="stats-tertiary-text">gas</p>
+              </div>
+              <div className="stats-icon">
+                <div>
+                  {selection !== '0' && (
+                    <div className="stats-border-container">
+                      <img
+                        src={carAccidentIconBlack}
+                        alt="carAccidentIconBlack"
+                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                      />
+                    </div>
+                  )}
+                  {selection === '0' && (
+                    <div className="stats-no-border-container">
+                      <img
+                        src={carAccidentIcon}
+                        alt="carAccidentIcon"
+                        style={{ width: 'calc(20px + 6vw)', height: 'calc(20px + 5vw)' }}
+                      />
+                    </div>
+                  )}
                 </div>
+                <p className="stats-tertiary-text">car accidents</p>
               </div>
             </div>
-            <p className="source stats-text">{source}</p>
-          </ParallaxComponent>
-        </div>
+          </div>
+          <p className="source">{source}</p>
+        </ParallaxComponent>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 Statistics.propTypes = {
   image: PropTypes.node,
