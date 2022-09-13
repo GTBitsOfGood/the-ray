@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2896295590741e41bf020b7863680fd",
+    "revision": "c7be2a9f112856ef1b72037ea4b7e24c",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "31179d211bec7b0cd465",
-    "url": "/the-ray/static/css/main.b98545c7.chunk.css"
+    "revision": "d444eea015fa1dc7e9ee",
+    "url": "/the-ray/static/css/main.271c6abd.chunk.css"
   },
   {
     "revision": "54b1b9116210d7538bcc",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/js/2.7b455673.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31179d211bec7b0cd465",
-    "url": "/the-ray/static/js/main.71b2ae8b.chunk.js"
+    "revision": "d444eea015fa1dc7e9ee",
+    "url": "/the-ray/static/js/main.02366aa8.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -60,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/blown-out.58c6fcf1.svg"
   },
   {
-    "revision": "e76797c13a8a936b4b1ca6e07cca07c9",
-    "url": "/the-ray/static/media/car-accident-icon-black.e76797c1.svg"
+    "revision": "1185024eef1c305482251bf09b9ec8d8",
+    "url": "/the-ray/static/media/car-accident-icon-black.1185024e.svg"
   },
   {
-    "revision": "e6e4e4ccdf22bd2a58a38178a303e7e4",
-    "url": "/the-ray/static/media/car-accident-icon.e6e4e4cc.svg"
+    "revision": "656db4e1ea13e189476bf787da4f37a1",
+    "url": "/the-ray/static/media/car-accident-icon.656db4e1.svg"
   },
   {
     "revision": "d9174d63c1e7eed1ec974abe8e827433",
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/gas-icon.f310cdd7.svg"
   },
   {
-    "revision": "f6c69d2b128cd50e97be7e802e8eb72c",
-    "url": "/the-ray/static/media/gas-station-crop.f6c69d2b.jpg"
+    "revision": "f233b60b02c2ecadd90bfdc8bf86000b",
+    "url": "/the-ray/static/media/gas-station-crop.f233b60b.png"
   },
   {
     "revision": "e32fc4f43930ad0d7b8d5277d153f465",
