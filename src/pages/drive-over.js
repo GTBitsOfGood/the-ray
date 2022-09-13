@@ -3,15 +3,19 @@ import '../static/css/drive-over.css';
 import '../static/css/commons.css';
 import PropTypes from 'prop-types';
 import Car from '../static/images/half-car.png';
+import CarMobile from '../static/images/half-car-mobile.png';
 import Tire from '../static/images/tire-graphic.svg';
 import Yellow from '../static/images/yellow-dot.svg';
 import ParallaxComponent from '../components/Parallax/ParallaxComponent';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const DriveOver = (props) => {
+  const isMobile = useMediaQuery('(max-width: 800px)');
+
   const { pageIndex } = props;
   return (
     <div className="drive-background">
-      <img className="image-car" src={Car} alt="Car" />
+      {/* <div> */}
       <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0} styles={{ height: '100%' }}>
         <div className="flex-col driveover-container">
           <img className="image-tire" src={Tire} alt="Tire Graphic" />
@@ -25,6 +29,8 @@ const DriveOver = (props) => {
           </div>
         </div>
       </ParallaxComponent>
+      {/* </div> */}
+      <img className="image-car" src={isMobile ? CarMobile : Car} alt="Car" />
     </div>
   );
 };
