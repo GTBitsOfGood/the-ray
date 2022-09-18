@@ -2,33 +2,29 @@ import React from 'react';
 import '../static/css/PvMap.css';
 import PropTypes from 'prop-types';
 import lightbulbs from '../static/images/lightbulbs.svg';
-import pvMapImg from '../static/images/TheRayMap.png';
 import ParallaxComponent from '../components/Parallax/ParallaxComponent';
 
-const PvMap = (props) => {
-  const { pageIndex } = props;
+const PvMap = ({ pageIndex }) => {
   return (
-    <div className="pv-map-background">
-      <div className="pv-map-infobox">
-        <div className="pv-map-textbox">
-          <ParallaxComponent pageIndex={pageIndex} transitionDelay={0} transitionTime={1500}>
-            <h2 className="pv-text pv-text-bold">Location</h2>
-            <p className="pv-text">
+    <div className="pv-map-container">
+      <div className="map-img-container" />
+      <div className="pv-map-text-container">
+        <div className="pv-map-bulb-container">
+          <img className="bulb-img" alt={lightbulbs} src={lightbulbs} />
+        </div>
+        <ParallaxComponent pageIndex={pageIndex} transitionTime={1500} transitionDelay={0}>
+          <div className="pv-map-text">
+            <h1>Location</h1>
+            <p>
               The Georgia Visitor Information Center in West Point is home to the state’s very first solar-powered PV4EV
               charging station.
             </p>
-            <p className="pv-text">
+            <p>
               It’s one giant step toward creating the infrastructure that’s needed to support electric vehicle
               transportation.
             </p>
-          </ParallaxComponent>
-          <div className="pv-map-imagebox">
-            <img width="100%" height="100%" src={pvMapImg} alt="I85 Map" />
           </div>
-          <div className="pv-bulb">
-            <img className="pv-bulb" src={lightbulbs} alt="lightbulbs" />
-          </div>
-        </div>
+        </ParallaxComponent>
       </div>
     </div>
   );
