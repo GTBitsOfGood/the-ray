@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7f6e20a05556dbca722fd8a212d46e8",
+    "revision": "48f1a11329ebe2c36c69c6876d92afe3",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "f62b913cb7b377048f34",
-    "url": "/the-ray/static/css/main.ae65f498.chunk.css"
+    "revision": "fa3db3f630676b452b85",
+    "url": "/the-ray/static/css/main.d1407206.chunk.css"
   },
   {
-    "revision": "801861115da978e5497f",
-    "url": "/the-ray/static/js/2.bab656db.chunk.js"
+    "revision": "96a9697717ecb977419a",
+    "url": "/the-ray/static/js/2.a3e21e5f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-ray/static/js/2.bab656db.chunk.js.LICENSE.txt"
+    "url": "/the-ray/static/js/2.a3e21e5f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f62b913cb7b377048f34",
-    "url": "/the-ray/static/js/main.b020400b.chunk.js"
+    "revision": "fa3db3f630676b452b85",
+    "url": "/the-ray/static/js/main.88b82761.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -206,10 +206,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "95d2c79c44d49def67eb7f1f9acb9005",
     "url": "/the-ray/static/media/ray-future.95d2c79c.jpg"
-  },
-  {
-    "revision": "88285a2ef9979c7be4601b7dac78d6dd",
-    "url": "/the-ray/static/media/right-background.88285a2e.svg"
   },
   {
     "revision": "f007f57f735cf2522cfaf1334d577bff",

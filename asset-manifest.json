@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/the-ray/static/css/main.ae65f498.chunk.css",
-    "main.js": "/the-ray/static/js/main.b020400b.chunk.js",
-    "main.js.map": "/the-ray/static/js/main.b020400b.chunk.js.map",
+    "main.css": "/the-ray/static/css/main.d1407206.chunk.css",
+    "main.js": "/the-ray/static/js/main.88b82761.chunk.js",
+    "main.js.map": "/the-ray/static/js/main.88b82761.chunk.js.map",
     "runtime-main.js": "/the-ray/static/js/runtime-main.bfd88035.js",
     "runtime-main.js.map": "/the-ray/static/js/runtime-main.bfd88035.js.map",
-    "static/js/2.bab656db.chunk.js": "/the-ray/static/js/2.bab656db.chunk.js",
-    "static/js/2.bab656db.chunk.js.map": "/the-ray/static/js/2.bab656db.chunk.js.map",
+    "static/js/2.a3e21e5f.chunk.js": "/the-ray/static/js/2.a3e21e5f.chunk.js",
+    "static/js/2.a3e21e5f.chunk.js.map": "/the-ray/static/js/2.a3e21e5f.chunk.js.map",
     "index.html": "/the-ray/index.html",
-    "precache-manifest.c1159964e020311c564fd96b8109db73.js": "/the-ray/precache-manifest.c1159964e020311c564fd96b8109db73.js",
+    "precache-manifest.8c07d3233f9afa55204fc4d1d15ad97d.js": "/the-ray/precache-manifest.8c07d3233f9afa55204fc4d1d15ad97d.js",
     "service-worker.js": "/the-ray/service-worker.js",
-    "static/css/main.ae65f498.chunk.css.map": "/the-ray/static/css/main.ae65f498.chunk.css.map",
-    "static/js/2.bab656db.chunk.js.LICENSE.txt": "/the-ray/static/js/2.bab656db.chunk.js.LICENSE.txt",
+    "static/css/main.d1407206.chunk.css.map": "/the-ray/static/css/main.d1407206.chunk.css.map",
+    "static/js/2.a3e21e5f.chunk.js.LICENSE.txt": "/the-ray/static/js/2.a3e21e5f.chunk.js.LICENSE.txt",
     "static/media/DOT-GA-US-Logo-2018 1.png": "/the-ray/static/media/DOT-GA-US-Logo-2018 1.12c18b5c.png",
     "static/media/PvStat.css": "/the-ray/static/media/projection.8baf426e.png",
     "static/media/PvMiles.css": "/the-ray/static/media/Earth.143d0ff6.png",
@@ -52,7 +52,6 @@
     "static/media/pv4ev.svg": "/the-ray/static/media/pv4ev.7c1f7f7a.svg",
     "static/media/ray-anderson-logo 1.png": "/the-ray/static/media/ray-anderson-logo 1.d4e2d0ac.png",
     "static/media/ray-future.jpg": "/the-ray/static/media/ray-future.95d2c79c.jpg",
-    "static/media/right-background.svg": "/the-ray/static/media/right-background.88285a2e.svg",
     "static/media/RubberEnd.css": "/the-ray/static/media/rubber.f007f57f.jpg",
     "static/media/solar-top.png": "/the-ray/static/media/solar-top.b3acb0e2.png",
     "static/media/solar.png": "/the-ray/static/media/solar.da72f6cd.png",
@@ -71,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bfd88035.js",
-    "static/js/2.bab656db.chunk.js",
-    "static/css/main.ae65f498.chunk.css",
-    "static/js/main.b020400b.chunk.js"
+    "static/js/2.a3e21e5f.chunk.js",
+    "static/css/main.d1407206.chunk.css",
+    "static/js/main.88b82761.chunk.js"
   ]
 }
