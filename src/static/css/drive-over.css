@@ -70,20 +70,34 @@
   width: calc(100vw - 400px - 3.89% - 4px);
 }
 
-@media only screen and (max-width: 800px) {
-  .drive-background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #d35c58;
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+  .driveover-container {
+    top: 11vh;
+    left: 8vw;
+  }
+  .drive-title {
+    width: 87.2vw;
+    font-size: max(5.8vh, 40px);
+  }
+  .drive-text {
+    width: 79vw;
+    font-size: max(2.9vh, 20px);
+    margin: none;
   }
   .image-car {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+    object-fit: cover;
   }
-  .driveover-container {
-    top: 20%;
+  .image-tire {
+    width: 9.8vh;
+    height: 9.8vh;
+  }
+  .drive-pointer {
+    display: none;
+  }
+  .driveover-container > p {
+    margin: 5px;
   }
 }
