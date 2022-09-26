@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48f1a11329ebe2c36c69c6876d92afe3",
+    "revision": "627690ac73dcd235afe43d8663375531",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "fa3db3f630676b452b85",
-    "url": "/the-ray/static/css/main.d1407206.chunk.css"
+    "revision": "277a9e910a34cba75545",
+    "url": "/the-ray/static/css/main.aa7c241b.chunk.css"
   },
   {
-    "revision": "96a9697717ecb977419a",
-    "url": "/the-ray/static/js/2.a3e21e5f.chunk.js"
+    "revision": "64a83a8201cb2f2d8de9",
+    "url": "/the-ray/static/js/2.0c0d73f3.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-ray/static/js/2.a3e21e5f.chunk.js.LICENSE.txt"
+    "url": "/the-ray/static/js/2.0c0d73f3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fa3db3f630676b452b85",
-    "url": "/the-ray/static/js/main.88b82761.chunk.js"
+    "revision": "277a9e910a34cba75545",
+    "url": "/the-ray/static/js/main.41c3307e.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "84a4103a6eb21a13c2fc3ce084aebea6",
     "url": "/the-ray/static/media/SolarStatBackground.84a4103a.png"
+  },
+  {
+    "revision": "2d99ec6c95ee9b9ad14819d9a1f23369",
+    "url": "/the-ray/static/media/TheRayMap-mobile.2d99ec6c.png"
   },
   {
     "revision": "71d96deb5076d70deb4f172994737057",
