@@ -132,6 +132,11 @@ hr {
   border-style: solid;
   border-radius: 50%;
   background-color: white;
+  aspect-ratio: 1/1;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stats-outline-container {
