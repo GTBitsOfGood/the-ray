@@ -7,7 +7,7 @@ function sineProgress(start, target, progress) {
 }
 
 function CrossBrowserAnimatedNumber(props) {
-  const { start, target, pageIndex, transitionTime, percentage } = props;
+  const { start, target, pageIndex, transitionTime, percentage, fontSize, fontMargin } = props;
 
   const [currTime, setCurrTime] = useState(0);
 
@@ -36,7 +36,7 @@ function CrossBrowserAnimatedNumber(props) {
     };
   }, [currTime]);
 
-  return <p style={{ 'font-size': '39vw', 'margin-bottom': '0px' }}>{currNum.toString() + (percentage ? '%' : '')}</p>;
+  return <p style={{ 'font-size': fontSize, margin: fontMargin }}>{currNum.toString() + (percentage ? '%' : '')}</p>;
 }
 
 export default CrossBrowserAnimatedNumber;
@@ -47,6 +47,8 @@ CrossBrowserAnimatedNumber.propTypes = {
   start: PropTypes.number,
   target: PropTypes.number,
   percentage: PropTypes.bool,
+  fontSize: PropTypes.string,
+  fontMargin: PropTypes.string,
 };
 
 CrossBrowserAnimatedNumber.defaultProps = {
@@ -55,4 +57,6 @@ CrossBrowserAnimatedNumber.defaultProps = {
   start: 0,
   target: 80,
   percentage: false,
+  fontSize: '100px',
+  fontMargin: '0',
 };

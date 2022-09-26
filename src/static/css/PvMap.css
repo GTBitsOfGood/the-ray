@@ -1,114 +1,78 @@
-@media only screen and (min-width: 800) {
-  .pv-map-background {
-    background-color: #70c6df;
+@media only screen and (min-width: 800px) {
+  .pv-map-container h1 {
+    color: white;
+    font-size: 48px;
+  }
+
+  .pv-map-container {
+    height: 100vh;
+    position: relative;
+    background-color: #50a6c3;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .map-img-container {
+    background-image: url('../images/TheRayMap.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
     z-index: 1;
-    overflow: hidden;
   }
 
-  .pv-map-infobox {
-    left: 0;
-    position: relative;
-    margin-top: 5vh;
-    text-align: center;
+  .pv-map-text {
+    margin: 40px;
   }
 
-  .pv-map-textbox {
-    width: 45%;
-    margin-top: 45vh;
-    text-align: left;
-
-    margin-left: 55px;
-  }
-
-  .pv-map-imagebox {
-    position: absolute;
-    top: -60px;
-    left: 770px;
-    width: 60%;
-    height: 106%;
-  }
-
-  .pv-bulb {
-    position: absolute;
-    top: 25px;
-    left: 95px;
-  }
-
-  .pv-text {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .pv-text-bold {
-    font-size: 50px;
-    font-weight: bold;
+  .pv-map-bulb-container {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .pv-map-background {
-    background-color: #50a6c3;
-    width: 100%;
-    height: 100vh;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    z-index: 1;
-    overflow: hidden;
+  .pv-map-container h1 {
+    color: white;
+    font-size: 48px;
   }
 
-  .pv-map-infobox {
+  .pv-map-container {
+    height: 100vh;
     position: relative;
-
-    text-align: start;
-    width: 100%;
+    background-color: #50a6c3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
-  .pv-map-textbox {
-    width: 85%;
-    height: 50%;
+  .map-img-container {
+    background-image: url('../images/TheRayMap-mobile.png');
+    background-size: cover;
+    height: 35%;
+  }
 
+  .bulb-img {
+    width: 300px;
     position: absolute;
-    text-align: left;
-    top: -55px;
-    left: 13%;
+    z-index: 1;
+    top: -15%;
+    left: calc(50vw - 150px);
   }
 
-  .pv-map-imagebox {
-    position: absolute;
-    top: -500px;
-    left: -180px;
-
-    height: 500px;
-    width: 525px;
+  .pv-map-text-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 35%);
+    background-color: #50a6c3;
+    overflow: visible;
   }
 
-  .pv-bulb {
-    height: 150px;
-    position: absolute;
-    top: -85px;
-    left: 13px;
-  }
-
-  .pv-text {
-    font-size: 20px;
-    margin-right: 40px;
-    line-height: 20px;
-  }
-
-  .pv-text-bold {
-    font-size: 30px;
-    font-weight: bold;
+  .pv-map-text {
+    margin: 40px;
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 18px;
   }
 }
