@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "627690ac73dcd235afe43d8663375531",
+    "revision": "20c1adcb4eb0e45e6a16c789836c95ed",
     "url": "/the-ray/index.html"
   },
   {
-    "revision": "277a9e910a34cba75545",
-    "url": "/the-ray/static/css/main.aa7c241b.chunk.css"
+    "revision": "822167d42f33edf08a5a",
+    "url": "/the-ray/static/css/main.d644dec0.chunk.css"
   },
   {
     "revision": "64a83a8201cb2f2d8de9",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/js/2.0c0d73f3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "277a9e910a34cba75545",
-    "url": "/the-ray/static/js/main.41c3307e.chunk.js"
+    "revision": "822167d42f33edf08a5a",
+    "url": "/the-ray/static/js/main.ca3fc912.chunk.js"
   },
   {
     "revision": "78df492d41a4665f4729",
@@ -164,6 +164,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-ray/static/media/location2-mobile.6d6a928e.png"
   },
   {
+    "revision": "396f21041cec090fcdbdc0d65932dab5",
+    "url": "/the-ray/static/media/location2.396f2104.png"
+  },
+  {
     "revision": "ad0490c928423cd490ebc5d52c96c427",
     "url": "/the-ray/static/media/locations.ad0490c9.png"
   },
@@ -274,10 +278,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e9c2db8797c9a3234a4bc801554e50ac",
     "url": "/the-ray/static/media/wheelright.e9c2db87.jpg"
-  },
-  {
-    "revision": "eb1cb279e072015acb5cecd06126598f",
-    "url": "/the-ray/static/media/where-to-find-us-mobile.eb1cb279.png"
   },
   {
     "revision": "2d3c8b24e2d1f5bf6085832d47198cc6",
