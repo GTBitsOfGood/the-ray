@@ -1,6 +1,7 @@
 .find-background {
   background-image: url('../images/where-to-find-us.jpg');
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
@@ -14,6 +15,20 @@
   flex-direction: column;
   z-index: 1;
   display: flex;
+}
+
+.find-body-mobile {
+  position: relative;
+  /* width: 1440px; */
+  /* min-height: 10000px; */
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(76, 125, 119, 0.5);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .find-main-text {
@@ -30,8 +45,12 @@
   color: #ffffff;
 }
 
-@media only screen and (max-width: 800px) {
-  .find-background {
-    background-image: url('../images/where-to-find-us-mobile.png');
-  }
+.find-main-mobile-text {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: max(2vw, 60px);
+  line-height: 84px;
+  color: #ffffff;
 }
