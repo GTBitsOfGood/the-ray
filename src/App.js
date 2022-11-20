@@ -169,67 +169,51 @@ function App() {
             <div className="App">
               <PV4EV setProject={setProject} pageIndex={0} />
             </div>
-
             <div className="App">
               <Problem selection="Problem" pageIndex={1} />
             </div>
-
             <div className="App">
               <Problem selection="Solution" pageIndex={2} />
             </div>
-
             <div className="App">
               <PVProjection pageIndex={3} />
             </div>
-
             <div className="App">
               <PVPorts pageIndex={4} />
             </div>
-
             <div className="App">
               <PvSolarStat pageIndex={5} />
             </div>
-
             <div className="App">
               <PvEVStat pageIndex={6} />
             </div>
-
             <div className="App">
               <PvFuelSavings pageIndex={7} />
             </div>
-
             <div className="App">
               <HowItWorks pageIndex={8} />
-            </div>
-
+            </div>{' '}
             <div className="App">
               <PvMap pageIndex={9} />
             </div>
-
             <div className="App">
               <PvBigNum pageIndex={10} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
             </div>
-
             <div className="App">
               <PvBigNum pageIndex={11} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
             </div>
-
             <div className="App">
               <EnergyVisPage setkwh={setkwh} />
             </div>
-
             <div className="App">
               <PvMiles kwh={kwh} pageIndex={13} />
             </div>
-
             <div className="App">
               <CO2VisPage setCO2={setCO2} />
             </div>
-
             <div className="App">
               <PvMiles CO2={CO2} pageIndex={15} />
             </div>
-
             <div className="App">
               <Help pageIndex={16} />
             </div>

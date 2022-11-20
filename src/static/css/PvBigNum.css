@@ -103,7 +103,6 @@
   }
 
   .pv-bignum-textbox {
-    left: 0;
     position: absolute;
     text-align: right;
     color: white;
@@ -117,5 +116,10 @@
   .pv-bignum-numbers {
     width: 100%;
     text-align: center;
+  }
+
+  .label {
+    font-size: 84px;
+    margin: 0px 0px 30px 0px;
   }
 }
