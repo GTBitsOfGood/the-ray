@@ -196,8 +196,12 @@ function App() {
             <div className="App">
               <PvMap pageIndex={9} />
             </div>
-            <PvBigNum pageIndex={10} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
-            <PvBigNum pageIndex={11} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
+            <div className="App">
+              <PvBigNum pageIndex={10} targetNum={80} percentage label="CHARGE" transitionTime={2500} />
+            </div>
+            <div className="App">
+              <PvBigNum pageIndex={11} targetNum={20} label="MINUTES" transitionTime={1000} percentage={false} />
+            </div>
             <div className="App">
               <EnergyVisPage setkwh={setkwh} />
             </div>
